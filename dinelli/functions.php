@@ -547,5 +547,15 @@ function get_reviews_vk(){
 	//group_id
 }
 
+/**
+ * Load Jetpack compatibility file.
+ */
+require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load TGM Plugin.
+ */
+require get_template_directory() . '/tgm/dinelli_tgm.php';
+
 
 ?>
