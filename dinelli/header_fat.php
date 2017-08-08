@@ -115,7 +115,7 @@
 				</ul>*/ ?>
 				<div class="sidebar_delim"></div>
 				<ul class="sidebar_list">
-					<li><a href="mailto:info@dinelli.ru">info@dinelli.ru</a></li>
+					<li><a href="mailto:info@dinelli.ru" target=_blank >info@dinelli.ru </a></li>
 					<li>+7 918 476 90 30</li>
 					<li><a href="#" class="show_modal"><span style="color:#e93a1d">[</span> Заказать звонок <span style="color:#e93a1d">]</span></a></li>
 				</ul>

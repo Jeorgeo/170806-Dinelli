@@ -1,5 +1,8 @@
 <?php
 
+// Add theme support for selective refresh for widgets.
+add_theme_support( 'customize-selective-refresh-widgets' );
+
 function load_php_files_in_dir($dir = ''){
 	if(!empty($dir)){
 		if( file_exists($dir) ){
@@ -39,7 +42,7 @@ add_action( 'admin_bar_menu', 'my_admin_bar_menu', 100 );*/
  */
 function dinelli_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dinelli' ),
+		'name'          => esc_html__( 'mail', 'dinelli' ),
 		'id'            => 'mail',
 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -48,7 +51,7 @@ function dinelli_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dinelli' ),
+		'name'          => esc_html__( 'phone', 'dinelli' ),
 		'id'            => 'phone',
 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -57,7 +60,7 @@ function dinelli_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dinelli' ),
+		'name'          => esc_html__( 'social_vk', 'dinelli' ),
 		'id'            => 'social_vk',
 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -66,7 +69,7 @@ function dinelli_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dinelli' ),
+		'name'          => esc_html__( 'social_f', 'dinelli' ),
 		'id'            => 'social_f',
 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -75,7 +78,7 @@ function dinelli_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dinelli' ),
+		'name'          => esc_html__( 'social_youtube', 'dinelli' ),
 		'id'            => 'social_youtube',
 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -84,7 +87,7 @@ function dinelli_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dinelli' ),
+		'name'          => esc_html__( 'social_instagram', 'dinelli' ),
 		'id'            => 'social_instagram',
 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -99,35 +102,38 @@ add_action( 'widgets_init', 'dinelli_widgets_init' );
  * Enqueue scripts and styles.
  */
 function dinelli_scripts() {
-	wp_enqueue_style( 'normalize-style', get_stylesheet_uri() . "/css/normalize.css", array(), 		'2', 'all' );
 
-	wp_enqueue_style( 'dinelli-style', get_stylesheet_uri() . "/style.css", array(), 		'2', 'all' );
+	$dineli_url = get_template_directory_uri();
 
-	wp_register_style( 'bootstrap_min-style' ,  get_stylesheet_uri() . "/css/bootstrap.min.css", array(), 		'2', 'all' );
+	wp_enqueue_style( 'normalize-style', $dineli_url . "/css/normalize.css", array(), 		'2', 'all' );
 
-	wp_register_style( 'bootstrap-theme_min-style' ,  get_stylesheet_uri() . "/css/bootstrap-theme.min.css", array(), 		'2', 'all' );
+	wp_enqueue_style( 'bootstrap_min-style' ,  $dineli_url . "/css/bootstrap.min.css", array(), 		'2', 'all' );
 
-	wp_register_style( 'jquery_fancybox-style' ,  get_stylesheet_uri() . "/css/jquery.fancybox.css", array(), 		'2', 'all' );
+	wp_enqueue_style( 'bootstrap-theme_min-style' ,  $dineli_url . "/css/bootstrap-theme.min.css", array(), 		'2', 'all' );
 
-	wp_register_style( 'jquery_bxslider-style' ,  get_stylesheet_uri() . "/css/jquery.bxslider.css", array(), 		'2', 'all' );
+	wp_enqueue_style( 'jquery_fancybox-style' ,  $dineli_url . "/css/jquery.fancybox.css", array(), 		'2', 'all' );
 
-	wp_register_style( 'animate-style' ,  get_stylesheet_uri() . "/css/animate.css", array(), 		'2', 'all' );
+	wp_enqueue_style( 'jquery_bxslider-style' ,  $dineli_url . "/css/jquery.bxslider.css", array(), 		'2', 'all' );
 
-	wp_register_style( 'font-awesome_min-style' ,  get_stylesheet_uri() . "/css/font-awesome.min.css", array(), 		'2', 'all' );
+	wp_enqueue_style( 'animate-style' ,  $dineli_url . "/css/animate.css", array(), 		'2', 'all' );
 
-	wp_enqueue_script('newscript', get_template_directory_uri() . '/js/jquery.min.js');
+	wp_enqueue_style( 'font-awesome_min-style' ,  $dineli_url . "/css/font-awesome.min.css", array(), 		'2', 'all' );
 
-	wp_enqueue_script('newscript', get_template_directory_uri() . '/js/jquery.mousewheel-3.0.6.pack.js');
+	wp_enqueue_style( 'dinelli-style', get_stylesheet_uri());
 
-	wp_enqueue_script('newscript', get_template_directory_uri() . '/js/jquery.bxslider.min.js');
+	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.min.js');
 
-	wp_enqueue_script('newscript', get_template_directory_uri() . '/js/jquery.fancybox.pack.js');
+	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.mousewheel-3.0.6.pack.js');
 
-	wp_enqueue_script('newscript', get_template_directory_uri() . '/js/bootstrap.min.js');
+	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.bxslider.min.js');
 
-	wp_enqueue_script('newscript', get_template_directory_uri() . '/js/wow.min.js');
+	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.fancybox.pack.js');
 
-	wp_enqueue_script('newscript', get_template_directory_uri() . '/js/main.js');
+	wp_enqueue_script('newscript', $dineli_url . '/js/bootstrap.min.js');
+
+	wp_enqueue_script('newscript', $dineli_url . '/js/wow.min.js');
+
+	wp_enqueue_script('newscript', $dineli_url . '/js/main.js');
 
 }
 add_action( 'wp_enqueue_scripts', 'dinelli_scripts' );
