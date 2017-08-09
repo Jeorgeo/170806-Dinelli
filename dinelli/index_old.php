@@ -1,12 +1,25 @@
-<?php
-/* Template Name: Главная */
-?><?php get_header(); ?>
+<?php get_header(); ?>
 	<?php
 		if (have_posts()){
 			while (have_posts()) : the_post();
-			the_content();
+
+			?>
+				<div class="content-padding">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12 wow bounceIn page">
+							<h1 style=""><?php the_title(); ?></h1>
+							<div style="min-width:100%;width:100%;padding:25px 0;">
+								<?php the_content(); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php
+
 			endwhile;
 		}
+
+
 	/*?>
 				<div class="row row-right" style="background:#f7fafc;">
 					<div class="col-md-6 col-sm-6 col-xs-12 wow bounceIn">
@@ -341,7 +354,7 @@
 						</div>
 					</div>
 
-
+					
 					<div class="row">
 						<div class="col-md-6 col-sm-6 col-xs-12 wow bounceIn">
 							<p>малоэтажного строительства,  крупными застройщиками многоэтажных домов, торговых центров, административных зданий, ремонтными компаниями и банками.</p>
@@ -358,7 +371,7 @@
 							<img src="i/data/main/bg_10.png" alt="">
 						</div>
 					</div>
-
+					
 					<div class="row">
 						<div class="col-md-6 col-sm-6 col-xs-12 wow bounceIn">
 							<p>С этого момента берём на себя обязательства взять в оборот ваш бизнес и довести его до полного возбуждения интереса вашей целевой аудитории.</p>
@@ -369,7 +382,7 @@
 
 
 					<br><br>
-
+					
 					<div class="row">
 						<div class="col-md-6 col-sm-6 col-xs-12 wow bounceIn">
 							<h3>Спасибо за внимание!</h3>
@@ -380,9 +393,9 @@
 						</div>
 					</div>
 
-
+					
 					<br><br>
-
+					
 					<div class="row" style="min-height:600px;">
 						<div class="col-md-6 col-sm-6 col-xs-12 wow bounceIn">
 							<h3>Заявка</h3>
@@ -442,6 +455,4 @@
 				</div><!--/.content-padding-->
 
 				*/?>
-
-
 <?php get_footer(); ?>
