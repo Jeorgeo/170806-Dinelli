@@ -51,10 +51,19 @@ function dinelli_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'phone', 'dinelli' ),
+		'name'          => esc_html__( 'phone-top', 'dinelli' ),
 		'id'            => 'phone',
 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'before_widget' => '<div id="%1$s" class="widget phone">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'phone-bottom', 'dinelli' ),
+		'id'            => 'phone_b',
+		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+		'before_widget' => '<div id="%1$s" class="widget phone">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
@@ -95,6 +104,25 @@ function dinelli_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Контент в подвале', 'dinelli' ),
+		'id'            => 'footer_c',
+		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Копирайт в подвале', 'dinelli' ),
+		'id'            => 'footer_copy',
+		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+		'before_widget' => '<div id="%1$s" class="footer_copy">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'dinelli_widgets_init' );
 
@@ -546,16 +574,6 @@ function wp_head_reviews_text_js(){
 function get_reviews_vk(){
 	//group_id
 }
-
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';
-
-/**
- * Load TGM Plugin.
- */
-require get_template_directory() . '/tgm/dinelli_tgm.php';
 
 
 ?>

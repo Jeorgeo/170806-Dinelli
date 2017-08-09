@@ -2,7 +2,7 @@
 
 
 
-
+				
 			</div><!--/#content-page-->
 
 		</div><!--/#content-->
@@ -11,24 +11,21 @@
 		<div id="footer">
 			<div class="row">
 				<div class="col-xs-3 col-lg-3 col-md-3 col-sm-12 left">
-					<div class="footer-contacts">
-					<div class="contacts_icon">
-						<span class="contacts_icon-w"></span>
-						<span class="contacts_icon-v"></span>
-						<span class="contacts_icon-t"></span>
-						<span class="contacts_icon-s"></span>
-					</div>
-					<?php dynamic_sidebar( 'phone' ); ?>
-					<?php dynamic_sidebar( 'phone_b' ); ?>
+					<div  style="line-height:27px;text-align:right;">
+					+7 918 476 90 30<br>
+					Менеджер ВК
 					</div>
 				</div>
 				<div class="col-xs-4 col-lg-4 col-md-4 col-sm-12">
-					<ul class="footer_content">
-						<li><?php dynamic_sidebar( 'footer_c' ); ?></li>
+					<ul>
+						<li   style="line-height:28px;"><a href="#">Партнерская программа</a></li>
+						<li   style="line-height:28px;"><a href="#">Политика конфиденциальности</a></li>
+						<li   style="line-height:28px;"><a href="#">Договор оферты</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-5 col-lg-5 col-md-5 col-sm-12">
-					<?php dynamic_sidebar( 'footer_copy' ); ?>
+					<p>&copy; 2016. Разработано агенством DiNelli. Все права защищены. Использование материалов сайта возможно только с личного разрешения Нелли Давыдовой.</p>
+					<p>ИП Давыдова Нелли ОРГН 1290003800407519</p>
 				</div>
 			</div>
 		</div><!--/#footer-->
@@ -52,7 +49,7 @@
 						$body.className = $body.className == 'menu-active' ? '' : 'menu-active';
 				});
 		}
-}.call(this));
+}.call(this)); 
 
 
 //@ sourceURL=pen.js

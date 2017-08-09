@@ -94,6 +94,7 @@
 				<ul class="sidebar_list">
 					<li><?php dynamic_sidebar( 'mail' ); ?></li>
 					<li><?php dynamic_sidebar( 'phone' ); ?></li>
+					<li><?php dynamic_sidebar( 'phone_b' ); ?></li>
 					<li><a href="#" class="show_modal"><span style="color:#e93a1d">[</span> Заказать звонок <span style="color:#e93a1d">]</span></a></li>
 				</ul>
 				<ul class="social">
@@ -196,6 +197,7 @@
 				<ul class="sidebar_list">
 					<li><?php dynamic_sidebar( 'mail' ); ?></li>
 					<li><?php dynamic_sidebar( 'phone' ); ?></li>
+					<li><?php dynamic_sidebar( 'phone_b' ); ?></li>
 					<li><a href="#" class="show_modal"><span style="color:#e93a1d">[</span> Заказать звонок <span style="color:#e93a1d">]</span></a></li>
 				</ul>
 				<ul class="social">

@@ -116,13 +116,14 @@
 				<div class="sidebar_delim"></div>
 				<ul class="sidebar_list">
 					<li><a href="mailto:info@dinelli.ru" target=_blank >info@dinelli.ru </a></li>
-					<li>+7 918 476 90 30</li>
+					<li><a href="tel:+79184769030">+7 918 476 90 30</a></li>
+					<li><a href="tel:+79996325085">+7 999 632 50 85</a></li>
 					<li><a href="#" class="show_modal"><span style="color:#e93a1d">[</span> Заказать звонок <span style="color:#e93a1d">]</span></a></li>
 				</ul>
 				<ul class="social">
-					<li><a href="https://vk.com/directbm" rel="nofollow" class="social_vk"></a></li>
-					<li><a href="https://www.facebook.com/blondinkaNelli/?ref=bookmarks" rel="nofollow" class="social_fb"></a></li>
-					<li><a href="https://www.youtube.com/channel/UCoQA6nd0lINqLvD49rYpUVA" rel="nofollow" class="social_yt"></a></li>
+					<li><a href="https://vk.com/directbm" rel="nofollow" target=_blank class="social_vk"></a></li>
+					<li><a href="https://www.facebook.com/blondinkaNelli/?ref=bookmarks" rel="nofollow" target=_blank class="social_fb"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCoQA6nd0lINqLvD49rYpUVA" rel="nofollow" target=_blank class="social_yt"></a></li>
 				</ul>
 				<div style="clear:both;"></div>
 			</div><!--/.sidebar-->
