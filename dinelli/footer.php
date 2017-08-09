@@ -10,7 +10,7 @@
 
 		<div id="footer">
 			<div class="row">
-				<div class="col-xs-3 col-lg-3 col-md-3 col-sm-12 left">
+				<div class="col-xs-2 col-lg-2 col-md-2 col-sm-12 left contacts">
 					<div class="footer-contacts">
 					<div class="contacts_icon">
 						<span class="contacts_icon-w"></span>
@@ -22,12 +22,12 @@
 					<?php dynamic_sidebar( 'phone_b' ); ?>
 					</div>
 				</div>
-				<div class="col-xs-4 col-lg-4 col-md-4 col-sm-12">
+				<div class="col-xs-2 col-lg-2 col-md-2 col-sm-12">
 					<ul class="footer_content">
 						<li><?php dynamic_sidebar( 'footer_c' ); ?></li>
 					</ul>
 				</div>
-				<div class="col-xs-5 col-lg-5 col-md-5 col-sm-12">
+				<div class="col-xs-3 col-lg-3 col-md-4 col-sm-12">
 					<?php dynamic_sidebar( 'footer_copy' ); ?>
 				</div>
 			</div>

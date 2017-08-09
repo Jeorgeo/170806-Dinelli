@@ -135,9 +135,9 @@ function dinelli_scripts() {
 
 	wp_enqueue_style( 'normalize-style', $dineli_url . "/css/normalize.css", array(), 		'2', 'all' );
 
-	wp_enqueue_style( 'bootstrap_min-style' ,  $dineli_url . "/css/bootstrap.min.css", array(), 		'2', 'all' );
+	/*wp_enqueue_style( 'bootstrap_min-style' ,  $dineli_url . "/css/bootstrap.min.css", array(), 		'2', 'all' );
 
-	wp_enqueue_style( 'bootstrap-theme_min-style' ,  $dineli_url . "/css/bootstrap-theme.min.css", array(), 		'2', 'all' );
+	wp_enqueue_style( 'bootstrap-theme_min-style' ,  $dineli_url . "/css/bootstrap-theme.min.css", array(), 		'2', 'all' );*/
 
 	wp_enqueue_style( 'jquery_fancybox-style' ,  $dineli_url . "/css/jquery.fancybox.css", array(), 		'2', 'all' );
 
@@ -157,7 +157,7 @@ function dinelli_scripts() {
 
 	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.fancybox.pack.js');
 
-	wp_enqueue_script('newscript', $dineli_url . '/js/bootstrap.min.js');
+	/*wp_enqueue_script('newscript', $dineli_url . '/js/bootstrap.min.js');*/
 
 	wp_enqueue_script('newscript', $dineli_url . '/js/wow.min.js');
 
