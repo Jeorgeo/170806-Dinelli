@@ -100,28 +100,132 @@ add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function dinelli_widgets_init() {
+ function dinelli_widgets_init() {
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'mail', 'dinelli' ),
+ 		'id'            => 'mail',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'phone-top', 'dinelli' ),
+ 		'id'            => 'phone',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget phone">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'phone-bottom', 'dinelli' ),
+ 		'id'            => 'phone_b',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget phone">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'social_vk', 'dinelli' ),
+ 		'id'            => 'social_vk',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'social_f', 'dinelli' ),
+ 		'id'            => 'social_f',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'social_youtube', 'dinelli' ),
+ 		'id'            => 'social_youtube',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'social_instagram', 'dinelli' ),
+ 		'id'            => 'social_instagram',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'dinelli' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'dinelli_widgets_init' );
+ 		'name'          => esc_html__( 'События', 'dinelli' ),
+ 		'id'            => 'events',
+ 		'description'   => esc_html__( 'Add events here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'Контент в подвале', 'dinelli' ),
+ 		'id'            => 'footer_c',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+ 	register_sidebar( array(
+ 		'name'          => esc_html__( 'Копирайт в подвале', 'dinelli' ),
+ 		'id'            => 'footer_copy',
+ 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'before_widget' => '<div id="%1$s" class="footer_copy">',
+ 		'after_widget'  => '</div>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
+
+ }
+ add_action( 'widgets_init', 'dinelli_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
 function dinelli_scripts() {
+	wp_enqueue_style( 'normalize-style', $dineli_url . "/css/normalize.css", array(), 		'2', 'all' );
+
+	wp_enqueue_style( 'jquery_fancybox-style' ,  $dineli_url . "/css/jquery.fancybox.css", array(), 		'2', 'all' );
+
+	wp_enqueue_style( 'jquery_bxslider-style' ,  $dineli_url . "/css/jquery.bxslider.css", array(), 		'2', 'all' );
+
+	wp_enqueue_style( 'animate-style' ,  $dineli_url . "/css/animate.css", array(), 		'2', 'all' );
+
+	wp_enqueue_style( 'font-awesome_min-style' ,  $dineli_url . "/css/font-awesome.min.css", array(), 		'2', 'all' );
+
 	wp_enqueue_style( 'dinelli-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'dinelli-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'dinelli-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.min.js');
+
+	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.mousewheel-3.0.6.pack.js');
+
+	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.bxslider.min.js');
+
+	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.fancybox.pack.js');
+
+	wp_enqueue_script('newscript', $dineli_url . '/js/wow.min.js');
+
+	wp_enqueue_script('newscript', $dineli_url . '/js/main.js');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -154,4 +258,212 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * TGM.
+ */
+require get_template_directory() . '/tgm/dinelli_tgm.php';
+
+/**
+ * Custom reviews_text.
+ */
+require get_template_directory() . '/inc/reviews_text.php';
+
+/**
+ * Custom reviews_video.
+ */
+require get_template_directory() . '/inc/reviews_video.php';
+
+/**
+	* Custom fields.
+ */
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_video-otzyvy',
+		'title' => 'Видео отзывы',
+		'fields' => array (
+			array (
+				'key' => 'field_5901b60ecb2dc',
+				'label' => 'Затраты',
+				'name' => 'cost',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b620cb2dd',
+				'label' => 'Прибыль (было)',
+				'name' => 'profit_old',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b627cb2de',
+				'label' => 'Прибыль (стало)',
+				'name' => 'profit_new',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b633cb2df',
+				'label' => 'Конверсия (было)',
+				'name' => 'conversion_old',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b643cb2e0',
+				'label' => 'Конверсия (стало)',
+				'name' => 'conversion_new',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b657cb2e1',
+				'label' => 'Код YouTube',
+				'name' => 'youtube',
+				'type' => 'text',
+				'instructions' => 'например, если ссылка на ролик выглядит https://www.youtube.com/watch?v=KIUqODqW0t0 то мы вписываем код KIUqODqW0t0',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'reviews_video',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_pismennye-otzyvy',
+		'title' => 'Письменные отзывы',
+		'fields' => array (
+			array (
+				'key' => 'field_5901b55565f77',
+				'label' => 'Затраты',
+				'name' => 'cost',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b59065f78',
+				'label' => 'Прибыль (было)',
+				'name' => 'profit_old',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b5b165f79',
+				'label' => 'Прибыль (стало)',
+				'name' => 'profit_new',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b5c165f7a',
+				'label' => 'Конверсия (было)',
+				'name' => 'conversion_old',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5901b5e265f7b',
+				'label' => 'Конверсия (стало)',
+				'name' => 'conversion_new',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'reviews_text',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 }
