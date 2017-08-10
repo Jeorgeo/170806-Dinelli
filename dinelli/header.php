@@ -23,7 +23,7 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header left-panel">
 		<div class="box-menu-toggle">
-			<div class="left-panel__menu-toggle">
+			<div id="js-toggle" class="left-panel__menu-toggle">
 				<button class="header-menu-toggle"><span>menu</span></button>
 			</div>
 			<div id="logo" class="site-branding">

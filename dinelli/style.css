@@ -67,8 +67,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 }
 
 @keyframes hidden-panel {
-  from { left: 0 }
+  from { left: 0; }
   to   { left: -235px; }
+}
+
+@keyframes rotate-up {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-45deg); }
+}
+
+@keyframes prerotate-up {
+  from { transform: rotate(-45deg); }
+  to   { transform: rotate(0deg); }
+}
+
+@keyframes rotate-bottom {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(45deg); }
+}
+
+@keyframes prerotate-bottom {
+  from { transform: rotate(45deg); }
+  to   { transform: rotate(0deg); }
 }
 
 
@@ -202,7 +222,7 @@ img {
     width: 100%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   .container {
     max-width: 900px;
   }
@@ -479,18 +499,21 @@ img {
 
 .header-menu-toggle span::before {
   top: -14px;
+  transform: rotate(-45deg);
+  animation-name: prerotate-up;
+  animation-duration: 0.8s;
+  transform: rotate(0deg);
 }
 
 .header-menu-toggle span::after {
   bottom: -14px;
+  transform: rotate(45deg);
+  animation-name: prerotate-bottom;
+  animation-duration: 0.8s;
+  transform: rotate(0deg);
 }
 
-.left-panel__menu-toggle:hover,
-.header-menu-toggle {
-  cursor: pointer;
-}
-
-.left-panel__menu-toggle:hover {
+.left-panel__menu-toggle:active {
   background-color: #000000;
   box-shadow: 1px 1px 2px 2px #363636;
 }
@@ -502,6 +525,26 @@ img {
   left: 0;
 }
 
+.header-menu-toggle.btn-arrow-top span::before  {
+  animation-name: rotate-up;
+  animation-duration: 0.8s;
+  transform: rotate(-45deg);
+}
+
+.header-menu-toggle.btn-arrow-bottom span::after {
+  animation-name: rotate-bottom;
+  animation-duration: 0.8s;
+  transform: rotate(45deg);
+}
+
+@media screen and (min-width: 960px) {
+  .left-panel__menu-toggle {
+    display: none;
+  }
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Sidebar
@@ -512,68 +555,67 @@ img {
 # Footer
 --------------------------------------------------------------*/
 
-#footer {
+.main-footer {
 	width: 100%;
-	padding: 45px 235px 50px 235px;
+	padding: 45px 0;
 	min-height: 230px;
 	background: #000000;
 	color: #ffffff;
 	position: relative;
 }
 
-#footer a {
+.main-footer a {
 	color: #ffffff;
 }
 
-#footer .row div ul {
+.main-footer .row {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.main-footer .row div ul {
 	list-style-type: none;
 	padding: 0 0 0 0;
 }
 
-#footer .row .footer-contacts .widget.phone,
-#footer .row div .footer_content li {
+.main-footer .row .footer-contacts .widget.phone,
+.main-footer .row div .footer_content li {
 	text-align: left;
-	line-height:28px;
+	line-height: 28px;
 }
 
-#footer .row .col-md-2.contacts {
-	margin-left: 130px;
-  width: 10.5%;
-  min-width: 180px;
-}
-
-#footer .contacts_icon {
+.main-footer .contacts_icon {
 	display: block;
 	width: 100%;
 	margin-bottom: 0.5em;
 	text-align: left;
 }
 
-#footer .contacts_icon span {
+.main-footer .contacts_icon span {
 	display: inline-block;
 	vertical-align: top;
 	width: 32px;
 	height: 32px;
-	margin-right: 3%;
+	margin-right: 2px;
 	border-radius: 50%;
 }
 
-#footer .contacts_icon .contacts_icon-w {
+.main-footer .contacts_icon .contacts_icon-w {
 	background: #363636 url(i/social/wapp_icon.png) center center no-repeat;
 	background-size: 60%;
 }
 
-#footer .contacts_icon .contacts_icon-v {
+.main-footer .contacts_icon .contacts_icon-v {
 	background: #363636 url(i/social/viber_icon.png) center center no-repeat;
 	background-size: 60%;
 }
 
-#footer .contacts_icon .contacts_icon-t {
+.main-footer .contacts_icon .contacts_icon-t {
 	background: #363636 url(i/social/telegram_icon.png) center center no-repeat;
 	background-size: 70%;
 }
 
-#footer .contacts_icon .contacts_icon-s {
+.main-footer .contacts_icon .contacts_icon-s {
 	background: #363636 url(i/social/skype_icon.png) center center no-repeat;
 	background-size: 70%;
 }
@@ -584,15 +626,15 @@ img {
   text-decoration: none;
 }
 
-#footer .footer-contacts a:hover,
-#footer .footer_content a:hover,
-#footer .footer_copy a:hover {
+.main-footer .footer-contacts a:hover,
+.main-footer .footer_content a:hover,
+.main-footer .footer_copy a:hover {
   color: #e93a1d;
 }
 
-#footer .footer-contacts a:active,
-#footer .footer_content a:active,
-#footer .footer_copy a:active {
+.main-footer .footer-contacts a:active,
+.main-footer .footer_content a:active,
+.main-footer .footer_copy a:active {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -603,9 +645,34 @@ ul.footer_content,
   margin: 0;
 }
 
-#footer .footer_copy {
+.main-footer .footer_copy {
   line-height: 1.6em;
 }
+
+@media (min-width: 960px) {
+  .main-footer .row {
+    width: 100%;
+    padding-left: 245px;
+    box-sizing: border-box;
+  }
+
+  .cols.col-2.contacts {
+    min-width: 160px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-footer .row {
+    padding-left: 330px;
+  }
+
+  .main-footer__footer-copy {
+    max-width: 340px;
+  }
+
+}
+
+
 
 
 
