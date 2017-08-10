@@ -276,6 +276,11 @@ require get_template_directory() . '/inc/reviews_text.php';
 require get_template_directory() . '/inc/reviews_video.php';
 
 /**
+ * Custom events.
+ */
+/*require get_template_directory() . '/inc/events.php';*/
+
+/**
 	* Custom fields.
  */
 

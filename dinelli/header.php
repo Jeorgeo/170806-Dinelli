@@ -16,41 +16,66 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'dinelli' ); ?></a>
+	<header id="masthead" class="site-header left-panel">
+		<div class="box-menu-toggle">
+			<div class="left-panel__menu-toggle">
+				<button class="header-menu-toggle"><span>menu</span></button>
+			</div>
+			<div id="logo" class="site-branding">
+			<?php	the_custom_logo(); ?>
+			</div>
+			<nav id="site-navigation" class="left-panel__primary-menu">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+				?>
+			</nav><!-- #site-navigation -->
+			<div class="sidebar-delim"></div><!-- #линия-разделитель -->
+			<div class="left-panel__contacts">
+				<ul class="sidebar-contacts">
+					<li><?php dynamic_sidebar( 'mail' ); ?></li>
+					<li><?php dynamic_sidebar( 'phone' ); ?></li>
+					<li><?php dynamic_sidebar( 'phone_b' ); ?></li>
+					<li>
+						<a href="#" id="js_modal" class="show_modal">
+							<span class="color-text">[ </span>
+							Заказать звонок
+							<span class="color-text"> ]</span>
+						</a>
+					</li>
+				</ul>
+				<ul class="sidebar-social clearfix">
+					<li><?php dynamic_sidebar( 'social_vk' ); ?></a></li>
+					<li><?php dynamic_sidebar( 'social_f' ); ?></a></li>
+					<li><?php dynamic_sidebar( 'social_youtube' ); ?></a></li>
+					<li><?php dynamic_sidebar( 'social_instagram' ); ?></a></li>
+				</ul>
+			</div>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
+			<div class="sidebar-delim"></div><!-- #линия-разделитель -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dinelli' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
+			<div class="left-panel__certification">
+				<ul class="sidebar_list">
+					<li><p>Сертифицировано</p></li>
+					<li><img src="<?php bloginfo('template_url'); ?>/i/yandex.png" alt="Яндекс"></li>
+				</ul>
+			</div>
+
+			<div class="sidebar-delim"></div><!-- #линия-разделитель -->
+
+			<div class="left-panel__events">
+				<?php dynamic_sidebar( 'events' ); ?>
+			</div>
+		</div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
