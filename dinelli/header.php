@@ -14,7 +14,7 @@
 <!-- Navigation -->
 <nav id="slide-menu">
 			<div class="sidebar">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="logo"><img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt=""></a>
+				<a href="http://yush25um.bget.ru/glavnaya/" id="logo"><img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt=""></a>
 				<?php
 
 			$menu_name = 'menu-mobile';
@@ -115,7 +115,7 @@
 		<div id="content">
 
 			<div class="sidebar">
-				<a href="<?php bloginfo('template_url'); ?>" id="logo"><img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt=""></a>
+				<a href="http://yush25um.bget.ru/glavnaya/" id="logo"><img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt=""></a>
 				<?php
 
 			$menu_name = 'menu-top';

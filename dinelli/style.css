@@ -870,7 +870,8 @@ html, body, #wrap {
 }
 
 .sidebar_menu a:active,
-.sidebar_list a:active {
+.sidebar_list a:active,
+.sidebar_menu li.active a {
 	color: #e93a1d;
 	background-color: transparent;
 }
@@ -1004,6 +1005,7 @@ html, body, #wrap {
 #footer .row .col-md-2.contacts {
 	margin-left: 130px;
   width: 10.5%;
+  min-width: 180px;
 }
 
 #footer .contacts_icon {
@@ -1018,7 +1020,7 @@ html, body, #wrap {
 	vertical-align: top;
 	width: 32px;
 	height: 32px;
-	margin-right: 10px;
+	margin-right: 3%;
 	border-radius: 50%;
 }
 
