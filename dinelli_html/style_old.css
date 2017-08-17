@@ -40,14 +40,20 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 @font-face {
-   font-family: 'Open Sans'; /* Гарнитура шрифта */
+   font-family: 'OpenSans'; /* Гарнитура шрифта */
    src: url(fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
   }
 
 @font-face {
-   font-family: 'Roboto Slab'; /* Гарнитура шрифта */
-   src: url(fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
+   font-family: 'OpenSansExtraBold'; /* Гарнитура шрифта */
+   src: url(fonts/OpenSans-ExtraBold.ttf); /* Путь к файлу со шрифтом */
   }
+
+@font-face {
+   font-family: 'OpenSansSemibold'; /* Гарнитура шрифта */
+   src: url(fonts/OpenSans-Semibold.ttf); /* Путь к файлу со шрифтом */
+  }
+
 
 /*--------------------------------------------------------------
 # Animation
@@ -95,7 +101,7 @@ html, body {
 	height: 100%;
 	min-width: 100%;
 	min-height: 100%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'OpenSans', sans-serif;
   color: #404040;
 }
 
@@ -105,8 +111,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 1.2em;
-  font-weight: 600;
+	font-size: 1em;
+  font-family: 'OpenSansSemibold', serif;
 }
 
 ul {
@@ -172,13 +178,49 @@ img {
     margin: 1em 0;
   }
 
+  .cols.col-1 {
+    width: 24.9999%;
+  }
+
+  .cols.col-2 {
+    width: 33.3332%;
+  }
+
+  .cols.col-3 {
+    width: 41.6665%;
+  }
+
   .cols.col-4 {
     width: 49.9998%;
   }
+
+  .cols.col-5 {
+    width: 58.3331%;
+  }
+
+  .cols.col-6 {
+    width: 66.6664%;
+  }
+
+  .cols.col-7 {
+    width: 74.9997%;
+  }
+
+  .cols.col-8 {
+    width: 83.333%;
+  }
+
+  .cols.col-9 {
+    width: 91.663%;
+  }
+
+  .cols.col-10,
+  .cols.col-11,
+  .cols.col-12 {
+    width: 100%;
+  }
 }
-
 @media (min-width: 960px) {
-
   .container {
     max-width: 900px;
   }
@@ -233,7 +275,7 @@ img {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1170px;
   }
 }
 
@@ -626,151 +668,6 @@ ul.footer_content,
 # Content
 --------------------------------------------------------------*/
 
-.box-content {
-  font-weight: 200;
-}
-
-.box-content a {
-  color: #172df8;
-}
-
-.box-content a:hover {
-  color: #e93a1d;
-}
-
-.box-content a:active {
-  color: #b9b9b9;
-}
-
-.box-content figure {
-  margin: 0;
-  padding: 0;
-}
-
-.box-title {
-  display: block;
-  font-size: 2em;
-  font-weight: 100;
-  font-family: 'Roboto Slab', sans-serif;
-}
-
-.big-title {
-  display: block;
-  margin: 1em 0;
-  font-size: 2em;
-}
-
-.small-title {
-  display: block;
-}
-
-.list-title,
-.strong-text {
-  font-weight: bold;
-}
-
-.main-box-1 {
-  background: #f7fafc url("img/shadow-box-1.png") no-repeat 50% 100%;
-  background-size: contain;
-}
-
-.main-box-1 p {
-  font-size: 0.9em;
-}
-
-.title-img {
-  margin: 0;
-}
-
-.main-box-2 a {
-  display: block;
-}
-
-.advantages img {
-  width: 40%;
-  margin: auto;
-}
-
-.details img {
-  width: 70%;
-  margin: auto;
-}
-
-.details p {
-  margin: 1.2em 0;
-}
-
-.main-box-10 .advantages.flip img {
-  width: 20%;
-}
-
-.main-box-12 .box-title {
-  padding-bottom: 5em;
-  background: #f7fafc url("img/dn_img-12-submarine.svg") no-repeat 50% 100%;
-  background-size: contain;
-}
-
-.details-form,
-.bottom-form {
-  padding: 0.5em;
-  background-color: #f2f6f9;
-}
-
-.details-form input,
-.details-form label,
-.details-form button,
-.bottom-form input,
-.bottom-form label,
-.bottom-form textarea,
-.bottom-form button {
-  display: block;
-  width: 90%;
-  margin: 0.5em auto;
-  padding: 0.3em;
-  box-sizing: border-box;
-  font-size: 1.1em;
-  font-weight: normal;
-  border: none;
-}
-
-.details-form #phone,
-.bottom-form #phone {
-  padding: 1.5em 1em;
-  background: url("img/dn_mail-pole-1.svg") no-repeat 50% 50%;
-  background-size: contain;
-}
-
-.details-form #mail,
-.bottom-form #mail {
-  padding: 1.5em 1em;
-  background: url("img/dn_mail-pole-1.svg") no-repeat 50% 50%;
-  background-size: contain;
-}
-
-.bottom-form #message {
-  padding: 1.5em 1em;
-  background: url("img/dn_mail-pole-3.svg") no-repeat 50% 50%;
-  background-size: contain;
-}
-
-.details-form #btn,
-.bottom-form #btn {
-  width: 80%;
-  padding: 1em;
-  color: #ffffff;
-  background: #ffffff url("img/dn_mail-button-nonactive.svg") no-repeat 50% 50%;
-  background-size: contain;
-}
-
-.details-form #btn:hover,
-.bottom-form #btn:hover,
-.details-form #btn:active,
-.bottom-form #btn:active  {
-  cursor: pointer;
-  color: #404040;
-  background: #ffffff url("img/dn_mail-button-active.svg") no-repeat 50% 50%;
-  background-size: contain;
-}
 
 
 @media (min-width: 960px) {
@@ -778,7 +675,7 @@ ul.footer_content,
     padding-left: 235px;
   }
 
-  .content-area .box-content {
+  .container {
     padding-left: 8.33%;
   }
 }
