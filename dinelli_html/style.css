@@ -846,23 +846,27 @@ ul.footer_content,
     width: 70%;
   }
 
-  .details-form {
+  .main-box-9 .cloud-form {
     position: relative;
     z-index: 225;
     background-color: transparent;
   }
 
-  .details-form::after {
+  .main-box-9 .cloud-form::after {
     position: absolute;
     top: -50px;
     left: -30px;
     z-index: -1;
     display: block;
-    width: 468px;
-    height: 320px;
+    width: 600px;
+    height: 600px;
     background: url("img/dn_mail-back-1.svg") no-repeat 50% 50%;
     background-size: contain;
     content: "";
+  }
+
+  .details-form {
+    background-color: transparent;
   }
 
   .bottom-form {
@@ -971,10 +975,11 @@ ul.footer_content,
   }
 
   .main-box-12 .cloud-form::after {
-    top: -115px;
-    left: -230px;
-    width: 768px;
-    height: 768px;
+    top: -230px;
+    left: -350px;
+    width: 900px;
+    height: 900px;
+    background-size: contain;
   }
 
   .bottom-form #phone,
@@ -982,12 +987,160 @@ ul.footer_content,
   .bottom-form #message {
     padding: 0.5em;
   }
-
-
-
 }
 
 @media (min-width: 1280px) {
+  .col_right {
+    float: right;
+  }
+
+  .main-box-1 .box-content {
+    position: relative;
+    padding-bottom: 2em;
+  }
+
+  .title-img {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+  }
+
+  .main-box-4 .box-content {
+    background: url("img/dn_img-4-cake.png") no-repeat 25% 55%;
+    background-size: 90%;
+  }
+
+  .main-box-6 .box-content {
+    margin-top: 1em;
+  }
+
+  .main-box-6 figure img {
+    width: 25%;
+    padding-right: 10%;
+  }
+
+  .main-box-6 figure .figure-title {
+    width: 75%;
+  }
+
+ .main-box-8 .box-content {
+   background: url("img/dn_img-8-cloth_off.svg") no-repeat 65% 50%;
+   background-size: 60%;
+ }
+
+ .main-box-9 .box-content {
+   position: relative;
+ }
+
+ .main-box-9 .col-4 {
+   position: relative;
+   z-index: 999;
+ }
+
+ .main-box-9 .box-content .small-title {
+   text-align: center;
+ }
+
+ .cols.col-4.cloud-form {
+   position: absolute;
+   z-index: 555;
+   bottom: 0;
+   right: 20px;
+   width: 40%;
+   margin: 0;
+   padding: 0;
+ }
+
+ .details-form input,
+ .details-form label,
+ .details-form button {
+    display: inline-block;
+    width: 60%;
+    margin: 0.5em auto;
+    padding: 0.3em;
+  }
+
+  .details-form label {
+    width: 30%;
+  }
+
+  .details-form #btn {
+    width: 60%;
+    margin-left: 30%;
+  }
+
+  .main-box-9 .cloud-form::after {
+    top: -77px;
+    left: -224px;
+    z-index: -1;
+    width: 768px;
+    height: 600px;
+  }
+
+  .main-box-10 figure img {
+    width: 25%;
+    padding-right: 10%;
+  }
+
+  .main-box-10 .advantages.flip img {
+    width: 18%;
+  }
+
+  .main-box-10 figure .figure-title {
+    width: 75%;
+    margin-top: 0;
+  }
+
+  .main-box-10 .col-6 {
+    padding-right: 16.66%;
+  }
+
+  .main-box-10 .box-content.assist {
+    background: url("img/dn_img-10-assist.svg") no-repeat 40% 0%;
+    background-size: 10%;
+  }
+
+  .main-box-11 .box-title {
+    margin-top: -1em;
+    padding: 7em 0 5em 0;
+  }
+
+  .main-box-12 .cols.cloud-form {
+    width: 55%;
+    margin-top: 4em;
+  }
+
+  .main-box-12 .col-4 {
+    position: relative;
+    z-index: 555;
+  }
+
+  .bottom-form {
+    width: 320px;
+  }
+
+  .bottom-form input,
+  .bottom-form label,
+  .bottom-form textarea,
+  .bottom-form button {
+      width: 215px;
+      margin: 0.5em auto;
+      padding: 0.5em;
+  }
+
+  .bottom-form #btn {
+    width: 215px;
+  }
+
+
+  .bottom-form label {
+    width: 75px;
+    font-size: 0.9em;
+  }
+
+
+
+
 
 
 
