@@ -46,7 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 @font-face {
    font-family: 'Roboto Slab'; /* Гарнитура шрифта */
-   src: url(fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
+   src: url(fonts/RobotoSlab-Thin.ttf); /* Путь к файлу со шрифтом */
   }
 
 /*--------------------------------------------------------------
@@ -95,6 +95,8 @@ html, body {
 	height: 100%;
 	min-width: 100%;
 	min-height: 100%;
+  font-size: 1em;
+  line-height: 1.4em;
 	font-family: 'Open Sans', sans-serif;
   color: #404040;
 }
@@ -651,15 +653,60 @@ ul.footer_content,
 
 .box-title {
   display: block;
+  margin: 1em 0;
   font-size: 2em;
   font-weight: 100;
   font-family: 'Roboto Slab', sans-serif;
 }
 
+.main-box-2 .box-title {
+  margin: 0;
+  padding: 2em 0 2em;
+  background: url("img/dn_img-2-follow_me.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+.main-box-3 .box-title {
+  margin: -0.5em 0 0 0;
+  padding: 2em 0 2em;
+  text-align: center;
+  background: url("img/dn_img-3-target.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.main-box-7 .box-title {
+  margin: -0.5em 0 0 0;
+  padding: 2em 0 2em;
+  background: url("img/dn_img-7-start_now.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.main-box-9 .box-title {
+  padding: 2em 0 2em;
+  text-align: center;
+  background: url("img/dn_img-9-raspberry.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.main-box-11 .box-title {
+  margin-top: -0.5em;
+  padding: 3em 0 1.5em 0;
+  background: url("img/dn_img-11-comments.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
+.main-box-12 .box-title {
+  margin-top: -0.1em;
+  padding: 1em 0 3em;
+  background: url("img/dn_img-12-submarine.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
 .big-title {
   display: block;
-  margin: 1em 0;
+  margin: 0.5em 0 1em 0;
   font-size: 2em;
+  line-height: 1.5em;
 }
 
 .small-title {
@@ -672,6 +719,7 @@ ul.footer_content,
 }
 
 .main-box-1 {
+  padding-top: 0.5em;
   background: #f7fafc url("img/shadow-box-1.png") no-repeat 50% 100%;
   background-size: contain;
 }
@@ -686,6 +734,7 @@ ul.footer_content,
 
 .main-box-2 a {
   display: block;
+  margin-bottom: 0.7em;
 }
 
 .advantages img {
@@ -704,12 +753,6 @@ ul.footer_content,
 
 .main-box-10 .advantages.flip img {
   width: 20%;
-}
-
-.main-box-12 .box-title {
-  padding-bottom: 5em;
-  background: #f7fafc url("img/dn_img-12-submarine.svg") no-repeat 50% 100%;
-  background-size: contain;
 }
 
 .details-form,
@@ -781,10 +824,39 @@ ul.footer_content,
 
   .box-title {
     text-align: center;
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+
+  .main-box-2 .box-title {
+    padding: 5em 0 2em;
+  }
+
+  .main-box-3 .box-title {
+    padding: 4em 0 3em;
+  }
+
+  .main-box-7 .box-title {
+    padding: 4em 0 2em;
+  }
+
+  .main-box-9 .box-title {
+    padding: 3em 0 2em;
+  }
+
+  .main-box-11 .box-title {
+    margin-top: -1em;
+    padding: 4em 0 2em 0;
+    text-align: left;
+  }
+
+  .main-box-12 .box-title {
+    padding: 3em 0 6em;
   }
 
   .content-area .box-content,
-  .content-area .box-title {
+  .box-title {
+    margin-top: -0.5em;
     padding-left: 8%;
     padding-right: 8%;
   }
@@ -826,17 +898,6 @@ ul.footer_content,
   .main-box-10 figure {
     float: left;
     width: 100%;
-  }
-
-  .main-box-11 .box-title {
-    margin-top: -2em;
-    padding: 6em 8% 4em 8%;
-    background: url("img/dn_img-11-comments.svg") no-repeat 50% 50%;
-    background-size: contain;
-  }
-
-  .main-box-12 .box-title {
-    padding-top: 2em;
   }
 
   .main-box-12 .cols.cloud-form {
@@ -942,43 +1003,25 @@ ul.footer_content,
     padding-right: 8.33%;
   }
 
-  .content-area .box-title {
-    margin: 0 8%;
-    padding: 5em 0 3em 0;
-    background-size: contain;
+  .container .box-title {
+    margin: 0 8.33%;
   }
 
-  .main-box-2 .box-title {
-    background: url("img/dn_img-2-follow_me.svg") no-repeat 50% 0;
+  .main-box-12{
+    padding-bottom: 5em;
   }
 
-  .main-box-3 .box-title {
-    background: url("img/dn_img-3-target.svg") no-repeat 50% 50%;
-  }
-
-  .main-box-7 .box-title {
-    background: url("img/dn_img-7-start_now.svg") no-repeat 50% 50%;
-  }
-
-  .main-box-9 .box-title {
-    background: url("img/dn_img-9-raspberry.svg") no-repeat 50% 50%;
-  }
-
-  .main-box-11 .box-title {
-    margin-top: -2em;
-    padding: 6em 0 4em 0;
-  }
-
-  .main-box-12 .box-title {
-    margin-top: -1em;
-    padding: 3em 0 8em 0;
+  .main-box-12 .content_center p {
+    display: block;
+    width: 50%;
+    margin: 3em auto;
   }
 
   .main-box-12 .cloud-form::after {
     top: -230px;
-    left: -350px;
-    width: 900px;
-    height: 900px;
+    left: -200px;
+    width: 800px;
+    height: 768px;
     background-size: contain;
   }
 
@@ -994,6 +1037,26 @@ ul.footer_content,
     float: right;
   }
 
+  .box-title {
+    font-size: 60px;
+  }
+
+  .small-title {
+    margin-bottom: 0.8em;
+  }
+
+  .main-box-2 .box-title {
+    margin-top: -0.5em;
+    padding: 4em 0 2em 0;
+  }
+
+  .main-box-3 .box-title {
+    margin-top: -2em;
+    margin-bottom: -2em;
+    text-align: left;
+    padding-left: 2em;
+  }
+
   .main-box-1 .box-content {
     position: relative;
     padding-bottom: 2em;
@@ -1002,12 +1065,21 @@ ul.footer_content,
   .title-img {
     position: absolute;
     bottom: 0;
-    left: 2%;
+    left: -1%;
+  }
+
+  .main-box-2 {
+    padding-top: 1em;
+  }
+
+  .main-box-2 a {
+    margin-bottom: 0.5em;
   }
 
   .main-box-4 .box-content {
-    background: url("img/dn_img-4-cake.png") no-repeat 25% 55%;
-    background-size: 90%;
+    margin-bottom: 1em;
+    background: url("img/dn_img-4-cake.png") no-repeat 75% 55%;
+    background-size: 70%;
   }
 
   .main-box-6 .box-content {
@@ -1024,8 +1096,8 @@ ul.footer_content,
   }
 
  .main-box-8 .box-content {
-   background: url("img/dn_img-8-cloth_off.svg") no-repeat 65% 50%;
-   background-size: 60%;
+   background: url("img/dn_img-8-cloth_off.svg") no-repeat 70% 50%;
+   background-size: 55%;
  }
 
  .main-box-9 .box-content {
@@ -1038,6 +1110,10 @@ ul.footer_content,
  }
 
  .main-box-9 .box-content .small-title {
+   text-align: left;
+ }
+
+ .main-box-9 .box-content .cloud-form .small-title {
    text-align: center;
  }
 
@@ -1077,6 +1153,10 @@ ul.footer_content,
     height: 600px;
   }
 
+  .main-box-10 .box-content {
+    margin-bottom: 1em;
+  }
+
   .main-box-10 figure img {
     width: 25%;
     padding-right: 10%;
@@ -1097,12 +1177,7 @@ ul.footer_content,
 
   .main-box-10 .box-content.assist {
     background: url("img/dn_img-10-assist.svg") no-repeat 40% 0%;
-    background-size: 10%;
-  }
-
-  .main-box-11 .box-title {
-    margin-top: -1em;
-    padding: 7em 0 5em 0;
+    background-size: 8%;
   }
 
   .main-box-12 .cols.cloud-form {
@@ -1137,13 +1212,87 @@ ul.footer_content,
     width: 75px;
     font-size: 0.9em;
   }
+}
 
+@media (min-width: 1360px) {
+  .box-content {
+    font-size: 0.95em;
+    padding-top: 1.5em;
+  }
 
+  .main-box-1 .box-content {
+      padding: 4em 0 6em 0;
+  }
 
+  .main-box-1 .title-img {
+      width: 700px;
+  }
 
+  .big-title {
+    font-size: 3.33em;
+    line-height: 1.15em;
+  }
 
+  .box-content .small-title {
+    font-size: 1.3em;
+  }
 
+  .main-box-1 h1 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin: 2.83em 0 0.7em 0;
+  }
+  .main-box-4 .box-content {
+    background: url("img/dn_img-4-cake.png") no-repeat 75% 30%;
+    background-size: 65%;
+}
 
+  .main-box-5 .box-content .col-6{
+    margin-bottom: 2em;
+  }
+
+  .main-box-7 .box-title {
+    font-size: 4.5em;
+    padding: 3em 0 2em 0;
+  }
+
+  .main-box-8 .box-content {
+    background: url("img/dn_img-8-cloth_off.svg") no-repeat 67% 40%;
+    background-size: 43%;
+  }
+
+  .cols.col-4.cloud-form {
+    right: 50px;
+    width: 35%;
+  }
+
+  .main-box-11 .box-title {
+    padding: 3em 0;
+    padding-left: 2em;
+  }
+
+  .main-box-12 .box-title {
+    padding: 2em 0 4em 0;
+  }
+
+  .main-box-12 .content_center p {
+    max-width: 430px;
+    margin: 5em 0 5em 16.66%;
+  }
+
+  .bottom-form #message {
+    font-size: 0.95em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    margin-left: 96px;
+  }
+
+  .main-box-1 {
+    margin-bottom: 2.5em;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -17,14 +17,14 @@
 			<div class="row clearfix">
 				<div class="cols col-2 contacts">
 					<div class="footer-contacts">
-					<div class="contacts_icon">
-						<span class="contacts_icon-w"></span>
-						<span class="contacts_icon-v"></span>
-						<span class="contacts_icon-t"></span>
-						<span class="contacts_icon-s"></span>
-					</div>
-					<?php dynamic_sidebar( 'phone' ); ?>
-					<?php dynamic_sidebar( 'phone_b' ); ?>
+						<?php dynamic_sidebar( 'phone' ); ?>
+						<?php dynamic_sidebar( 'phone_b' ); ?>
+						<div class="contacts_icon">
+							<span class="contacts_icon-w"></span>
+							<span class="contacts_icon-v"></span>
+							<span class="contacts_icon-t"></span>
+							<span class="contacts_icon-s"></span>
+						</div>
 					</div>
 				</div>
 				<div class="cols col-4">

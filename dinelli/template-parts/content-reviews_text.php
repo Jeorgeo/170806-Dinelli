@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php
+ * Template part for displaying posts
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -21,15 +21,17 @@
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</div>
 			<div class="blog-desc" >
-				<?php the_content();
+				<?php the_excerpt();
 
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dinelli' ),
 					'after'  => '</div>',
 				) );
+
+				the_field('cost');
 				?>
 			</div>
 		</div>
 </div><!-- .entry-content -->
-	
+
 </article><!-- #post-<?php the_ID(); ?> -->

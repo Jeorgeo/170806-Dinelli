@@ -30,9 +30,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   ## Header mobile menu
   ## Header menu
 # Footer
-# Sidebar
 # Content
-	## Pagebilder
   ## Reviews
   ## Posts and pages
 --------------------------------------------------------------*/
@@ -42,20 +40,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 @font-face {
-   font-family: 'OpenSans'; /* Гарнитура шрифта */
+   font-family: 'Open Sans'; /* Гарнитура шрифта */
    src: url(fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
   }
 
 @font-face {
-   font-family: 'OpenSansExtraBold'; /* Гарнитура шрифта */
-   src: url(fonts/OpenSans-ExtraBold.ttf); /* Путь к файлу со шрифтом */
+   font-family: 'Roboto Slab'; /* Гарнитура шрифта */
+   src: url(fonts/RobotoSlab-Thin.ttf); /* Путь к файлу со шрифтом */
   }
-
-@font-face {
-   font-family: 'OpenSansSemibold'; /* Гарнитура шрифта */
-   src: url(fonts/OpenSans-Semibold.ttf); /* Путь к файлу со шрифтом */
-  }
-
 
 /*--------------------------------------------------------------
 # Animation
@@ -103,7 +95,9 @@ html, body {
 	height: 100%;
 	min-width: 100%;
 	min-height: 100%;
-	font-family: 'OpenSans', sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+	font-family: 'Open Sans', sans-serif;
   color: #404040;
 }
 
@@ -113,8 +107,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 1em;
-  font-family: 'OpenSansSemibold', serif;
+	font-size: 1.2em;
+  font-weight: 600;
 }
 
 ul {
@@ -180,51 +174,22 @@ img {
     margin: 1em 0;
   }
 
-  .cols.col-1 {
-    width: 24.9999%;
-  }
-
-  .cols.col-2 {
-    width: 33.3332%;
-  }
-
-  .cols.col-3 {
-    width: 41.6665%;
-  }
-
   .cols.col-4 {
     width: 49.9998%;
   }
+}
 
-  .cols.col-5 {
-    width: 58.3331%;
-  }
+@media (min-width: 1024px) {
 
-  .cols.col-6 {
-    width: 66.6664%;
-  }
-
-  .cols.col-7 {
-    width: 74.9997%;
-  }
-
-  .cols.col-8 {
-    width: 83.333%;
-  }
-
-  .cols.col-9 {
-    width: 91.663%;
-  }
-
-  .cols.col-10,
-  .cols.col-11,
-  .cols.col-12 {
-    width: 100%;
+  .container {
+    max-width: 1000px;
   }
 }
-@media (min-width: 960px) {
+
+@media (min-width: 1280px) {
+
   .container {
-    max-width: 900px;
+    max-width: 1200px;
   }
 
   .cols.col-1 {
@@ -273,11 +238,6 @@ img {
 
   .cols.col-12 {
     width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
   }
 }
 
@@ -544,13 +504,6 @@ img {
 }
 
 
-
-
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -673,31 +626,666 @@ ul.footer_content,
 }
 
 
-
-
-
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 
+.box-content {
+  font-weight: 200;
+}
+
+.box-content a {
+  color: #172df8;
+}
+
+.box-content a:hover {
+  color: #e93a1d;
+}
+
+.box-content a:active {
+  color: #b9b9b9;
+}
+
+.box-content figure {
+  margin: 0;
+  padding: 0;
+}
+
+.box-title {
+  display: block;
+  margin: 1em 0;
+  font-size: 2em;
+  font-weight: 100;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.main-box-2 .box-title {
+  margin: 0;
+  padding: 2em 0 2em;
+  background: url("img/dn_img-2-follow_me.svg") no-repeat 0 0;
+  background-size: contain;
+}
+
+.main-box-3 .box-title {
+  margin: -0.5em 0 0 0;
+  padding: 2em 0 2em;
+  text-align: center;
+  background: url("img/dn_img-3-target.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.main-box-7 .box-title {
+  margin: -0.5em 0 0 0;
+  padding: 2em 0 2em;
+  background: url("img/dn_img-7-start_now.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.main-box-9 .box-title {
+  padding: 2em 0 2em;
+  text-align: center;
+  background: url("img/dn_img-9-raspberry.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.main-box-11 .box-title {
+  margin-top: -0.5em;
+  padding: 3em 0 1.5em 0;
+  background: url("img/dn_img-11-comments.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
+.main-box-12 .box-title {
+  margin-top: -0.1em;
+  padding: 1em 0 3em;
+  background: url("img/dn_img-12-submarine.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
+.big-title {
+  display: block;
+  margin: 0.5em 0 1em 0;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.small-title {
+  display: block;
+}
+
+.list-title,
+.strong-text {
+  font-weight: bold;
+}
+
+.main-box-1 {
+  padding-top: 0.5em;
+  background: #f7fafc url("img/shadow-box-1.png") no-repeat 50% 100%;
+  background-size: contain;
+}
+
+.main-box-1 p {
+  font-size: 0.9em;
+}
+
+.title-img {
+  margin: 0;
+}
+
+.main-box-2 a {
+  display: block;
+  margin-bottom: 0.7em;
+}
+
+.advantages img {
+  width: 40%;
+  margin: auto;
+}
+
+.details img {
+  width: 70%;
+  margin: auto;
+}
+
+.details p {
+  margin: 1.2em 0;
+}
+
+.main-box-10 .advantages.flip img {
+  width: 20%;
+}
+
+.details-form,
+.bottom-form {
+  padding: 0.5em;
+  background-color: #f2f6f9;
+}
+
+.details-form input,
+.details-form label,
+.details-form button,
+.bottom-form input,
+.bottom-form label,
+.bottom-form textarea,
+.bottom-form button {
+  display: block;
+  width: 90%;
+  margin: 0.5em auto;
+  padding: 0.3em;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  font-weight: normal;
+  border: none;
+}
+
+.details-form #phone,
+.bottom-form #phone {
+  padding: 1.5em 1em;
+  background: url("img/dn_mail-pole-1.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.details-form #mail,
+.bottom-form #mail {
+  padding: 1.5em 1em;
+  background: url("img/dn_mail-pole-1.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.bottom-form #message {
+  padding: 1.5em 1em;
+  background: url("img/dn_mail-pole-3.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.details-form #btn,
+.bottom-form #btn {
+  width: 80%;
+  padding: 1em;
+  color: #ffffff;
+  background: url("img/dn_mail-button-nonactive.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.details-form #btn:hover,
+.bottom-form #btn:hover,
+.details-form #btn:active,
+.bottom-form #btn:active  {
+  cursor: pointer;
+  color: #404040;
+  background: #ffffff url("img/dn_mail-button-active.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .big-title {
+    font-size: 2.5em;
+  }
+
+  .box-title {
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+
+  .main-box-2 .box-title {
+    padding: 5em 0 2em;
+  }
+
+  .main-box-3 .box-title {
+    padding: 4em 0 3em;
+  }
+
+  .main-box-7 .box-title {
+    padding: 4em 0 2em;
+  }
+
+  .main-box-9 .box-title {
+    padding: 3em 0 2em;
+  }
+
+  .main-box-11 .box-title {
+    margin-top: -1em;
+    padding: 4em 0 2em 0;
+    text-align: left;
+  }
+
+  .main-box-12 .box-title {
+    padding: 3em 0 6em;
+  }
+
+  .content-area .box-content,
+  .box-title {
+    margin-top: -0.5em;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .advantages img {
+    float: left;
+    padding-right: 25%;
+    box-sizing: border-box;
+  }
+
+  .advantages .figure-title {
+    float: left;
+    width: 50%;
+    min-height: 165px;
+    margin-top: 25px;
+  }
+
+  .main-box-6 .cols {
+    margin: 0;
+  }
+
+  .main-box-9 figure {
+    margin: 1em 1.5em;
+    min-height: 300px;
+  }
+
+  .main-box-9 figure img {
+    width: 100%;
+  }
+
+  .main-box-10 .advantages.flip img {
+    width: 33%;
+  }
+
+  .main-box-10 .advantages.flip .figure-title {
+    margin-left: 7%;
+  }
+
+  .main-box-10 figure {
+    float: left;
+    width: 100%;
+  }
+
+  .main-box-12 .cols.cloud-form {
+    position: relative;
+    z-index: 224;
+    float: right;
+    width: 70%;
+  }
+
+  .main-box-9 .cloud-form {
+    position: relative;
+    z-index: 225;
+    background-color: transparent;
+  }
+
+  .main-box-9 .cloud-form::after {
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    z-index: -1;
+    display: block;
+    width: 600px;
+    height: 600px;
+    background: url("img/dn_mail-back-1.svg") no-repeat 50% 50%;
+    background-size: contain;
+    content: "";
+  }
+
+  .details-form {
+    background-color: transparent;
+  }
+
+  .bottom-form {
+    position: relative;
+    z-index: 225;
+    background-color: transparent;
+  }
+
+  .main-box-12 .cloud-form::after,
+  .main-box-12 .cloud-form::before {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    z-index: 222;
+    display: block;
+    width: 768px;
+    height: 550px;
+    background: url("img/dn_mail-back-1.svg") no-repeat 50% 50%;
+    background-size: cover;
+    content: "";
+  }
+
+  .main-box-12 .cloud-form::before {
+    z-index: 223;
+    width: 200px;
+    height: 150px;
+    background: url("img/line-mail.png") no-repeat 50% 50%;
+    background-size: contain;
+  }
+
+  .bottom-form input,
+  .bottom-form label,
+  .bottom-form textarea,
+  .bottom-form button {
+    float: right;
+    width: 60%;
+    margin: 0.5em auto;
+    padding: 0.3em;
+  }
+
+  .bottom-form label {
+    float: left;
+    width: 35%
+  }
+
+  .bottom-form #phone,
+  .bottom-form #mail,
+  .bottom-form #message {
+    padding: 1em;
+  }
+
+  .bottom-form #message {
+    min-height: 115px;
+    padding: 1.5em;
+  }
+
+  .bottom-form #btn {
+    width: 60%;
+  }
+}
+
+
 @media (min-width: 960px) {
-  .site-content {
+  .content-area {
     padding-left: 235px;
+  }
+
+  .content-area .box-content {
+    padding-left: 8.33%;
+  }
+
+  .box-content .cols {
+    padding-right: 8.33%;
+  }
+
+  .container .box-title {
+    margin: 0 8.33%;
+  }
+
+  .main-box-12{
+    padding-bottom: 5em;
+  }
+
+  .main-box-12 .content_center p {
+    display: block;
+    width: 50%;
+    margin: 3em auto;
+  }
+
+  .main-box-12 .cloud-form::after {
+    top: -230px;
+    left: -200px;
+    width: 800px;
+    height: 768px;
+    background-size: contain;
+  }
+
+  .bottom-form #phone,
+  .bottom-form #mail,
+  .bottom-form #message {
+    padding: 0.5em;
   }
 }
 
 @media (min-width: 1280px) {
-  .content-area {
-    max-width: 920px;
-    margin-left: 96px;
-    }
+  .col_right {
+    float: right;
+  }
+
+  .box-title {
+    font-size: 60px;
+  }
+
+  .small-title {
+    margin-bottom: 0.8em;
+  }
+
+  .main-box-2 .box-title {
+    margin-top: -0.5em;
+    padding: 4em 0 2em 0;
+  }
+
+  .main-box-3 .box-title {
+    margin-top: -2em;
+    margin-bottom: -2em;
+    text-align: left;
+    padding-left: 2em;
+  }
+
+  .main-box-1 .box-content {
+    position: relative;
+    padding-bottom: 2em;
+  }
+
+  .title-img {
+    position: absolute;
+    bottom: 0;
+    left: -1%;
+  }
+
+  .main-box-2 {
+    padding-top: 1em;
+  }
+
+  .main-box-2 a {
+    margin-bottom: 0.5em;
+  }
+
+  .main-box-4 .box-content {
+    margin-bottom: 1em;
+    background: url("img/dn_img-4-cake.png") no-repeat 75% 55%;
+    background-size: 70%;
+  }
+
+  .main-box-6 .box-content {
+    margin-top: 1em;
+  }
+
+  .main-box-6 figure img {
+    width: 25%;
+    padding-right: 10%;
+  }
+
+  .main-box-6 figure .figure-title {
+    width: 75%;
+  }
+
+ .main-box-8 .box-content {
+   background: url("img/dn_img-8-cloth_off.svg") no-repeat 70% 50%;
+   background-size: 55%;
+ }
+
+ .main-box-9 .box-content {
+   position: relative;
+ }
+
+ .main-box-9 .col-4 {
+   position: relative;
+   z-index: 999;
+ }
+
+ .main-box-9 .box-content .small-title {
+   text-align: left;
+ }
+
+ .main-box-9 .box-content .cloud-form .small-title {
+   text-align: center;
+ }
+
+ .cols.col-4.cloud-form {
+   position: absolute;
+   z-index: 555;
+   bottom: 0;
+   right: 20px;
+   width: 40%;
+   margin: 0;
+   padding: 0;
+ }
+
+ .details-form input,
+ .details-form label,
+ .details-form button {
+    display: inline-block;
+    width: 60%;
+    margin: 0.5em auto;
+    padding: 0.3em;
+  }
+
+  .details-form label {
+    width: 30%;
+  }
+
+  .details-form #btn {
+    width: 60%;
+    margin-left: 30%;
+  }
+
+  .main-box-9 .cloud-form::after {
+    top: -77px;
+    left: -224px;
+    z-index: -1;
+    width: 768px;
+    height: 600px;
+  }
+
+  .main-box-10 .box-content {
+    margin-bottom: 1em;
+  }
+
+  .main-box-10 figure img {
+    width: 25%;
+    padding-right: 10%;
+  }
+
+  .main-box-10 .advantages.flip img {
+    width: 18%;
+  }
+
+  .main-box-10 figure .figure-title {
+    width: 75%;
+    margin-top: 0;
+  }
+
+  .main-box-10 .col-6 {
+    padding-right: 16.66%;
+  }
+
+  .main-box-10 .box-content.assist {
+    background: url("img/dn_img-10-assist.svg") no-repeat 40% 0%;
+    background-size: 8%;
+  }
+
+  .main-box-12 .cols.cloud-form {
+    width: 55%;
+    margin-top: 4em;
+  }
+
+  .main-box-12 .col-4 {
+    position: relative;
+    z-index: 555;
+  }
+
+  .bottom-form {
+    width: 320px;
+  }
+
+  .bottom-form input,
+  .bottom-form label,
+  .bottom-form textarea,
+  .bottom-form button {
+      width: 215px;
+      margin: 0.5em auto;
+      padding: 0.5em;
+  }
+
+  .bottom-form #btn {
+    width: 215px;
+  }
+
+
+  .bottom-form label {
+    width: 75px;
+    font-size: 0.9em;
+  }
 }
 
+@media (min-width: 1360px) {
+  .box-content {
+    font-size: 0.95em;
+    padding-top: 1.5em;
+  }
 
-/*--------------------------------------------------------------
-# Content
-  ## Pagebilder
---------------------------------------------------------------*/
+  .main-box-1 .box-content {
+      padding: 4em 0 6em 0;
+  }
+
+  .main-box-1 .title-img {
+      width: 700px;
+  }
+
+  .big-title {
+    font-size: 3.33em;
+    line-height: 1.15em;
+  }
+
+  .box-content .small-title {
+    font-size: 1.3em;
+  }
+
+  .main-box-1 h1 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin: 2.83em 0 0.7em 0;
+  }
+  .main-box-4 .box-content {
+    background: url("img/dn_img-4-cake.png") no-repeat 75% 30%;
+    background-size: 65%;
+}
+
+  .main-box-5 .box-content .col-6{
+    margin-bottom: 2em;
+  }
+
+  .main-box-7 .box-title {
+    font-size: 4.5em;
+    padding: 3em 0 2em 0;
+  }
+
+  .main-box-8 .box-content {
+    background: url("img/dn_img-8-cloth_off.svg") no-repeat 67% 40%;
+    background-size: 43%;
+  }
+
+  .cols.col-4.cloud-form {
+    right: 50px;
+    width: 35%;
+  }
+
+  .main-box-11 .box-title {
+    padding: 3em 0;
+    padding-left: 2em;
+  }
+
+  .main-box-12 .box-title {
+    padding: 2em 0 4em 0;
+  }
+
+  .main-box-12 .content_center p {
+    max-width: 430px;
+    margin: 5em 0 5em 16.66%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-box-1 {
+    margin-bottom: 2.5em;
+  }
+}
 
 /*--------------------------------------------------------------
 # Content

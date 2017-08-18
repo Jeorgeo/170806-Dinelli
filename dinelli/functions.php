@@ -131,7 +131,8 @@ add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
  	register_sidebar( array(
  		'name'          => esc_html__( 'social_vk', 'dinelli' ),
  		'id'            => 'social_vk',
- 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'description'   => esc_html__( 'Add widgets here. <a href="#" class="social_vk" target="_blanck">
+		</a>', 'dinelli' ),
  		'before_widget' => '<div id="%1$s" class="widget %2$s">',
  		'after_widget'  => '</div>',
  		'before_title'  => '<h2 class="widget-title">',
@@ -140,7 +141,8 @@ add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
  	register_sidebar( array(
  		'name'          => esc_html__( 'social_f', 'dinelli' ),
  		'id'            => 'social_f',
- 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'description'   => esc_html__( 'Add widgets here.<a href="#" class="social_f" target="_blanck">
+		</a>', 'dinelli' ),
  		'before_widget' => '<div id="%1$s" class="widget %2$s">',
  		'after_widget'  => '</div>',
  		'before_title'  => '<h2 class="widget-title">',
@@ -149,7 +151,8 @@ add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
  	register_sidebar( array(
  		'name'          => esc_html__( 'social_youtube', 'dinelli' ),
  		'id'            => 'social_youtube',
- 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'description'   => esc_html__( 'Add widgets here.<a href="#" class="social_yt" target="_blanck">
+		</a>', 'dinelli' ),
  		'before_widget' => '<div id="%1$s" class="widget %2$s">',
  		'after_widget'  => '</div>',
  		'before_title'  => '<h2 class="widget-title">',
@@ -158,7 +161,8 @@ add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
  	register_sidebar( array(
  		'name'          => esc_html__( 'social_instagram', 'dinelli' ),
  		'id'            => 'social_instagram',
- 		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+ 		'description'   => esc_html__( 'Add widgets here.<a href="#" class="social_in" target="_blanck">
+		</a>', 'dinelli' ),
  		'before_widget' => '<div id="%1$s" class="widget %2$s">',
  		'after_widget'  => '</div>',
  		'before_title'  => '<h2 class="widget-title">',
@@ -280,7 +284,7 @@ require get_template_directory() . '/inc/reviews_video.php';
 /**
  * Custom events.
  */
-/*require get_template_directory() . '/inc/events.php';*/
+require get_template_directory() . '/inc/events.php';
 
 /**
 	* Custom fields.
