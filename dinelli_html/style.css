@@ -31,6 +31,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   ## Header menu
 # Footer
 # Content
+  ## Blog
   ## Reviews
   ## Posts and pages
 --------------------------------------------------------------*/
@@ -1297,8 +1298,19 @@ ul.footer_content,
 
 /*--------------------------------------------------------------
 # Content
-  ## Posts and pages
+  ## Blog
 --------------------------------------------------------------*/
+
+.blog_title {
+  padding: 0 2em;
+}
+
+.blog_title h1 {
+  font-size: 1.8em;
+  
+}
+
+
 
 /*--------------------------------------------------------------
 # # Content
