@@ -46,6 +46,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   }
 
 @font-face {
+   font-family: 'Open Sans Light'; /* Гарнитура шрифта */
+   src: url(fonts/OpenSans-Light.ttf); /* Путь к файлу со шрифтом */
+  }
+
+@font-face {
    font-family: 'Roboto Slab'; /* Гарнитура шрифта */
    src: url(fonts/RobotoSlab-Thin.ttf); /* Путь к файлу со шрифтом */
   }
@@ -1301,14 +1306,159 @@ ul.footer_content,
   ## Blog
 --------------------------------------------------------------*/
 
+.blog h2 {
+  font-size: 1.4em;
+  line-height: 1.25em;
+}
+
+.blog figure {
+  margin: 0.5em;
+}
+
+.blog a {
+  text-decoration: underline;
+  color: #0404a8;
+}
+
+.blog a:hover {
+  color: #e93a1d;
+}
+
+.blog a:active {
+  color: #b9b9b9;
+}
+
 .blog_title {
-  padding: 0 2em;
+  padding: 0 1em;
 }
 
 .blog_title h1 {
+  position: relative;
+  z-index: 10;
   font-size: 1.8em;
-  
+  text-align: center;
 }
+
+.blog_title p {
+  position: relative;
+  z-index: 10;
+  font-size: 0.9em;
+  font-family: 'Open Sans Light', 'Arial', serif;
+}
+
+@media (min-width: 768px) {
+  .blog-box-1 {
+    min-height: 450px;
+    background: url("img/blog-bg.png") no-repeat 0 100%;
+    background-size: cover;
+  }
+
+  .cols.blog_title {
+    position: relative;
+    z-index: 9;
+    margin-top: 10%;
+    padding-top: 5%;
+    width: 50%;
+    max-width: 480px;
+  }
+
+  .blog_title p {
+    width: 70%;
+    max-width: 420px;
+    margin: auto;
+  }
+
+  .blog_title::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 480px;
+    height: 300px;
+    background: url("img/dn_blog-back-1.png") no-repeat 100% 100%;
+    background-size: contain;
+    content: "";
+  }
+}
+
+@media (min-width: 960px) {
+  .blog-box-1 {
+    min-height: 480px;
+  }
+
+  .blog-box-2 .blog__box-content {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cols.col-4-md {
+    width: 41.44%;
+    margin-right: 8%;
+  }
+
+  .cols.col-12-md {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .blog_title h1 {
+    margin: 0.8em 0;
+    text-align: left;
+    font-size: 3.3em;
+  }
+
+  .blog-box-1 {
+    min-height: 610px;
+  }
+
+  .blog-box-1 p {
+    width: 100%;
+    margin: 0;
+  }
+
+  .blog-box-2 {
+    margin: 4em 0;
+  }
+
+  .cols.col-6 {
+    width: 46%;
+    float: left;
+  }
+
+  .cols.col-6 h2 {
+    margin-top: -0.2em;
+  }
+
+  .cols.blog_title {
+    width: 73%;
+    max-width: 670px;
+    padding: 100px 115px 130px 100px;
+  }
+
+  .blog_title::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: 1400px) {
+    .blog {
+      margin-left: 0;
+    }
+
+    .blog-box-2 .blog__box-content {
+      margin-right: 20px;
+    }
+  }
+
+
+
+}
+
+
 
 
 
