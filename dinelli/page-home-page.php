@@ -270,7 +270,7 @@ get_header(); ?>
 				<div class="cols col-4">
 					<figure class="details">
 						<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-6-offer_analise.svg" alt="">
-						<p>Анализ существующих рекламных кампаний в Яндекс.Директ, Google при их наличии/p>
+						<p>Анализ существующих рекламных кампаний в Яндекс.Директ, Google при их наличии</p>
 					</figure>
 				</div>
 				<div class="cols col-4">
@@ -362,7 +362,7 @@ get_header(); ?>
 	</section>
 	<section class="main-box-11">
 		<div class="container">
-			<span class="box-title">наши клиенты красный <span class="color-text">уголок*</span></span>
+			<span class="box-title">наши клиенты<br> красный <span class="color-text">уголок*</span></span>
 			<div class="box-content clearfix">
 				<h4 class="small-title">Сотрудничество с компаниями</h4>
 				<div class="cols col-6">
