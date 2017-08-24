@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * Template Name: Главная
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -301,6 +301,8 @@ get_header(); ?>
 						<input id="phone" type="text" name="phone" value="" placeholder="+7(___) ___-__-__">
 						<label for="mail">e-mail</label>
 						<input id="mail" type="text" name="mail" value="" placeholder="iNfo@DiNelli.ru">
+						<input id="сonsent" class="сonsent" type="checkbox" name="сonsent" value="">
+						<label class="сonsent" for="сonsent">Согласие на обработку персональных данных</label>
 						<button id="btn" type="submit" name="button">Отправить заявку</button>
 					</form>
 				</div>
@@ -325,7 +327,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="box-content assist clearfix">
-				<div class="cols col-6">
+				<div class="cols col-6 woman">
 					<figure class="advantages flip">
 						<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-10-flip.svg" alt="">
 						<div class="figure-title">
@@ -413,6 +415,8 @@ get_header(); ?>
 						<label for="message">сообщение</label>
 						<textarea id="message" name="message" rows="5" cols="80" placeholder="Очень хочу качественную	рекламу для сайта DiNelli.ru Рекламный бюджет от 50 тр."
 						></textarea>
+						<input id="сonsent" class="сonsent" type="checkbox" name="сonsent" value="">
+						<label class="сonsent" for="сonsent">Согласие на обработку персональных данных</label>
 						<button id="btn" type="submit" name="button">Отправить заявку</button>
 					</form>
 				</div>
