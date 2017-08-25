@@ -1,17 +1,17 @@
+var toggle_btn = document.getElementById('js-toggle');
+var menu_nav = document.getElementById('masthead');
+var toggle_arrow = document.querySelector('.header-menu-toggle');
 
-//*require fancybox
+toggle_btn.addEventListener('click', moveMenu);
 
-$(document).ready(function(){
-  $(".show_modal").fancybox({
-    type: 'inline',
-    padding : 20,
-    content: $('#modal')
-  });
-
-
-
-});
-
-//*require WOW effects
-
-/*new WOW().init();*/
+function moveMenu(){
+  if(menu_nav.classList.contains('nav-show')) {
+      toggle_arrow.classList.remove('btn-arrow-top');
+      toggle_arrow.classList.remove('btn-arrow-bottom');
+      menu_nav.classList.remove('nav-show');
+     } else {
+      toggle_arrow.classList.add('btn-arrow-top');
+      toggle_arrow.classList.add('btn-arrow-bottom');
+      menu_nav.classList.add('nav-show');
+      }
+};

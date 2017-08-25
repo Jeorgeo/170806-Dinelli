@@ -10,41 +10,26 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
 	<div class="entry-content">
-		<?php
-			the_content();
+		<div class="cols col-6">
+			<div class="blog-img">
+				<?php the_post_thumbnail( 'full' )?>
+			</div>
+		</div>
+		<div class="cols col-6">
+			<div class="blog-title">
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			</div>
+			<div class="blog-desc" >
+				<?php the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dinelli' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-				edit_post_link(
-					sprintf(
-						wp_kses(
-							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="screen-reader-text">%s</span>', 'dinelli' ),
-							array(
-								'span' => array(
-									'class' => array(),
-								),
-							)
-						),
-						get_the_title()
-					),
-					'<span class="edit-link">',
-					'</span>'
-				);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'dinelli' ),
+					'after'  => '</div>',
+				) );
+				?>
+			</div>
+		</div>
+</div><!-- .entry-content -->
+	
 </article><!-- #post-<?php the_ID(); ?> -->

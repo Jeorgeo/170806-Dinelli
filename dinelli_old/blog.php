@@ -1,7 +1,7 @@
 <?php
 /* Template Name: Блог */ 
-?>
-<?php get_header(); ?>
+?><?php
+?><?php get_header(); ?>
         <div class="content-padding blog">
   <?php
 
@@ -21,7 +21,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12 wow bounceIn page">
               <div class="blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
               <div class="blog-desc" style="">
-                <?php //the_excerpt();
+                <?php //the_excerpt(); 
                   echo get_short_post_content('',200,'Читать далее...',0);
                 ?>
 

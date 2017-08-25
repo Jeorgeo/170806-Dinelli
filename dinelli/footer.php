@@ -11,24 +11,39 @@
 
 ?>
 
-	</div><!-- #content -->
+		</div><!--/#content-->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dinelli' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'dinelli' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'dinelli' ), 'dinelli', '<a href="http://underscores.me/">Underscores.me</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<div id="footer" class="main-footer">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="cols col-6">
+						<div class="cols col-5 contacts">
+							<div class="footer-contacts">
+								<?php dynamic_sidebar( 'phone' ); ?>
+								<?php dynamic_sidebar( 'phone_b' ); ?>
+								<div class="contacts_icon">
+									<span class="contacts_icon-w"></span>
+									<span class="contacts_icon-v"></span>
+									<span class="contacts_icon-t"></span>
+									<span class="contacts_icon-s"></span>
+								</div>
+							</div>
+						</div>
+						<div class="cols col-7">
+							<ul class="footer_content">
+								<li><?php dynamic_sidebar( 'footer_c' ); ?></li>
+							</ul>
+						</div>
+					</div>
+					<div class="cols col-6 main-footer__footer-copy">
+						<?php dynamic_sidebar( 'footer_copy' ); ?>
+					</div>
+				</div>
+			</div>
+		</div><!--/#footer-->
+	</div><!-- #page -->
 
-<?php wp_footer(); ?>
 
+	<?php wp_footer(); ?>
 </body>
 </html>
