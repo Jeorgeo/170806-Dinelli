@@ -95,13 +95,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 html, body {
+  position: relative;
+  z-index: 1;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 	width: 100%;
 	height: 100%;
 	min-width: 100%;
 	min-height: 100%;
-  font-size: 0.92em;
+  font-size: 1em;
   line-height: 1.4em;
 	font-family: 'Open Sans Light', 'Arial', sans-serif;
   color: #404040;
@@ -177,13 +179,22 @@ img {
   }
 
   .cols {
+    position: relative;
+    z-index: 2;
     float: left;
     margin: 1em 0;
   }
 
-  .cols.col-4,
-  .cols.col-5 {
+  .cols.col-md-6 {
     width: 49.9998%;
+  }
+
+  .cols.col-md-6:first-child {
+    padding-right: 5%;
+  }
+
+  .float_right {
+    float: right;
   }
 }
 
@@ -691,6 +702,7 @@ ul.footer_content,
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*-------------------first mobile 360px-----------------------*/
 
 .box-content {
   font-weight: 200;
@@ -721,14 +733,14 @@ ul.footer_content,
   font-family: 'Roboto Slab', sans-serif;
 }
 
-.main-box-2 .box-title {
+.main.box-2 .box-title {
   margin: 0;
   padding: 2.5em 0 2em;
   background: url("img/dn_img-2-follow_me.svg") no-repeat 0 0;
   background-size: contain;
 }
 
-.main-box-3 .box-title {
+.main.box-3 .box-title {
   margin: 1em 0 0 0;
   padding: 2em 0 2em;
   text-align: center;
@@ -736,28 +748,28 @@ ul.footer_content,
   background-size: contain;
 }
 
-.main-box-7 .box-title {
+.main.box-7 .box-title {
   margin: 0.5em 0 0 0;
   padding: 2em 0 2em;
   background: url("img/dn_img-7-start_now.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 
-.main-box-9 .box-title {
+.main.box-9 .box-title {
   padding: 2em 0 2em;
   text-align: center;
   background: url("img/dn_img-9-raspberry.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 
-.main-box-11 .box-title {
+.main.box-11 .box-title {
   margin-top: -0.5em;
   padding: 3em 0 1.5em 0;
   background: url("img/dn_img-11-comments.svg") no-repeat 50% 100%;
   background-size: contain;
 }
 
-.main-box-12 .box-title {
+.main.box-12 .box-title {
   margin-top: -0.1em;
   padding: 1em 0 3em;
   background: url("img/dn_img-12-submarine.svg") no-repeat 50% 100%;
@@ -781,21 +793,17 @@ ul.footer_content,
   font-weight: bold;
 }
 
-.main-box-1 {
+.main.box-1 {
   padding-top: 0.5em;
   background: #f7fafc url("img/shadow-box-1.png") no-repeat 50% 100%;
   background-size: contain;
-}
-
-.main-box-1 p {
-  font-size: 0.9em;
 }
 
 .title-img {
   margin: 0;
 }
 
-.main-box-2 a {
+.main.box-2 a {
   display: block;
   margin-bottom: 0.7em;
 }
@@ -834,90 +842,106 @@ ul.footer_content,
   margin: 1.2em 0;
 }
 
-.main-box-12 {
+.main.box-12 {
   margin-bottom: 2em;
 }
 
+/*-------------------------Cloud-form------------------------------*/
+
 .details-form,
 .bottom-form {
-  padding: 0.5em;
+  position: relative;
+  z-index: 1;
 }
 
-.details-form input,
-.details-form label,
-.details-form button,
-.bottom-form input,
-.bottom-form label,
-.bottom-form textarea,
-.bottom-form button {
-  display: block;
-  width: 90%;
-  margin: 0.5em auto;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 1.1em;
-  font-weight: normal;
+.cloud-form {
+  width: 300px;
+  margin: auto;
+}
+
+.cloud-form label,
+.cloud-form input,
+.cloud-form textarea,
+.cloud-form button {
+  display: inline-block;
+  width: 85px;
+  margin: 5px 0;
+  padding: 16px 10px;
+  vertical-align: top;
+  text-align: left;
   border: none;
+  box-sizing: border-box;
 }
 
-.details-form #phone,
-.bottom-form #phone {
-  padding: 1em;
-  font-size: 0.9em;
+.cloud-form label {
+  padding-left: 0;
+}
+
+.cloud-form label.cloud-form__сonsent {
+  width: 210px;
+  margin: 0;
+  padding: 0;
+}
+
+.cloud-form input,
+.cloud-form textarea {
+  width: 210px;
+  color: #b9b9b9;
+}
+
+.cloud-form input.cloud-form__сonsent {
+  width: 85px;
+  text-align: center;
+}
+
+.cloud-form input {
   background: url("img/dn_mail-pole-1.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 
-.details-form #mail,
-.bottom-form #mail {
-  padding: 1em;
-  font-size: 0.9em;
-  background: url("img/dn_mail-pole-1.svg") no-repeat 50% 50%;
-  background-size: contain;
+.cloud-form input:focus {
+  color: #404040;
 }
 
-.bottom-form #message {
-  padding: 1em;
-  font-size: 0.9em;
+.cloud-form textarea {
   background: url("img/dn_mail-pole-3.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 
-.details-form input.сonsent,
-.bottom-form input.сonsent {
-  display: inline-block;
-  vertical-align: top;
-  width: 50px;
-  margin: 16px auto;
-  vertical-align: top;
-}
-
-.details-form label.сonsent,
-.bottom-form label.сonsent {
-  display: inline-block;
-  vertical-align: top;
-  width: 200px;
-  font-size: 0.9em;
-}
-
-.details-form #btn,
-.bottom-form #btn {
-  width: 80%;
-  padding: 1em;
+.cloud-form button {
+  width: 180px;
+  margin-left: 95px;
+  text-align: center;
+  font-size: 1.05em;
   color: #ffffff;
   background: url("img/dn_mail-button-nonactive.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 
-.details-form #btn:hover,
-.bottom-form #btn:hover,
-.details-form #btn:active,
-.bottom-form #btn:active  {
+.cloud-form button:hover {
   cursor: pointer;
   color: #404040;
   background: url("img/dn_mail-button-active.svg") no-repeat 50% 50%;
   background-size: contain;
 }
+
+.details-form::after,
+.bottom-form::after,
+.bottom-form::before {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  display: block;
+  width: 380px;
+  height: 275px;
+  background: url("img/dn_mail-back-1.svg") no-repeat 50% 50%;
+  background-size: cover;
+  content: "";
+}
+
+
+/*-------------------Second for tablet 768px-----------------------*/
 
 @media (min-width: 768px) {
   .big-title {
@@ -930,251 +954,130 @@ ul.footer_content,
     line-height: 1em;
   }
 
-  .main-box-2 .box-title {
+  .main.box-2 .box-title,
+  .main.box-3 .box-title,
+  .main.box-7 .box-title,
+  .main.box-9 .box-title,
+  .main.box-11 .box-title,
+  .main.box-12 .box-title {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
     padding: 5em 0 2em;
   }
 
-  .main-box-3 .box-title {
+  .main.box-3 .box-title {
     padding: 3em 0 3em;
   }
 
-  .main-box-7 .box-title {
+  .main.box-4,
+  .main.box-5 {
+    margin-bottom: 1.5em;
+  }
+
+  .main.box-4 .box-content {
+    background: url("img/dn_img-4-cake.png") no-repeat 75% 55%;
+    background-size: 70%;
+  }
+
+  .main.box-6 .cols {
+    margin: 0;
+  }
+
+  .main.box-7 .box-title {
     padding: 4em 0 2em;
   }
 
-  .main-box-9 .box-title {
+  .main.box-8 .box-content {
+    background: url("img/dn_img-8-cloth_off.svg") no-repeat 70% 50%;
+    background-size: 55%;
+  }
+
+  .main.box-9 .box-title {
     padding: 3em 0 2em;
   }
 
-  .main-box-11 .box-title {
+  .main.box-9 figure {
+    margin: 1em 1.5em;
+    min-height: 230px;
+  }
+
+  .main.box-9 figure img {
+    width: 70%;
+  }
+
+  .main.box-10 figure {
+    float: left;
+    width: 100%;
+  }
+
+  .main.box-11 .box-title {
     margin-top: -1em;
     padding: 4em 8.3% 2em 8.3%;
     text-align: left;
   }
 
-  .main-box-12 .box-title {
+  .main.box-12 .box-title {
     padding: 3em 0 6em;
   }
 
-  .content-area .box-content,
-  .box-title {
+  .content-area .box-content {
     margin-top: -0.5em;
     padding-left: 8%;
     padding-right: 8%;
   }
 
-  .main-box-5 {
-    margin-bottom: 1.5em;
+  .details-form h4 {
+    text-align: center;
   }
 
-  .main-box-5 img,
-  .main-box-7 img {
-    width: 55%;
-    margin: auto;
+  .details-form::after {
+    left: -85px;
+    width: 480px;
+    height: 295px;
   }
 
-  .main-box-6 .cols {
-    margin: 0;
+  .bottom-form::after {
+    top: -40px;
+    left: -45px;
+    width: 660px;
+    height: 415px;
   }
 
-  .main-box-9 figure {
-    margin: 1em 1.5em;
-    min-height: 300px;
-  }
-
-  .main-box-9 figure img {
-    width: 70%;
-  }
-
-  .main-box-10 figure {
-    float: left;
-    width: 100%;
-  }
-
-  .cols.woman {
-    width: 49.9%;
-  }
-
-  .main-box-11 .col-5 {
-    width: 100%;
-  }
-
-  .main-box-12 .col-4 {
-    width: 100%;
-  }
-
-  .main-box-12 .cloud-form {
-    position: relative;
-    z-index: 224;
-    float: right;
-    width: 70%;
-  }
-
-  .main-box-9 .cloud-form {
-    position: relative;
-    z-index: 225;
-    background-color: transparent;
-  }
-
-  .main-box-9 .cloud-form::after {
-    position: absolute;
-    top: -50px;
-    left: -30px;
-    z-index: -1;
-    display: block;
-    width: 600px;
-    height: 600px;
-    background: url("img/dn_mail-back-1.svg") no-repeat 50% 50%;
-    background-size: contain;
-    content: "";
-  }
-
-  .details-form {
-    background-color: transparent;
-  }
-
-  .bottom-form {
-    position: relative;
-    z-index: 225;
-    background-color: transparent;
-  }
-
-  .main-box-12 .cloud-form::after,
-  .main-box-12 .cloud-form::before,
-  .service-box-2 .cloud-form::after,
-  .service-box-2 .cloud-form::before {
-    position: absolute;
-    top: 0;
-    left: -150px;
-    z-index: 222;
-    display: block;
-    width: 768px;
-    height: 480px;
-    background: url("img/dn_mail-back-1.svg") no-repeat 50% 50%;
-    background-size: cover;
-    content: "";
-  }
-
-  .service-box-2 .cloud-form::after {
-    top: -100px;
-    left: -190px;
-  }
-
-  .main-box-12 .cloud-form::before,
-  .service-box-2 .cloud-form::before {
-    z-index: 223;
+  .bottom-form::before {
+    z-index: 0;
     width: 200px;
     height: 150px;
+    top: 0;
+    left: 0;
     background: url("img/line-mail.png") no-repeat 50% 50%;
     background-size: contain;
   }
-
-  .service-box-2 .cloud-form::before {
-    top: -5px;
-    left: -85px;
-  }
-
-  .service-box-2 .col-7 {
-    width: 49.99%;
-    padding-left: 6%;
-  }
-
-  .details-form,
-  .bottom-form {
-    max-width: 330px;
-  }
-
-  .details-form input,
-  .details-form label,
-  .details-form button,
-  .bottom-form input,
-  .bottom-form label,
-  .bottom-form textarea,
-  .bottom-form button {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 215px;
-    margin: 0 auto;
-    padding: 0.3em;
-  }
-
-  .bottom-form label {
-    max-width: 100px;
-  }
-
-  .details-form label.сonsent,
-  .bottom-form label.сonsent {
-    max-width: 180px;
-    font-size: 0.9em;
-  }
-
-  .bottom-form #phone,
-  .bottom-form #mail,
-  .bottom-form #message {
-    padding: 1em;
-  }
-
-  .bottom-form #message {
-    min-height: 115px;
-    padding: 1.5em;
-  }
-
-  .bottom-form #btn {
-    margin: 0 auto;
-    padding: 0.5em;
-  }
 }
 
+/*----------------------Second for tablet 960px-----------------------------------------*/
 
 @media (min-width: 960px) {
   .content-area {
     padding-left: 235px;
   }
 
-  .content-area .box-content {
-    padding-left: 8.33%;
+  .main.box-9 figure {
+    min-height: 235px;
   }
 
-  .box-content .cols {
-    padding-right: 8.33%;
-  }
 
-  .cols.no-padding_right {
-    padding-right: 0;
-  }
-
-  .container .box-title {
-    margin: 0 8.33%;
-  }
-
-  .main-box-12 {
+  .main.box-12 {
     padding-bottom: 8em;
   }
 
-  .main-box-12 .content_center p {
+  .main.box-12 .content_center p {
     display: block;
     width: 50%;
     margin: 3em auto;
   }
-
-  .main-box-12 .cloud-form::after {
-    top: -230px;
-    left: -200px;
-    width: 800px;
-    height: 768px;
-    background-size: contain;
-  }
-
-  .bottom-form #phone,
-  .bottom-form #mail,
-  .bottom-form #message,
-  .details-form #phone,
-  .details-form #mail,
-  .details-form #message {
-    padding: 1.5em;
-    font-size: 0.8em;
-  }
 }
+
+/*----------------------------Third for tablet 1288px-----------------------------------*/
 
 @media (min-width: 1280px) {
   .col_right {
@@ -1220,11 +1123,7 @@ ul.footer_content,
     margin-bottom: 0.5em;
   }
 
-  .main-box-4 .box-content {
-    margin-bottom: 1em;
-    background: url("img/dn_img-4-cake.png") no-repeat 75% 55%;
-    background-size: 70%;
-  }
+
 
   .main-box-5 img,
   .main-box-7 img {
@@ -1245,10 +1144,7 @@ ul.footer_content,
     width: 75%;
   }
 
- .main-box-8 .box-content {
-   background: url("img/dn_img-8-cloth_off.svg") no-repeat 70% 50%;
-   background-size: 55%;
- }
+
 
  .main-box-9 .box-content {
    position: relative;
