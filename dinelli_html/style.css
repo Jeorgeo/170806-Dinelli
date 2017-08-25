@@ -737,7 +737,7 @@ ul.footer_content,
 }
 
 .main-box-7 .box-title {
-  margin: -0.5em 0 0 0;
+  margin: 0.5em 0 0 0;
   padding: 2em 0 2em;
   background: url("img/dn_img-7-start_now.svg") no-repeat 50% 50%;
   background-size: contain;
@@ -800,14 +800,15 @@ ul.footer_content,
   margin-bottom: 0.7em;
 }
 
-.advantages {
-  margin-bottom: 1em;
+.box-content figure.advantages {
+  margin-bottom: 2em;
 }
 
 .advantages img {
   float: left;
   width: 40%;
-  padding-right: 25%;
+  padding-left: 10%;
+  padding-right: 15%;
   box-sizing: border-box;
 }
 
@@ -822,7 +823,6 @@ ul.footer_content,
 .advantages .figure-title {
   float: left;
   width: 50%;
-  min-height: 165px;
 }
 
 .details img {
@@ -832,6 +832,10 @@ ul.footer_content,
 
 .details p {
   margin: 1.2em 0;
+}
+
+.main-box-12 {
+  margin-bottom: 2em;
 }
 
 .details-form,
@@ -1143,7 +1147,7 @@ ul.footer_content,
     margin: 0 8.33%;
   }
 
-  .main-box-12{
+  .main-box-12 {
     padding-bottom: 8em;
   }
 
@@ -1341,7 +1345,7 @@ ul.footer_content,
     padding-right: 16.66%;
   }
 
-  .main-box-10 .box-content.assist {
+  .main-box-10 .box-content .assist {
     background: url("img/dn_img-10-assist.svg") no-repeat 40% 0%;
     background-size: 8%;
   }
@@ -1659,6 +1663,7 @@ ul.footer_content,
 .service-box-1 .box-title {
   margin: 0;
   padding: 2.5em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   background: url("img/DN_Service-img-1.png") no-repeat 0 100%;
   background-size: contain;
 }
@@ -1709,6 +1714,7 @@ ul.footer_content,
 
   .service-box-1 .box-title {
     padding: 2em 0;
+    line-height: 1.3em;
   }
 
   .service-box-2 {
@@ -1731,9 +1737,14 @@ ul.footer_content,
     margin-top: 5em;
     padding-left: 8.33%;
   }
-
-
 }
+
+/*--------------------------------------------------------------
+# Content
+  ## Сouching
+--------------------------------------------------------------*/
+
+
 
 
 /*--------------------------------------------------------------
