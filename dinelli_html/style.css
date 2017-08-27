@@ -89,6 +89,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   to   { transform: rotate(0deg); }
 }
 
+@keyframes swell {
+  from { width: 98%; }
+  to   { width: 100%; }
+}
+
+@keyframes deflate {
+  from { width: 100%; }
+  to   { width: 98%; }
+}
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -273,7 +283,7 @@ img {
   left: 0;
 	width: 235px;
 	min-height: 900px;
-	padding: 2em 0;
+	padding: 0.5em 0;
 	margin: 0;
 	color: #ffffff;
 	background: #000000;
@@ -334,8 +344,7 @@ img {
   height: 30px;
 }
 
-.left-panel__primary-menu a:hover,
-.sidebar-contacts a:hover {
+.left-panel__primary-menu a:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -344,6 +353,11 @@ img {
 .current_page_item a {
 	color: #e93a1d;
 	background-color: transparent;
+}
+
+.sidebar-contacts a:hover,
+.left-panel__events a:hover {
+	color: #e93a1d;
 }
 
 .sidebar-delim {
@@ -360,6 +374,7 @@ img {
 
 .sidebar-social {
 	list-style-type: none;
+  margin-top: 0.5em;
 	padding: 0 0 0 2em;
 }
 
@@ -407,6 +422,10 @@ img {
   box-sizing: border-box;
 }
 
+.left-panel__certification img {
+  margin-left: 0;
+}
+
 .left-panel__events {
   padding-left: 2em;
   font-family: 'Open Sans Light', 'Arial', sans-serif;
@@ -427,8 +446,12 @@ img {
 }
 
 @media screen and (min-height: 780px) {
+  .left-panel {
+  	padding: 2em 0;
+  }
+
   .site-branding {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 
   .sidebar-delim {
@@ -565,9 +588,9 @@ img {
 # Footer
 --------------------------------------------------------------*/
 
-.main-footer {
+.footer {
 	width: 100%;
-	padding: 45px 0;
+	padding: 1.5em 0;
 	min-height: 230px;
   font-size: 0.9em;
   color: #ffffff;
@@ -575,34 +598,34 @@ img {
 	position: relative;
 }
 
-.main-footer a {
+.footer a {
 	color: #ffffff;
 }
 
-.main-footer .row {
+.footer .row {
   width: 95%;
   margin: 0 auto;
 }
 
-.main-footer .row div ul {
+.footer .row div ul {
 	list-style-type: none;
 	padding: 0 0 0 0;
 }
 
-.main-footer .row .footer-contacts .widget.phone,
-.main-footer .row div .footer_content li {
+.footer .row .footer-contacts .widget.phone,
+.footer .row div .footer_content li {
 	text-align: left;
-	line-height: 28px;
+	line-height: 1.6em;
 }
 
-.main-footer .contacts_icon {
+.footer .contacts_icon {
 	display: block;
 	width: 100%;
-	margin-bottom: 0.5em;
+	margin: 0.5em 0;
 	text-align: left;
 }
 
-.main-footer .contacts_icon span {
+.footer .contacts_icon span {
 	display: inline-block;
 	vertical-align: top;
 	width: 25px;
@@ -611,22 +634,22 @@ img {
 	border-radius: 50%;
 }
 
-.main-footer .contacts_icon .contacts_icon-w {
+.footer .contacts_icon .contacts_icon-w {
 	background: #363636 url(i/social/wapp_icon.png) center center no-repeat;
 	background-size: 60%;
 }
 
-.main-footer .contacts_icon .contacts_icon-v {
+.footer .contacts_icon .contacts_icon-v {
 	background: #363636 url(i/social/viber_icon.png) center center no-repeat;
 	background-size: 60%;
 }
 
-.main-footer .contacts_icon .contacts_icon-t {
+.footer .contacts_icon .contacts_icon-t {
 	background: #363636 url(i/social/telegram_icon.png) center center no-repeat;
 	background-size: 70%;
 }
 
-.main-footer .contacts_icon .contacts_icon-s {
+.footer .contacts_icon .contacts_icon-s {
 	background: #363636 url(i/social/skype_icon.png) center center no-repeat;
 	background-size: 70%;
 }
@@ -637,15 +660,15 @@ img {
   text-decoration: none;
 }
 
-.main-footer .footer-contacts a:hover,
-.main-footer .footer_content a:hover,
-.main-footer .footer_copy a:hover {
+.footer .footer-contacts a:hover,
+.footer .footer_content a:hover,
+.footer .footer_copy a:hover {
   color: #e93a1d;
 }
 
-.main-footer .footer-contacts a:active,
-.main-footer .footer_content a:active,
-.main-footer .footer_copy a:active {
+.footer .footer-contacts a:active,
+.footer .footer_content a:active,
+.footer .footer_copy a:active {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -656,21 +679,21 @@ ul.footer_content,
   margin: 0;
 }
 
-.main-footer .footer_copy {
+.footer .footer_copy {
   line-height: 1.6em;
 }
 
-.col-6 .col-5,
-.col-6 .col-7 {
+.footer .col-5 .col-5,
+.footer .col-5 .col-7 {
   margin: 0;
 }
 
 @media (min-width: 960px) {
-  .main-footer {
+  .footer {
     padding-left: 235px;
   }
 
-  .main-footer .row {
+  .footer .row {
     width: 100%;
     box-sizing: border-box;
   }
@@ -681,21 +704,26 @@ ul.footer_content,
 }
 
 @media (min-width: 1280px) {
-  .main-footer {
+  .footer {
     box-sizing: border-box;
   }
 
-  .main-footer .container {
+  .footer .container {
+    width: 96%;
+    margin: 0 2%;
     margin-left: 0;
   }
 
-  .main-footer .row {
-    padding-left: 8.33%;
+  .footer .cols. {
+    margin-left: 8.33%;
   }
+}
 
- .main-footer .contacts_icon {
-   margin-top: 1em;
- }
+@media (min-width: 1440px) {
+  .footer .container {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 
@@ -1304,6 +1332,11 @@ ul.footer_content,
 }
 
 @media (min-width: 1400px) {
+  .main .container {
+    width: 100%;
+    margin: 0;
+  }
+
   .main.box-1 {
     margin-bottom: 2.5em;
   }
@@ -1478,6 +1511,7 @@ ul.footer_content,
   }
 }
 
+
 /*--------------------------------------------------------------
 # Content
   ## Service
@@ -1487,7 +1521,7 @@ ul.footer_content,
   margin: 0;
   padding: 2.5em 0;
   font-family: 'Open Sans', 'Arial', sans-serif;
-  background: url("img/DN_Service-img-1.png") no-repeat 0 100%;
+  background: url("img/dn_service-img-1.svg") no-repeat 0 100%;
   background-size: contain;
 }
 
@@ -1495,18 +1529,31 @@ ul.footer_content,
   margin: 0;
   padding: 1.5em 2em;
   text-align: center;
-  background: url("img/DN_Service-img-2.png") no-repeat 0 100%;
+  background: url("img/dn_service-img-1.svg") no-repeat 0 100%;
   background-size: contain;
 }
 
 .service .cols a {
+  position: relative;
   display: block;
-  margin-bottom: 2em;
+  width: 243px;
+  height: 243px;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.service .cols a img {
+  animation-name: deflate;
+  animation-duration: 0.5s;
+  width: 98%;
 }
 
 .service .cols a.service__card:hover img {
+  position: absolute;
   box-shadow: 0 0 3px 1px #404040;
-  transform: rotate(2deg);
+  animation-name: swell;
+  animation-duration: 0.5s;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1532,7 +1579,9 @@ ul.footer_content,
 @media screen and (min-width: 1280px) {
   .service-box-1 .col-3,
   .service-box-2 .col-3 {
-    width: 33.33%;
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
   }
 
   .service-box-1 .box-title {
