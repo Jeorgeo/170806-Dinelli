@@ -1108,7 +1108,7 @@ ul.footer_content,
 /*----------------------------Third for tablet 1288px-----------------------------------*/
 
 @media (min-width: 1280px) {
-  .main .container {
+  .container {
     width: 96%;
     margin: 0 2%;
   }
@@ -1119,7 +1119,7 @@ ul.footer_content,
     padding-right: 0;
   }
 
-  .main .cols {
+  .cols {
     margin-left: 8.33%;
   }
 
@@ -1284,7 +1284,7 @@ ul.footer_content,
     z-index: 555;
   }
 
-  .main .cols.bottom-form {
+  .cols.bottom-form {
     margin-left: 2%;
   }
 }
@@ -1331,8 +1331,8 @@ ul.footer_content,
   }
 }
 
-@media (min-width: 1400px) {
-  .main .container {
+@media (min-width: 1440px) {
+  .container {
     width: 100%;
     margin: 0;
   }
@@ -1388,7 +1388,7 @@ ul.footer_content,
 }
 
 @media (min-width: 768px) {
-  .blog-box-1 {
+  .blog.box-1 {
     min-height: 450px;
     background: url("img/blog-bg.png") no-repeat 0 100%;
     background-size: cover;
@@ -1423,23 +1423,18 @@ ul.footer_content,
 }
 
 @media (min-width: 960px) {
-  .blog-box-1 {
+  .blog.box-1 {
     min-height: 480px;
-  }
-
-  .blog-box-2 .blog__box-content {
-    margin-left: 8.33%;
-    margin-right: 8.33%;
   }
 }
 
 @media (min-width: 1024px) {
-  .cols.col-4-md {
+  .blog .cols.col-4-md {
     width: 41.44%;
     margin-right: 8%;
   }
 
-  .cols.col-12-md {
+  .blog .cols.col-12-md {
     width: 100%;
     float: none;
   }
@@ -1452,25 +1447,30 @@ ul.footer_content,
     font-size: 3.3em;
   }
 
-  .blog-box-1 {
+  .blog.box-1 {
     min-height: 610px;
   }
 
-  .blog-box-1 p {
+  .blog.box-1 p {
     width: 100%;
     margin: 0;
   }
 
-  .blog-box-2 {
+  .blog.box-2 {
     margin: 4em 0;
   }
 
-  .blog .cols.col-6 {
-    width: 46%;
-    float: left;
+  .blog .cols.col-4-md {
+    margin-right: 0;    
   }
 
-  .blog .cols.col-6 h2 {
+  .blog .cols.col-12-md {
+    float: left;
+    width: 41.65%;
+    margin-bottom: 3em;
+  }
+
+  .blog .cols.col-5 h2 {
     margin-top: -0.2em;
   }
 
@@ -1491,19 +1491,14 @@ ul.footer_content,
     margin-left: 0;
   }
 
-  .blog-box-1 {
+  .blog.box-1 {
   background: url("img/blog-bg.png") no-repeat 0 100%,
               url("img/blog-line.png") repeat-x 100% 100%;
   background-size: contain, 1px;
   }
 
-  .blog-box-2 .blog__box-content {
+  .blog.box-2 .blog__box-content {
     margin-right: 20px;
-  }
-
-  .cols.blog_title {
-    margin-left: 8.33%;
-    padding: 80px 115px 130px 100px;
   }
 
   .blog_title::after {
@@ -1517,7 +1512,7 @@ ul.footer_content,
   ## Service
 --------------------------------------------------------------*/
 
-.service-box-1 .box-title {
+.service.box-1 .box-title {
   margin: 0;
   padding: 2.5em 0;
   font-family: 'Open Sans', 'Arial', sans-serif;
@@ -1525,20 +1520,20 @@ ul.footer_content,
   background-size: contain;
 }
 
-.service-box-2 .box-title {
+.service.box-2 .box-title {
   margin: 0;
   padding: 1.5em 2em;
   text-align: center;
-  background: url("img/dn_service-img-1.svg") no-repeat 0 100%;
+  background: url("img/dn_service-img-2.svg") no-repeat 0 100%;
   background-size: contain;
 }
 
 .service .cols a {
   position: relative;
   display: block;
-  width: 243px;
-  height: 243px;
-  margin-bottom: 1em;
+  width: 180px;
+  height: 180px;
+  margin: 1em auto;
   padding-bottom: 1em;
 }
 
@@ -1557,59 +1552,61 @@ ul.footer_content,
 }
 
 @media screen and (min-width: 768px) {
-  .service-box-1 .col-3,
-  .service-box-2 .col-3 {
-    width: 50%;
-  }
-
-  .service-box-1 .box-title {
+  .service.box-1 .box-title {
     margin-top: 1em;
     margin-left: 8%;
     margin-right: 8%;
     text-align: left;
   }
 
-  .service-box-2 .box-title {
+  .service.box-2 .box-title {
     margin: 1em;
     padding: 2.5em;
     text-align: left;
   }
+
+  .service .cols a {
+    width: 240px;
+    height: 240px;
+  }
+
+  .service .cols.col-md-6:first-child {
+    padding-right: 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .service-box-1 .col-3,
-  .service-box-2 .col-3 {
-    display: inline-block;
-    width: 32%;
-    vertical-align: top;
-  }
-
-  .service-box-1 .box-title {
+  .service.box-1 .box-title {
     padding: 2em 0;
     line-height: 1.3em;
   }
 
-  .service-box-2 {
+  .service.box-2 {
     margin-bottom: 10em;
   }
 
-  .service-box-2 .box-title {
+  .service.box-2 .box-title {
     margin: 0.5em 8.33% 0.5em 8.33%;
     padding: 2em 2em 2em 2.5em;
   }
 
-  .service-box-2 .row {
+  .service.box-2 .row {
     margin-bottom: 2em;
   }
 
-  .service-box-2 .cloud-form {
-    position: relative;
-    z-index: 224;
-    float: right;
+  .service .right_side a {
+    margin-right: 0;
+  }
+
+  .service .left_side a {
+    margin-left: 0;
+  }
+
+  .cols.bottom-form {
     margin-top: 5em;
-    padding-left: 8.33%;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Content

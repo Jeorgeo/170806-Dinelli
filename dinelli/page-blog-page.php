@@ -15,8 +15,8 @@
 get_header(); ?>
 
 <main class="content-area">
-	<section class="blog-box-1">
-		<div class="blog container">
+	<section class="blog box-1">
+		<div class="container">
 			<div class="blog__box-content clearfix">
 				<div class="cols col-6 blog_title">
 					<h1>
@@ -33,13 +33,13 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
-	<section class="blog-box-2">
-		<div class="blog container">
+	<section class="blog box-2">
+		<div class="container">
 			<figure class="blog__box-content clearfix">
-				<div class="cols col-6 col-4-md">
+				<div class="cols col-5 col-4-md">
 					<img src="<?php bloginfo('template_url'); ?>/pics/blog-1.jpg" alt="">
 				</div>
-				<div class="cols col-6 col-12-md">
+				<div class="cols col-5 col-12-md">
 					<h2>Показать товар «лицом» стало еще проще
 						 с усовершенствованным Конструктором графических объявлений в Яндекс.Директ.</h2>
 					<p>
@@ -56,10 +56,10 @@ get_header(); ?>
 				</div>
 			</figure>
 			<figure class="blog__box-content clearfix">
-				<div class="cols col-6 col-4-md">
+				<div class="cols col-5 col-4-md">
 					<img src="<?php bloginfo('template_url'); ?>/pics/blog-1.jpg" alt="">
 				</div>
-				<div class="cols col-6 col-12-md">
+				<div class="cols col-5 col-12-md">
 					<h2>Показать товар «лицом» стало еще проще
 						 с усовершенствованным Конструктором графических объявлений в Яндекс.Директ.</h2>
 					<p>
@@ -76,10 +76,10 @@ get_header(); ?>
 				</div>
 			</figure>
 			<figure class="blog__box-content clearfix">
-				<div class="cols col-6 col-4-md">
+				<div class="cols col-5 col-4-md">
 					<img src="<?php bloginfo('template_url'); ?>/pics/blog-1.jpg" alt="">
 				</div>
-				<div class="cols col-6 col-12-md">
+				<div class="cols col-5 col-12-md">
 					<h2>Показать товар «лицом» стало еще проще
 						 с усовершенствованным Конструктором графических объявлений в Яндекс.Директ.</h2>
 					<p>
@@ -96,10 +96,10 @@ get_header(); ?>
 				</div>
 			</figure>
 			<figure class="blog__box-content clearfix">
-				<div class="cols col-6 col-4-md">
+				<div class="cols col-5 col-4-md">
 					<img src="<?php bloginfo('template_url'); ?>/pics/blog-1.jpg" alt="">
 				</div>
-				<div class="cols col-6 col-12-md">
+				<div class="cols col-5 col-12-md">
 					<h2>Показать товар «лицом» стало еще проще
 						 с усовершенствованным Конструктором графических объявлений в Яндекс.Директ.</h2>
 					<p>
