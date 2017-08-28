@@ -711,7 +711,6 @@ ul.footer_content,
   .footer .container {
     width: 96%;
     margin: 0 2%;
-    margin-left: 0;
   }
 
   .footer .cols. {
@@ -719,7 +718,7 @@ ul.footer_content,
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .footer .container {
     width: 100%;
     margin: 0;
@@ -1290,6 +1289,11 @@ ul.footer_content,
 }
 
 @media (min-width: 1360px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
   .box-content {
     font-size: 0.95em;
     padding: 1em 0;
@@ -1332,11 +1336,6 @@ ul.footer_content,
 }
 
 @media (min-width: 1440px) {
-  .container {
-    width: 100%;
-    margin: 0;
-  }
-
   .main.box-1 {
     margin-bottom: 2.5em;
   }
@@ -1461,7 +1460,7 @@ ul.footer_content,
   }
 
   .blog .cols.col-4-md {
-    margin-right: 0;    
+    margin-right: 0;
   }
 
   .blog .cols.col-12-md {
@@ -1610,8 +1609,109 @@ ul.footer_content,
 
 /*--------------------------------------------------------------
 # Content
-  ## Сouching
+  ## Сoach
 --------------------------------------------------------------*/
+
+.coach .box-content img {
+  max-width: 80%;
+  margin: 2em auto;
+}
+
+.coach.box-2 .box-title {
+  margin: 0.5em 0 0 0;
+  padding: 3em 0 2em;
+  background: url("img/dn_img-3-target.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.title_left {
+  display: block;
+  text-align: left;
+  line-height: 1.3em;
+}
+
+.title_right {
+  display: block;
+  text-align: right;
+  line-height: 1.3em;
+}
+
+.coach.box-3 .box-title {
+  margin: 0.5em 0 0 0;
+  padding: 2em 0 2em;
+  background: url("img/coach/dn_couch-img-7.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.coach.box-4 .box-title {
+  margin: 0.5em 0 0 0;
+  padding: 2em 0 2em;
+  background: url("img/coach/dn_couch-img-9.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.coach.box-5 .box-title {
+  margin: 0.5em 0 0 0;
+  padding: 2em 0 2em;
+  background: url("img/coach/dn_couch-img-11.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.coach.box-8 .box-title {
+  margin: 0.5em 0 0 0;
+  padding: 2.5em 0 1em;
+  background: url("img/coach/dn_couch-img-17.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.coach.box-8 .box-content a {
+  text-transform: uppercase;
+}
+
+
+/*----------------------for tablet 768px---------------------------*/
+
+@media (min-width: 768px) {
+  .coach.box-1 .box-title {
+    margin: 0.5em 0 0 0;
+    padding: 2em 0 2em;
+    background: url("img/coach/dn_couch-img-1.svg") no-repeat 50% 50%;
+    background-size: contain;
+  }
+
+  .coach.box-6 .box-title {
+    margin: 0.5em 0 0 0;
+    padding: 2em 0 2em;
+    background: url("img/coach/dn_couch-img-15.svg") no-repeat 50% 50%;
+    background-size: contain;
+  }
+}
+
+/*----------------------for tablet 768px---------------------------*/
+
+@media (min-width: 960px) {
+
+}
+
+/*----------------------for PC 1280px---------------------------*/
+
+@media (min-width: 1280px) {
+
+}
+
+/*----------------------for PC 1366px---------------------------*/
+
+@media (min-width: 1366px) {
+
+}
+
+/*----------------------for MAC 1440px---------------------------*/
+
+@media (min-width: 1440px) {
+
+}
+
+
 
 
 
