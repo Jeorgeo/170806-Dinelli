@@ -971,6 +971,10 @@ ul.footer_content,
 /*-------------------Second for tablet 768px-----------------------*/
 
 @media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
   .big-title {
     font-size: 2.5em;
   }
@@ -1041,12 +1045,6 @@ ul.footer_content,
 
   .main.box-12 .box-title {
     padding: 3em 0 6em;
-  }
-
-  .content-area .box-content {
-    margin-top: -0.5em;
-    padding-left: 8%;
-    padding-right: 8%;
   }
 
   .bottom-form .cloud-form {
@@ -1382,7 +1380,8 @@ ul.footer_content,
 .blog_title p {
   position: relative;
   z-index: 10;
-  font-size: 0.9em;
+  margin-left: 0.5em;
+  font-size: 1em;
   font-family: 'Open Sans Light', 'Arial', serif;
 }
 
@@ -1617,6 +1616,10 @@ ul.footer_content,
   margin: 2em auto;
 }
 
+.coach .cols li {
+  margin: 1em 0;
+}
+
 .coach.box-2 .box-title {
   margin: 0.5em 0 0 0;
   padding: 3em 0 2em;
@@ -1672,11 +1675,44 @@ ul.footer_content,
 /*----------------------for tablet 768px---------------------------*/
 
 @media (min-width: 768px) {
+  .coach .cols {
+    margin: 0;
+  }
+
+  .coach .box-content img {
+    max-width: 100%;
+  }
+
   .coach.box-1 .box-title {
     margin: 0.5em 0 0 0;
-    padding: 2em 0 2em;
+    padding: 2em 40% 2em 0;
+    text-align: left;
+    font-weight: bold;
     background: url("img/coach/dn_couch-img-1.svg") no-repeat 50% 50%;
     background-size: contain;
+  }
+
+  .learning {
+    background: url("img/coach/dn_couch-img-2.svg") no-repeat 90% 50%;
+    background-size: 45%;
+  }
+
+  .strategy {
+    background: url("img/coach/dn_couch-img-4.svg") no-repeat 90% 50%;
+    background-size: 45%;
+  }
+
+  .coach.box-3 .title_left {
+    margin-left: 30%;
+  }
+
+  .coach.box-3 .title_right {
+    margin-right: 10%;
+  }
+
+  .coach.box-4 .box-title {
+    text-align: left;
+    padding-left: 2em;
   }
 
   .coach.box-6 .box-title {
@@ -1685,24 +1721,97 @@ ul.footer_content,
     background: url("img/coach/dn_couch-img-15.svg") no-repeat 50% 50%;
     background-size: contain;
   }
+
+  .coach.box-8 .box-title {
+    margin-bottom: 1em;
+  }
+
+  .coach.box-8 .title_left {
+    margin-left: 20%;
+  }
+
+  .coach.box-8 .title_right {
+    margin-right: 30%;
+  }
 }
 
 /*----------------------for tablet 768px---------------------------*/
 
 @media (min-width: 960px) {
+  .coach.box-1 .box-title {
+    margin: 0;
+    padding: 1em 40% 1em 0;
+  }
 
+  .coach.box-4 .box-title,
+  .coach.box-5 .box-title {
+    margin: 0;
+    padding: 3em 0 3em;
+  }
 }
 
 /*----------------------for PC 1280px---------------------------*/
 
 @media (min-width: 1280px) {
+  .coach__description,
+  .small-title.box,
+  .coach.box-1 .box-title,
+  .coach.box-2 .box-title,
+  .coach.box-3 .box-title,
+  .coach.box-4 .box-title,
+  .coach.box-5 .box-title,
+  .coach.box-7 .box-title {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+  }
+
+  .coach .cols {
+    margin: 1em 0 1em 8.33%;
+  }
+
+  .coach .graph img {
+    margin-left: 8.33%;
+  }
+
+  .coach.box-4 .box-title {
+    padding-left: 5%;
+  }
+
+  .coach.box-6 .box-title {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .coach.box-8 {
+    margin-bottom: 5em;
+  }
 
 }
 
 /*----------------------for PC 1366px---------------------------*/
 
 @media (min-width: 1366px) {
+  .coach.box-1 .box-title {
+    padding: 1em 30% 1em 0;
+  }
 
+  .learning {
+    background: url("img/coach/dn_couch-img-2.svg") no-repeat 90% 60%;
+    background-size: 35%;
+  }
+
+  .strategy {
+    background: url("img/coach/dn_couch-img-4.svg") no-repeat 90% 60%;
+    background-size: 35%;
+  }
+
+  .coach img.img_small {
+    max-width: 70%;
+  }
+
+  .box-content figure.palm {
+    margin-top: 3em;
+  }
 }
 
 /*----------------------for MAC 1440px---------------------------*/
