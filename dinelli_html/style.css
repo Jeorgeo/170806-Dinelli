@@ -1563,6 +1563,43 @@ ul.footer_content,
   width: 100%;
 }
 
+.consult.box-1 .box-title {
+  margin: 0;
+  padding: 2.5em 0 1.5em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/service/dn_service-consult-img-1.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
+.consult-time,
+.consult-price {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  margin: 0;
+}
+
+.consult-price {
+  width: 120px;
+  margin-left: 10px;
+}
+
+.question_link {
+  color: #172df8;
+}
+
+.question_link:hover {
+  color: #e93a1d;
+}
+
+.question_link:active {
+  color: #b9b9b9;
+}
+
+.consult.box-2 {
+  margin-bottom: 2em;
+}
+
 @media screen and (min-width: 768px) {
   .service.box-1 .box-title {
     margin-top: 1em;
@@ -1588,6 +1625,16 @@ ul.footer_content,
 
   .service .cols.col-md-6:first-child {
     padding-right: 0;
+  }
+
+  .consult-time .box-title,
+  .consult-price .box-title {
+    text-align: left;
+    font-size: 1.3em;
+  }
+
+  .consult-time {
+    margin-left: 10%;
   }
 }
 
@@ -1621,7 +1668,38 @@ ul.footer_content,
   .cols.bottom-form {
     margin-top: 5em;
   }
+
+  .consult.box-1 .box-title {
+    text-align: left;
+  }
+
+  .consult.box-1 .box-title,
+  .small-title.box {
+    margin-left: 8.33%;
+  }
+
+  .consult.box-2 {
+    margin-bottom: 5em;
+  }
 }
+
+@media screen and (min-width: 1366px) {
+  .consult-time .box-title,
+  .consult-price .box-title {
+    font-size: 1.8em;
+  }
+
+  .consult-time {
+    width: 170px;
+  }
+
+  .consult-price {
+    width: 130px;
+    margin-left: 70px;
+  }
+}
+
+
 
 
 /*--------------------------------------------------------------
@@ -1860,7 +1938,6 @@ ul.footer_content,
 }
 
 .reviews-photo {
-  width: 33%;
   margin-left: 0;
 }
 
@@ -1886,6 +1963,7 @@ ul.footer_content,
 
 .reviews-text {
   position: relative;
+  padding-bottom: 1em;
 }
 
 .reviews-text a {
@@ -1894,28 +1972,57 @@ ul.footer_content,
   right: 0;
 }
 
-.reviews-next {
+.reviews-next,
+.consult-time a {
   display: block;
   width: 175px;
   margin: auto;
   padding: 0.7em;
+  text-align: center;
   font-size: 1.1em;
   border: none;
   background: url("img/dn_all-button-nonactive.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 
-.reviews-next:hover {
+.reviews-next:hover,
+.consult-time a:hover {
   cursor: pointer;
   color: #ffffff;
   background: url("img/dn_mail-button-nonactive.svg") no-repeat 50% 50%;
   background-size: contain;
 }
 
-.reviews-next:active {
+.reviews-next:active,
+.consult-time a:active {
   color: #000000;
   background: url("img/dn_mail-button-active.svg") no-repeat 50% 50%;
   background-size: contain;
+}
+
+.reviews iframe {
+  max-width: 100%;
+  max-height: 180px;
+}
+
+/*----------------------for Tablet 768px---------------------------*/
+
+@media (min-width: 768px) {
+  .reviews iframe {
+    max-height: 100%;
+  }
+}
+
+/*----------------------for PC 1024px---------------------------*/
+
+@media (min-width: 1024px) {
+  .reviews iframe {
+    max-height: 220px;
+  }
+
+  .blog .blog__box-content {
+    margin-bottom: 3em;
+  }
 }
 
 /*----------------------for PC 1280px---------------------------*/
@@ -1930,5 +2037,9 @@ ul.footer_content,
     display: inline-block;
     margin-right: 1%;
     vertical-align: top;
+  }
+
+  .reviews iframe {
+    max-height: 100%;
   }
 }
