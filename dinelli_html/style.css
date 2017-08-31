@@ -1619,6 +1619,35 @@ ul.footer_content,
   text-transform: uppercase;
 }
 
+.yd.box-1 .box-title {
+  margin: 1em 0 0 0;
+  padding: 3em 0 0.5em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/yd/dn_service-yd-img-1.svg") no-repeat 100% 100%;
+  background-size: contain;
+}
+
+.yd.box-2 .box-title {
+  margin: 0;
+  padding: 2em 0 2em 0;
+  text-align: center;
+  background: url("img/seo/dn_service-seo-img-5.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
+.yd.box-3 .box-title {
+  margin: 0;
+  padding: 2em 0 1em 0;
+  background: url("img/yd/dn_service-yd-img-10.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.yd.box-3 .box-title .title_left {
+  text-align: center;
+}
+
+/*------------------------For Tablet 768px---------------------------------*/
+
 @media screen and (min-width: 768px) {
   .service.box-1 .box-title {
     margin-top: 1em;
@@ -1678,7 +1707,42 @@ ul.footer_content,
   .ga .bottom-form::before {
     display: none;
   }
+
+  img.yd-img-2,
+  img.yd-img-3,
+  img.yd-img-4,
+  img.yd-img-7 {
+    margin-top: 40%;
+  }
+
+  .yd.box-3 .box-title .title_left {
+    margin-left: 20%;
+    text-align: left;
+  }
+
+  .yd.box-3 .box-title .title_right {
+    margin-left: 33%;
+    text-align: left;
+  }
+
+  .yd.box-3 {
+    margin-bottom: 3em;
+  }
+
+  .yd.box-3 .bottom-form {
+    margin: 6em 0 0 0;
+  }
+
+  .yd.box-3 .bottom-form::before {
+    display: none;
+  }
+
+  .yd.box-3 .bottom-form .cloud-form {
+    margin: 0;
+  }
 }
+
+/*------------------------For PC 1280px---------------------------------*/
 
 @media screen and (min-width: 1280px) {
   .service.box-1 .box-title {
@@ -1769,6 +1833,38 @@ ul.footer_content,
     margin-bottom: 7em;
   }
 
+  .yd.box-1 .box-title {
+    margin: 0 8.33% 0 8.33%;
+    padding: 1em 27% 1em 0;
+  }
+
+  img.yd-img-2,
+  img.yd-img-3,
+  img.yd-img-4,
+  img.yd-img-7 {
+    margin-top: 10%;
+  }
+
+  .yd .content-img {
+    max-width: 65%;
+  }
+
+  .yd.box-3 {
+    margin-bottom: 5em;
+  }
+
+  .yd.box-3 .bottom-form::before {
+    display: block;
+  }
+
+  .yd.box-3 .bottom-form {
+    margin-top: 12em;
+  }
+
+  .yd.box-3 .bottom-form .cloud-form {
+    margin: 0 0 0 160px;
+  }
+
 }
 
 @media screen and (min-width: 1366px) {
@@ -1798,6 +1894,12 @@ ul.footer_content,
 
   .umbrella .small-title {
     margin-bottom: 90%;
+  }
+
+  .yd.box-1 .box-title {
+    margin-top: 2em;
+    padding: 1em 10% 1em 0;
+    font-size: 53px;
   }
 }
 
@@ -1994,7 +2096,7 @@ ul.footer_content,
   }
 }
 
-/*----------------------for tablet 768px---------------------------*/
+/*----------------------for tablet 960px---------------------------*/
 
 @media (min-width: 960px) {
   .coach.box-1 .box-title {
