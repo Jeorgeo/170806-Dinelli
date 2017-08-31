@@ -42,27 +42,27 @@ get_header(); ?>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_yd.jpg" alt="">
+						<a class="service__card" href="<?php echo get_field('yd'); ?>" target="_blank">
+							<img src="<?php bloginfo('template_url'); ?>/pics/service_yd.jpg" alt="Яндекс.Директ Контекстная реклама">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('ga'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/pics/service_ga.jpg" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('seo'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/pics/service_seo.jpg" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('site'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/pics/service_site.jpg" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('youtube'); ?> target="_blank"">
 							<img src="<?php bloginfo('template_url'); ?>/pics/service_youtube.jpg" alt="">
 						</a>
 					</div>
@@ -96,17 +96,17 @@ get_header(); ?>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('cons'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/pics/service_consult.jpg" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('audit'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/pics/service_audit.jpg" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('coach'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/pics/service_learn.jpg" alt="">
 						</a>
 					</div>

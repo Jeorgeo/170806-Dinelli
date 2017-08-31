@@ -1544,9 +1544,9 @@ ul.footer_content,
   background-size: contain;
 }
 
-.service .cols a,
-.site .cols a,
-.yt .cols a {
+.service .cols .service__card,
+.site .cols .service__card,
+.yt .cols .service__card {
   position: relative;
   display: block;
   width: 180px;
@@ -1555,9 +1555,9 @@ ul.footer_content,
   padding-bottom: 1em;
 }
 
-.service .cols a img,
-.site .cols a img,
-.yt .cols a img {
+.service .cols .service__card img,
+.site .cols .service__card img,
+.yt .cols .service__card img {
   animation-name: deflate;
   animation-duration: 0.5s;
   width: 98%;
@@ -1714,9 +1714,9 @@ ul.footer_content,
     text-align: left;
   }
 
-  .service .cols a,
-  .site .cols a,
-  .yt .cols a {
+  .service .cols .service__card,
+  .site .cols .service__card,
+  .yt .cols .service__card {
     width: 240px;
     height: 240px;
   }
