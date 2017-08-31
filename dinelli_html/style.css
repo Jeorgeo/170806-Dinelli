@@ -1646,6 +1646,34 @@ ul.footer_content,
   text-align: center;
 }
 
+.seo.box-1 .box-title {
+  margin: 0;
+  padding: 2em 0 2em 0;
+  background: url("img/seo/dn_service-seo-img-1.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
+.seo.box-2 .box-title {
+  margin: 0;
+  padding: 2em 0 2em 0;
+  background: url("img/seo/dn_service-seo-img-3.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.seo.box-3 .box-title {
+  margin: 0;
+  padding: 2em 0 2em 0;
+  background: url("img/seo/dn_service-seo-img-5.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
+.seo.box-4 .box-title {
+  margin: 0;
+  padding: 2em 0 2em 0;
+  background: url("img/seo/dn_service-seo-img-9.svg") no-repeat 50% 100%;
+  background-size: contain;
+}
+
 /*------------------------For Tablet 768px---------------------------------*/
 
 @media screen and (min-width: 768px) {
