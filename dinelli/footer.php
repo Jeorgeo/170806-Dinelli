@@ -13,10 +13,10 @@
 
 		</div><!--/#content-->
 
-		<div id="footer" class="main-footer">
+		<div id="footer" class="main footer">
 			<div class="container">
 				<div class="row clearfix">
-					<div class="cols col-6">
+					<div class="cols col-5 col-md-6">
 						<div class="cols col-5 contacts">
 							<div class="footer-contacts">
 								<?php dynamic_sidebar( 'phone' ); ?>
@@ -35,7 +35,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="cols col-6 main-footer__footer-copy">
+					<div class="cols col-5 col-md-6 footer__footer-copy">
 						<?php dynamic_sidebar( 'footer_copy' ); ?>
 					</div>
 				</div>
