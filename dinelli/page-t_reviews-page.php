@@ -12,7 +12,24 @@
  * @package Dinelli
  */
 
-get_header(); ?>
+get_header();
+
+$news = get_posts(
+		array(
+				'numberposts' => -1,
+				'offset' => 0,
+				'orderby'     => 'date',
+				'order'       => 'DESC',
+				'category' => '',
+				'include' => '',
+				'exclude' => '',
+				'meta_key' => '',
+				'meta_value' => '',
+				'post_type' => 'reviews_text',
+				'post_parent' => '',
+				'post_status' => 'publish'
+		)
+);?>
 
 <main class="content-area">
 	<section class="reviews box-1">
@@ -26,9 +43,9 @@ get_header(); ?>
 						<a class="active_link" >благодарственные письма</a>
 					</li>
 					<li>
-						<a href="">Видео отзывы</a>
+						<a href="http://yush25um.bget.ru/videootzyvy-iz-youtube-kanala/">Видео отзывы</a>
 					</li>
-					<li><a href="">Отзывы с ВК</a></li>
+					<li><a href="http://yush25um.bget.ru/otzyvy-iz-vk/">Отзывы с ВК</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -36,45 +53,28 @@ get_header(); ?>
 	<section class="reviews box-2">
 		<div class="container">
 			<div class="box-content">
+				<?php
+					foreach ($news as $obj) {
+						if($obj->post_name == 'archive'){
+								continue;
+						}
+				 ?>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
 						<h4 class="small-title">
-							Альтона-мебель
+							<?php echo $obj->post_title; ?>
 						</h4>
 						<figure class="reviews-photo">
-							<a href="#">
-								<img src="<?php bloginfo('template_url'); ?>/img/reviews/dn_review-1.jpg" alt="">
+							<a href="<?php echo $obj->post_name; ?>">
+								<img src="<?php echo get_field('image',$obj->ID); ?>" alt="">
 							</a>
 						</figure>
 						<div class="reviews-text">
-							<p>
-								Решил заняться новой для себя нишей,
-								и на начальном этапе задача привлечение клиентов.
-								Способ – создание сайта и настройка контекстной рекламы.
-								Выбирал очень щепетильно, так как наслышан о...
-							</p>
-							<a href="#">читать далее</a>
+							<?php echo get_field('description', $obj->ID); ?>
+							<a href="<?php echo $obj->post_name; ?>">Читать далее...</a>
 						</div>
 					</div>
-					<div class="cols col-5 col-md-6">
-						<h4 class="small-title">
-							Альтона-мебель
-						</h4>
-						<figure class="reviews-photo">
-							<a href="#">
-								<img src="<?php bloginfo('template_url'); ?>/img/reviews/dn_review-1.jpg" alt="">
-							</a>
-						</figure>
-						<div class="reviews-text">
-							<p>
-								Решил заняться новой для себя нишей,
-								и на начальном этапе задача привлечение клиентов.
-								Способ – создание сайта и настройка контекстной рекламы.
-								Выбирал очень щепетильно, так как наслышан о...
-							</p>
-							<a href="#">читать далее</a>
-						</div>
-					</div>
+				<?php } ?>
 				</div>
 			</div>
 			<button class="reviews-next" type="button" name="button">Показать ещё</button>

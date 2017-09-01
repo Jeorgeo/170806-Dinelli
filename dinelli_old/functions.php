@@ -1,8 +1,5 @@
 <?php
 
-// Add theme support for selective refresh for widgets.
-add_theme_support( 'customize-selective-refresh-widgets' );
-
 function load_php_files_in_dir($dir = ''){
 	if(!empty($dir)){
 		if( file_exists($dir) ){
@@ -24,7 +21,7 @@ load_php_files_in_dir(__DIR__.'/inc/');
 
 add_filter('widget_text', 'do_shortcode');//разрешаем юзать шорткод в виджетах
 
-//show_admin_bar(false);
+//show_admin_bar(false); 
 //add_filter('category_link', create_function('$a', 'return str_replace("category/", "", $a);'), 9999);
 
 //require_once('inc/options.php');
@@ -35,136 +32,25 @@ function my_admin_bar_menu( $wp_admin_bar ){
 add_action( 'admin_bar_menu', 'my_admin_bar_menu', 100 );*/
 
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function dinelli_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'mail', 'dinelli' ),
-		'id'            => 'mail',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'phone-top', 'dinelli' ),
-		'id'            => 'phone',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget phone">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'phone-bottom', 'dinelli' ),
-		'id'            => 'phone_b',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget phone">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'social_vk', 'dinelli' ),
-		'id'            => 'social_vk',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'social_f', 'dinelli' ),
-		'id'            => 'social_f',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'social_youtube', 'dinelli' ),
-		'id'            => 'social_youtube',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'social_instagram', 'dinelli' ),
-		'id'            => 'social_instagram',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Контент в подвале', 'dinelli' ),
-		'id'            => 'footer_c',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Копирайт в подвале', 'dinelli' ),
-		'id'            => 'footer_copy',
-		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
-		'before_widget' => '<div id="%1$s" class="footer_copy">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+/*
+add_action( 'widgets_init', 'theme_register_wp_sidebars' );
+function theme_register_wp_sidebars() {
+	register_sidebar(
+		array(
+			'name' => 'Сайтбар',
+			'id' => 'sidebar_1',
+			'description' => '',
+			'before_widget' => '<div id="%1$s" class="side widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+}*/
 
-}
-add_action( 'widgets_init', 'dinelli_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
-function dinelli_scripts() {
 
-	$dineli_url = get_template_directory_uri();
 
-	wp_enqueue_style( 'normalize-style', $dineli_url . "/css/normalize.css", array(), 		'2', 'all' );
-
-	/*wp_enqueue_style( 'bootstrap_min-style' ,  $dineli_url . "/css/bootstrap.min.css", array(), 		'2', 'all' );
-
-	wp_enqueue_style( 'bootstrap-theme_min-style' ,  $dineli_url . "/css/bootstrap-theme.min.css", array(), 		'2', 'all' );*/
-
-	wp_enqueue_style( 'jquery_fancybox-style' ,  $dineli_url . "/css/jquery.fancybox.css", array(), 		'2', 'all' );
-
-	wp_enqueue_style( 'jquery_bxslider-style' ,  $dineli_url . "/css/jquery.bxslider.css", array(), 		'2', 'all' );
-
-	wp_enqueue_style( 'animate-style' ,  $dineli_url . "/css/animate.css", array(), 		'2', 'all' );
-
-	wp_enqueue_style( 'font-awesome_min-style' ,  $dineli_url . "/css/font-awesome.min.css", array(), 		'2', 'all' );
-
-	wp_enqueue_style( 'dinelli-style', get_stylesheet_uri());
-
-	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.min.js');
-
-	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.mousewheel-3.0.6.pack.js');
-
-	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.bxslider.min.js');
-
-	wp_enqueue_script('newscript', $dineli_url . '/js/jquery.fancybox.pack.js');
-
-	/*wp_enqueue_script('newscript', $dineli_url . '/js/bootstrap.min.js');*/
-
-	wp_enqueue_script('newscript', $dineli_url . '/js/wow.min.js');
-
-	wp_enqueue_script('newscript', $dineli_url . '/js/main.js');
-
-}
-add_action( 'wp_enqueue_scripts', 'dinelli_scripts' );
 
 if ( function_exists( 'register_nav_menu' ) ) {
 	register_nav_menus( array(
@@ -172,6 +58,27 @@ if ( function_exists( 'register_nav_menu' ) ) {
 		'menu-mobile' => 'Mobile menu',
 	) );
 }
+
+/*
+add_theme_support( 'post-thumbnails' );
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+		set_post_thumbnail_size( 250, 250 ); 
+}
+
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'thumb_big', 1170, 300, true );
+	add_image_size( 'project_thumb', 230, 280, true );
+	add_image_size( 'project_cat', 300, 160, true );
+	add_image_size( 'project_big', 230, 280, true );
+}*/
+
+/*
+if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'shop_thumb', 290, 435, true );
+	add_image_size( 'product_thumb', 420, 630, true );
+}
+*/
 
 function get_short_text($post_content='',$limit=100,$dots=''){
 	$post_content_res='';
@@ -192,6 +99,7 @@ function get_short_text($post_content='',$limit=100,$dots=''){
 	}
 	return '';
 }
+
 
 function get_short_post_content($post_id='',$limit=200,$readmore='',$type=0){
 	if(empty($post_id)){
@@ -241,6 +149,8 @@ if(!is_admin()){
 	}
 }
 
+
+
 add_action('wp_head','theme_wp_head');
 function theme_wp_head(){
 	?>
@@ -251,12 +161,32 @@ function theme_wp_head(){
 	<?php
 }
 
+
+/*
+
+add_action( 'admin_init', 'custom_posts_order' );
+function custom_posts_order(){
+	add_post_type_support( 'post', 'page-attributes' );
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
 add_action( 'wp_ajax_feedback', 'feedback_callback' );
 add_action( 'wp_ajax_nopriv_feedback', 'feedback_callback' );
 function feedback_callback() {
 	//if(isset($_POST['act']) AND $_POST['act']=='travel-booking-form'){
 		if(get_option('admin_email')){
 			$values='';
+
 			foreach ($_POST as $key => $value) {
 				if($key!='action' AND $key!='act' AND !empty($value)){
 					$key=str_replace('_', ' ', $key);
@@ -270,6 +200,8 @@ function feedback_callback() {
 					if($key=='theme'){$key='Тема сообщения';}
 					if($key=='msg'){$key='Сообщение';}
 
+
+
 					$values.=$key.': '.$value.PHP_EOL;
 				}
 			}
@@ -282,7 +214,8 @@ function feedback_callback() {
 		}
 		die();
 	//}
-}
+} 
+
 
 
 add_action('wp_footer', 'form_wp_footer');
@@ -321,8 +254,22 @@ function form_wp_footer(){
 
 
 	</script>
-<?php
+<?php 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function get_reviews_per_page($post_type=''){
@@ -345,6 +292,9 @@ function get_reviews_count($post_type=''){
 	}
 }
 
+
+
+
 function get_reviews_text($offset=0){
 
 	$args=array(
@@ -356,6 +306,8 @@ function get_reviews_text($offset=0){
 	if( $my_query->have_posts() ) {
 		while( $my_query->have_posts() ) {
 			$my_query->the_post();
+
+
 			$cost = '';
 			$profit_old = '';
 			$profit_new = '';
@@ -404,12 +356,15 @@ function get_reviews_text($offset=0){
 					</div>
 				</div>
 
-		<?php
+
+		<?php 
 		}
 	}
 	wp_reset_query();
 
+
 }
+
 
 function get_reviews_video($offset=0){
 
@@ -422,6 +377,8 @@ function get_reviews_video($offset=0){
 	if( $my_query->have_posts() ) {
 		while( $my_query->have_posts() ) {
 			$my_query->the_post();
+
+
 			$cost = '';
 			$profit_old = '';
 			$profit_new = '';
@@ -443,6 +400,8 @@ function get_reviews_video($offset=0){
 			//https://www.youtube.com/watch?v=KIUqODqW0t0
 			//<img src="/i/data/reviews/video.png" alt="">*/
 			?>
+
+
 
 						<div class="col-md-6 col-sm-6 col-xs-12 wow bounceIn">
 							<div class="reviews-item">
@@ -475,15 +434,18 @@ function get_reviews_video($offset=0){
 								</div>
 								<div style="clear:both;"></div>
 								<div class="reviews-item-desc">
-									<?php
-										//the_excerpt();
+									<?php 
+										//the_excerpt(); 
 										echo get_short_post_content('',200,'читать далее',0);
 									?>
 								</div>
 							</div>
 						</div>
 
-		<?php
+
+
+
+		<?php 
 		}
 	}
 	wp_reset_query();
@@ -492,6 +454,8 @@ function get_reviews_video($offset=0){
 }
 
 //get_reviews_text();
+
+
 
 
 add_action( 'wp_ajax_reviews_text', 'reviews_text_callback' );
@@ -505,7 +469,7 @@ function reviews_text_callback() {
 	die();
 }
 
-
+	
 add_action('wp_head', 'wp_head_reviews_text_js');
 function wp_head_reviews_text_js(){
 	?>
@@ -514,7 +478,7 @@ function wp_head_reviews_text_js(){
 	function get_reviews(action){
 		if(action){
 
-			var offset = parseInt(jQuery('#reviews-items-paged').val())+parseInt(<?php
+			var offset = parseInt(jQuery('#reviews-items-paged').val())+parseInt(<?php 
 
 				/*global $post;
 				$post_type='';
@@ -532,7 +496,7 @@ function wp_head_reviews_text_js(){
 					$post_type = 'reviews_text';
 				}
 
-				echo get_reviews_per_page($post_type);
+				echo get_reviews_per_page($post_type); 
 			?>);
 			console.log('offset:'+offset);
 
@@ -567,200 +531,12 @@ function wp_head_reviews_text_js(){
 		}
 	}
 	</script>
-<?php
+<?php 
 }
 
 
 function get_reviews_vk(){
 	//group_id
-}
-if(function_exists("register_field_group"))
-{
-	register_field_group(array (
-		'id' => 'acf_video-otzyvy',
-		'title' => 'Видео отзывы',
-		'fields' => array (
-			array (
-				'key' => 'field_5901b60ecb2dc',
-				'label' => 'Затраты',
-				'name' => 'cost',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b620cb2dd',
-				'label' => 'Прибыль (было)',
-				'name' => 'profit_old',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b627cb2de',
-				'label' => 'Прибыль (стало)',
-				'name' => 'profit_new',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b633cb2df',
-				'label' => 'Конверсия (было)',
-				'name' => 'conversion_old',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b643cb2e0',
-				'label' => 'Конверсия (стало)',
-				'name' => 'conversion_new',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b657cb2e1',
-				'label' => 'Код YouTube',
-				'name' => 'youtube',
-				'type' => 'text',
-				'instructions' => 'например, если ссылка на ролик выглядит https://www.youtube.com/watch?v=KIUqODqW0t0 то мы вписываем код KIUqODqW0t0',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'reviews_video',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'normal',
-			'layout' => 'no_box',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => 0,
-	));
-}
-
-if(function_exists("register_field_group"))
-{
-	register_field_group(array (
-		'id' => 'acf_pismennye-otzyvy',
-		'title' => 'Письменные отзывы',
-		'fields' => array (
-			array (
-				'key' => 'field_5901b55565f77',
-				'label' => 'Затраты',
-				'name' => 'cost',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b59065f78',
-				'label' => 'Прибыль (было)',
-				'name' => 'profit_old',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b5b165f79',
-				'label' => 'Прибыль (стало)',
-				'name' => 'profit_new',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b5c165f7a',
-				'label' => 'Конверсия (было)',
-				'name' => 'conversion_old',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_5901b5e265f7b',
-				'label' => 'Конверсия (стало)',
-				'name' => 'conversion_new',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'reviews_text',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'normal',
-			'layout' => 'no_box',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => 0,
-	));
 }
 
 

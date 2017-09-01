@@ -23,12 +23,12 @@ get_header(); ?>
 			<nav class="reviews__nav">
 				<ul>
 					<li>
-						<a href="#">благодарственные письма</a>
+						<a href="http://yush25um.bget.ru/reviews_text/">благодарственные письма</a>
 					</li>
 					<li>
 						<a class="active_link">Видео отзывы</a>
 					</li>
-					<li><a href="#">Отзывы с ВК</a></li>
+					<li><a href="http://yush25um.bget.ru/otzyvy-iz-vk/">Отзывы с ВК</a></li>
 				</ul>
 			</nav>
 		</div>

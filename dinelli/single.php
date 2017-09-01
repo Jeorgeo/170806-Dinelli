@@ -20,7 +20,7 @@ get_header(); ?>
 			the_post_navigation();
 
 			// If comments are open or we have at least one comment, load up the comment template.
-			
+
 
 		endwhile; // End of the loop.
 		?>
@@ -29,5 +29,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();

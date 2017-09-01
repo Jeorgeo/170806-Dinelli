@@ -1,20 +1,45 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru-RU-lite">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" language="JavaScript" src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/bootstrap/css/bootstrap.min.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/bootstrap/css/bootstrap-theme.min.css" type="text/css" media="screen, projection" />
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/fancybox/jquery.fancybox.css" type="text/css" media="screen, projection" />
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/fancybox/jquery.fancybox.js"></script>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/bxslider/jquery.bxslider.css" type="text/css" media="screen, projection" />
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bxslider/jquery.bxslider.min.js"></script>
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/animate.css" type="text/css" media="screen, projection" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!--<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>-->
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/fonts/font-awesome/css/font-awesome.min.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=<?php echo time(); ?>" type="text/css" media="screen, projection" />
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		$(".show_modal").fancybox({
+			type: 'inline',
+			padding : 20,
+			content: $('#modal')
+		});
+	});
+	</script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
-
 <body>
 
 <!-- Navigation -->
 <nav id="slide-menu">
 			<div class="sidebar">
-				<a href="http://yush25um.bget.ru/glavnaya/" id="logo"><img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt=""></a>
+				<a href="<?php bloginfo('url'); ?>" id="logo"><img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt=""></a>
 				<?php
 
 			$menu_name = 'menu-mobile';
@@ -28,17 +53,21 @@
 				$menu_items = wp_get_nav_menu_items( $menu ); // получаем элементы меню
 				$this_url = get_bloginfo('url').$_SERVER['REQUEST_URI'];
 
+
 				// создаем список
 				$menu_list = '
 					<ul id="menu-' . $menu_name . '" class="sidebar_menu">';
 
+
 				foreach ( (array) $menu_items as $key => $menu_item ){
 					if(empty($menu_item->post_parent)){
+
 
 									$class_active='';
 									if($menu_item->url==$this_url){
 										$class_active='active';
 									}
+
 
 							$this_children=0;
 							$this_children_html='';
@@ -59,7 +88,7 @@
 							}
 
 							if(!empty($this_children_html_arr)){
-								for ($i=0; $i < count($this_children_html_arr); $i++) {
+								for ($i=0; $i < count($this_children_html_arr); $i++) { 
 									if($i == count($this_children_html_arr)-1){
 										$this_children_html.=str_replace('<li class="left_row">','<li class="left_row last">',$this_children_html_arr[$i]);
 									} else {
@@ -76,9 +105,11 @@
 								$menu_list .= '<a href="' . $menu_item->url . '">' . $menu_item->title . '</a>  <i class="accordion-btn" data-id="accordion-'.$md5.'"></i>'.$this_children_html;
 							} else {
 
+
 								$menu_list .= '
 								<a href="' . $menu_item->url . '">' . $menu_item->title . '</a>'.$this_children_html;
 							}
+
 
 							echo '</li>';
 					}
@@ -89,33 +120,39 @@
 
 			echo $menu_list;
 	?>
-				<?php ?>
+				<?php /*<ul class="sidebar_menu">
+					<li class="active"><a href="#">Моё агентство</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Блог</a></li>
+				</ul>*/ ?>
 				<div class="sidebar_delim"></div>
 				<ul class="sidebar_list">
-					<li><?php dynamic_sidebar( 'mail' ); ?></li>
-					<li><?php dynamic_sidebar( 'phone' ); ?></li>
-					<li><?php dynamic_sidebar( 'phone_b' ); ?></li>
+					<li><a href="mailto:info@dinelli.ru">info@dinelli.ru</a></li>
+					<li>+7 918 476 90 30</li>
 					<li><a href="#" class="show_modal"><span style="color:#e93a1d">[</span> Заказать звонок <span style="color:#e93a1d">]</span></a></li>
 				</ul>
 				<ul class="social">
-					<li><?php dynamic_sidebar( 'social_vk' ); ?></a></li>
-					<li><?php dynamic_sidebar( 'social_f' ); ?></a></li>
-					<li><?php dynamic_sidebar( 'social_youtube' ); ?></a></li>
-					<li><?php dynamic_sidebar( 'social_instagram' ); ?></a></li>
+					<li><a href="https://vk.com/directbm" rel="nofollow" class="social_vk"></a></li>
+					<li><a href="https://www.facebook.com/blondinkaNelli/?ref=bookmarks" rel="nofollow" class="social_fb"></a></li>	
+					<li><a href="https://www.youtube.com/channel/UCoQA6nd0lINqLvD49rYpUVA" rel="nofollow" class="social_yt"></a></li>
 				</ul>
 				<div style="clear:both;"></div>
 			</div><!--/.sidebar-->
-
+		
 
 </nav>
 <!-- Content panel -->
 <div id="content-wrap">
 	<div class="menu-trigger"></div>
+
+
 	<div id="wrapper">
 		<div id="content">
 
 			<div class="sidebar">
-				<a href="http://yush25um.bget.ru/glavnaya/" id="logo"><img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt=""></a>
+				<a href="<?php bloginfo('template_url'); ?>" id="logo"><img src="<?php bloginfo('template_url'); ?>/i/logo.png" alt=""></a>
 				<?php
 
 			$menu_name = 'menu-top';
@@ -129,17 +166,21 @@
 				$menu_items = wp_get_nav_menu_items( $menu ); // получаем элементы меню
 				$this_url = get_bloginfo('url').$_SERVER['REQUEST_URI'];
 
+
 				// создаем список
 				$menu_list = '
 					<ul id="menu-' . $menu_name . '" class="sidebar_menu">';
 
+
 				foreach ( (array) $menu_items as $key => $menu_item ){
 					if(empty($menu_item->post_parent)){
+
 
 									$class_active='';
 									if($menu_item->url==$this_url){
 										$class_active='active';
 									}
+
 
 							$this_children=0;
 							$this_children_html='';
@@ -160,7 +201,7 @@
 							}
 
 							if(!empty($this_children_html_arr)){
-								for ($i=0; $i < count($this_children_html_arr); $i++) {
+								for ($i=0; $i < count($this_children_html_arr); $i++) { 
 									if($i == count($this_children_html_arr)-1){
 										$this_children_html.=str_replace('<li class="left_row">','<li class="left_row last">',$this_children_html_arr[$i]);
 									} else {
@@ -192,19 +233,23 @@
 
 			echo $menu_list;
 	?>
-				<?php?>
+				<?php /*<ul class="sidebar_menu">
+					<li class="active"><a href="#">Моё агентство</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Блог</a></li>
+				</ul>*/ ?>
 				<div class="sidebar_delim"></div>
 				<ul class="sidebar_list">
-					<li><?php dynamic_sidebar( 'mail' ); ?></li>
-					<li><?php dynamic_sidebar( 'phone' ); ?></li>
-					<li><?php dynamic_sidebar( 'phone_b' ); ?></li>
+					<li><a href="mailto:info@dinelli.ru">info@dinelli.ru</a></li>
+					<li>+7 918 476 90 30</li>
 					<li><a href="#" class="show_modal"><span style="color:#e93a1d">[</span> Заказать звонок <span style="color:#e93a1d">]</span></a></li>
 				</ul>
 				<ul class="social">
-					<li><?php dynamic_sidebar( 'social_vk' ); ?></a></li>
-					<li><?php dynamic_sidebar( 'social_f' ); ?></a></li>
-					<li><?php dynamic_sidebar( 'social_youtube' ); ?></a></li>
-					<li><?php dynamic_sidebar( 'social_instagram' ); ?></a></li>
+					<li><a href="https://vk.com/directbm" rel="nofollow" class="social_vk"></a></li>
+					<li><a href="https://www.facebook.com/blondinkaNelli/?ref=bookmarks" rel="nofollow" class="social_fb"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCoQA6nd0lINqLvD49rYpUVA" rel="nofollow" class="social_yt"></a></li>
 				</ul>
 				<div style="clear:both;"></div>
 				<div class="sidebar_delim"></div>
@@ -215,7 +260,7 @@
 				<div class="sidebar_delim"></div>
 				<ul class="sidebar_list">
 					<li><p>События</p></li>
-<?php
+<?php 
 		$args=array(
 			'post_type' => 'events',
 			'post_status' => 'publish',
@@ -232,7 +277,12 @@
 		}
 		wp_reset_query();
 
+		/*
+					<li><a href="#">Вебинар «Настройка РК»</a></li>
+					<li><a href="#">Вебинар «Воронки продаж»</a></li>
+					<li><a href="#">Курс по настройке ЯД</a></li>*/
 ?>
+
 				</ul>
 			</div><!--/.sidebar-->
 

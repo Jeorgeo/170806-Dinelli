@@ -13,7 +13,7 @@
 	<div class="entry-content">
 		<div class="cols col-6">
 			<div class="blog-img">
-				<?php the_post_thumbnail( 'full' )?>
+				
 			</div>
 		</div>
 		<div class="cols col-6">
@@ -31,5 +31,5 @@
 			</div>
 		</div>
 </div><!-- .entry-content -->
-	
+
 </article><!-- #post-<?php the_ID(); ?> -->
