@@ -192,7 +192,7 @@ function the_vk_topik(){
 	//delete_transient( $transient_name );
 	$transient_time = 24*60*60;
 	if ( false === ( $transient_data = get_transient( $transient_name ) ) ) {
-		$transient_data = get_vk_topik();
+		$transient_data =get_vk_topik();
 		set_transient( $transient_name, $transient_data, $transient_time );
 	}
 	echo $transient_data;
