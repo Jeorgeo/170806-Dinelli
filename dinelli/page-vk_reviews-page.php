@@ -24,10 +24,10 @@ get_header();
 			<nav class="reviews__nav">
 				<ul>
 					<li>
-						<a href="http://yush25um.bget.ru/reviews_text/" >благодарственные письма</a>
+						<a href=" http://dinelli.ru/t_reviews-page/" >благодарственные письма</a>
 					</li>
 					<li>
-						<a href="http://yush25um.bget.ru/videootzyvy-iz-youtube-kanala/">Видео отзывы</a>
+						<a href=" http://dinelli.ru/v_reviews-page/‎">Видео отзывы</a>
 					</li>
 					<li><a class="active_link">Отзывы с ВК</a></li>
 				</ul>
@@ -39,7 +39,7 @@ get_header();
 			<div class="box-content">
 
 				<div class="row clearfix">
-					
+
 					<div class="reviews_vk">
 						<?php the_vk_topik(); ?>
 
