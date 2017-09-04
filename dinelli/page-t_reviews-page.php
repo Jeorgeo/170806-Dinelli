@@ -77,7 +77,9 @@ $news = get_posts(
 				<?php } ?>
 				</div>
 			</div>
+			<!-- для пагинации
 			<button class="reviews-next" type="button" name="button">Показать ещё</button>
+			!-->
 		</div>
 	</section>
 

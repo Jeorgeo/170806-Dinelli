@@ -122,13 +122,20 @@ get_header(); ?>
 							Нелли Давыдова лично свяжусь с вами в ближайшее рабочее время.</p>
 					</div>
 					<div class="cols col-5 bottom-form">
-						<form class="cloud-form" action="index.html" method="post">
+						<form id="js_form" class="cloud-form">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Dinelli.ru">
+							<input type="hidden" name="admin_email" value="<?php the_field('mail'); ?>">
+							<input type="hidden" name="form_subject" value="Заявка с сайта">
+							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
 							<input id="phone" class="cloud-form__phone" type="text" name="phone"
-							value="" placeholder="+7(___) ___-__-__" required>
+							value="" placeholder="+7(___) ___-__-__" required
+							pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
 							<label class="cloud-form__mail" for="mail">e-mail</label>
 							<input id="mail"  class="cloud-form__mail" type="text" name="mail"
-							value="" placeholder="iNfo@DiNelli.ru" required>
+							value="" placeholder="iNfo@DiNelli.ru" required
+							pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">							
 							<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="">
 							<label class="cloud-form__сonsent" for="сonsent">
 								Согласие на обработку персональных данных

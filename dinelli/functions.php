@@ -221,7 +221,7 @@ function dinelli_scripts() {
 
 	wp_enqueue_script( 'dinelli-skip-link-focus-fix', $dineli_url . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script('jquery', $dineli_url . '/js/jquery.min.js', array(), true );
+	wp_enqueue_script('jquery-min', $dineli_url . '/js/jquery.min.js', array(), true );
 
 	wp_enqueue_script('jquery-mousewheel', $dineli_url . '/js/jquery.mousewheel-3.0.6.pack.js', array(), '20151215', true );
 
@@ -280,6 +280,11 @@ require get_template_directory() . '/inc/reviews_text.php';
  * Custom reviews_video.
  */
 require get_template_directory() . '/inc/reviews_video.php';
+
+/**
+ * Custom reviews_video.
+ */
+require get_template_directory() . '/inc/vk_topik.php';
 
 /**
  * Custom events.
@@ -478,3 +483,211 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 };
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_blogi-otzyvy',
+		'title' => 'Блоги отзывы',
+		'fields' => array (
+			array (
+				'key' => 'field_59a8927c604d0',
+				'label' => 'Цитата',
+				'name' => 'description',
+				'type' => 'wysiwyg',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+			array (
+				'key' => 'field_59a892a0604d1',
+				'label' => 'Картинка в ленте',
+				'name' => 'image',
+				'type' => 'image',
+				'save_format' => 'url',
+				'preview_size' => 'full',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_59acc4450c4d4',
+				'label' => 'Видеоотзыв',
+				'name' => 'video',
+				'type' => 'text',
+				'instructions' => '<iframe> Код видео </iframe>',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'reviews_text',
+					'order_no' => 0,
+					'group_no' => 1,
+				),
+			),
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'reviews_video',
+					'order_no' => 0,
+					'group_no' => 2,
+				),
+			),
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'events',
+					'order_no' => 0,
+					'group_no' => 3,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+};
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_ssylki-na-stranitsy-uslug',
+		'title' => 'Ссылки на страницы услуг',
+		'fields' => array (
+			array (
+				'key' => 'field_59a88dda8ef67',
+				'label' => 'Яндекс.Директ',
+				'name' => 'yd',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59a88dff8ef68',
+				'label' => 'Google.Adwords',
+				'name' => 'ga',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59a88e188ef69',
+				'label' => 'seo',
+				'name' => 'seo',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59a88e228ef6a',
+				'label' => 'site',
+				'name' => 'site',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59a88e2a8ef6b',
+				'label' => 'youtube',
+				'name' => 'youtube',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59a88fea5e4cd',
+				'label' => 'Консультации',
+				'name' => 'cons',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59a890135e4ce',
+				'label' => 'Аудит',
+				'name' => 'audit',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_59a890225e4cf',
+				'label' => 'Обучение',
+				'name' => 'coach',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page',
+					'operator' => '==',
+					'value' => '109',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}

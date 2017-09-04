@@ -45,7 +45,7 @@
 					<li><?php dynamic_sidebar( 'phone' ); ?></li>
 					<li><?php dynamic_sidebar( 'phone_b' ); ?></li>
 					<li>
-						<a href="#" id="js_modal" class="show_modal">
+						<a href="#" id="js_modal" onclick="showPopup()" class="show_modal">
 							<span class="color-text">[ </span>
 							Заказать звонок
 							<span class="color-text"> ]</span>

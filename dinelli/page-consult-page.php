@@ -54,7 +54,7 @@ get_header(); ?>
 						<p class="box-title">
 							40 минут по skype
 						</p>
-						<a href="#">Заказать</a>
+						<a href="#" onclick="showPopup()">Заказать</a>
 					</div>
 					<div class="consult-price">
 						<p class="strong-text">
@@ -89,7 +89,7 @@ get_header(); ?>
 						<p class="box-title">
 							3-5 звонков по skype
 						</p>
-						<a href="#">Заказать</a>
+						<a href="#" onclick="showPopup()">Заказать</a>
 					</div>
 					<div class="consult-price">
 						<p class="strong-text">
@@ -129,7 +129,7 @@ get_header(); ?>
 						<p class="box-title">
 							1 месяц по skype
 						</p>
-						<a href="#">Заказать</a>
+						<a href="#" onclick="showPopup()">Заказать</a>
 					</div>
 					<div class="consult-price">
 						<p class="strong-text">
@@ -143,7 +143,7 @@ get_header(); ?>
 			</div>
 			<h4 class="small-title box">
 				Задать вопрос по настройке Яндекс.Директ вконтакте
-				<a class="question_link" href="https://vk.com/topic-55517976_28337937">бесплатно</a>
+				<a class="question_link" href="https://vk.com/topic-55517976_28337937" target="_blank" >бесплатно</a>
 			</h4>
 	 </div>
  </section>

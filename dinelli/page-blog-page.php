@@ -62,7 +62,7 @@ $news = get_posts(
 					</a>
 				</div>
 				<div class="cols col-5 col-12-md">
-					<?php echo $obj->post_title; ?>
+					<h4 class="small-title"><?php echo $obj->post_title; ?></h4>					
 					<?php echo get_field('description', $obj->ID); ?>
 					<a href="/blog/<?php echo $obj->post_name; ?>">Читать далее...</a>
 				</div>

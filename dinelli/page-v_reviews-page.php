@@ -12,7 +12,24 @@
  * @package Dinelli
  */
 
-get_header(); ?>
+get_header();
+
+$news = get_posts(
+		array(
+				'numberposts' => -1,
+				'offset' => 0,
+				'orderby'     => 'date',
+				'order'       => 'DESC',
+				'category' => '',
+				'include' => '',
+				'exclude' => '',
+				'meta_key' => '',
+				'meta_value' => '',
+				'post_type' => 'reviews_video',
+				'post_parent' => '',
+				'post_status' => 'publish'
+		)
+);?>
 
 <main class="content-area">
 	<section class="reviews box-1">
@@ -35,49 +52,28 @@ get_header(); ?>
 	</section>
 	<section class="reviews blog box-2">
 		<div class="container">
+			<?php
+				foreach ($news as $obj) {
+					if($obj->post_name == 'archive'){
+							continue;
+					}
+			 ?>
 			<figure class="blog__box-content clearfix">
 				<div class="cols col-5 col-4-md">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/he9NRJVmhKs?ecver=1" frameborder="0" allowfullscreen></iframe>
+					<?php echo get_field('video', $obj->ID); ?>
 				</div>
 				<div class="cols col-5 col-12-md">
-					<h2>Ярмарка Эмоций</h2>
-					<p>
-						Выбирал очень щепетильно, так как наслышан о «горе» -директологах и программистах.
-						Увидел рекламу DiNelli, просмотрел их кейсы, ознакомился с услугами,
-						но окончательное решение принял...
-					</p>
-					<a href="#">Читать далее...</a>
+					<h2 class="small-title">
+						<?php echo $obj->post_title; ?>
+					</h2>
+					<?php echo get_field('description', $obj->ID); ?>
+					<a href="<?php echo $obj->post_name; ?>">Читать далее...</a>
 				</div>
 			</figure>
-			<figure class="blog__box-content clearfix">
-				<div class="cols col-5 col-4-md">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/he9NRJVmhKs?ecver=1" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="cols col-5 col-12-md">
-					<h2>Ярмарка Эмоций</h2>
-					<p>
-						Выбирал очень щепетильно, так как наслышан о «горе» -директологах и программистах.
-						Увидел рекламу DiNelli, просмотрел их кейсы, ознакомился с услугами,
-						но окончательное решение принял...
-					</p>
-					<a href="#">Читать далее...</a>
-				</div>
-			</figure>
-			<figure class="blog__box-content clearfix">
-				<div class="cols col-5 col-4-md">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/he9NRJVmhKs?ecver=1" frameborder="0" allowfullscreen></iframe>
-				</div>
-				<div class="cols col-5 col-12-md">
-					<h2>Ярмарка Эмоций</h2>
-					<p>
-						Выбирал очень щепетильно, так как наслышан о «горе» -директологах и программистах.
-						Увидел рекламу DiNelli, просмотрел их кейсы, ознакомился с услугами,
-						но окончательное решение принял...
-					</p>
-					<a href="#">Читать далее...</a>
-				</div>
-			</figure>
+			<?php } ?>
+			<!-- для пагинации
 			<button class="reviews-next" type="button" name="button">Показать ещё</button>
+			!-->
 		</div>
 	</div>
 </section>
