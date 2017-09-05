@@ -160,10 +160,10 @@ function get_vk_topik(){
 
 				$res .='
 
-					<div class="review_vk" id="review_vk_'.$id.'">
-						<div class="review_vk_ava"><a href="https://vk.com/'.$screen_name.'" target="_blank" rel="nofollow">'.$ava.'</a></div>
-						<div class="review_vk_content">
-							<div class="review_vk_user">'.$user.'</div><div class="review_vk_date">'.$date.'</div>
+					<div class="review_vk row clearfix" id="review_vk_'.$id.'">
+						<div class="review_vk_ava cols col-1"><a href="https://vk.com/'.$screen_name.'" target="_blank" rel="nofollow">'.$ava.'</a></div>
+						<div class="review_vk_content cols col-9">
+							<div class="review_vk_user">'.$user.'</div><div class="review_vk_date"></div>
 							<div style="clear:both;"></div>
 							<div class="review_vk_text">'.$text.'</div>
 							<div class="review_vk_attachments">'.$attachments.'</div>

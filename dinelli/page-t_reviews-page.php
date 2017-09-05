@@ -43,9 +43,9 @@ $news = get_posts(
 						<a class="active_link">благодарственные письма</a>
 					</li>
 					<li>
-						<a href="http://dinelli.ru/v_reviews-page/">Видео отзывы</a>
+						<a href="<?php the_field('v_reviews'); ?>">Видео отзывы</a>
 					</li>
-					<li><a href="http://dinelli.ru/vk_reviews-page/">Отзывы с ВК</a></li>
+					<li><a href="<?php the_field('vk_reviews'); ?>">Отзывы с ВК</a></li>
 				</ul>
 			</nav>
 		</div>

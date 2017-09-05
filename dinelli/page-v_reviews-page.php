@@ -40,12 +40,12 @@ $news = get_posts(
 			<nav class="reviews__nav">
 				<ul>
 					<li>
-						<a href="http://dinelli.ru/t_reviews-page/‎">благодарственные письма</a>
+						<a href="<?php the_field('t_reviews'); ?>">благодарственные письма</a>
 					</li>
 					<li>
 						<a class="active_link">Видео отзывы</a>
 					</li>
-					<li><a href="http://dinelli.ru/vk_reviews-page/">Отзывы с ВК</a></li>
+					<li><a href="<?php the_field('vk_reviews'); ?>">Отзывы с ВК</a></li>
 				</ul>
 			</nav>
 		</div>

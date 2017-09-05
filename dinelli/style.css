@@ -2539,3 +2539,11 @@ ul.footer_content,
 .navigation.post-navigation {
   display: none;
 }
+
+.review_vk_ava img {
+  border-radius: 50%;
+}
+
+.review_vk_date {
+  display: none;
+}
