@@ -1546,6 +1546,19 @@ ul.footer_content,
   background-size: contain;
 }
 
+.service.box-1.yd-service .box-title {
+  margin: 0;
+  padding: 2.5em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/yd/dn_service-ya1-img-1.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.service.box-1.yd-service .yd-service.small-title {
+  margin: 0.5em 0;
+  font-size: 4em;
+}
+
 .service.box-2 {
   margin-bottom: 3em;
 }
@@ -1756,7 +1769,7 @@ ul.footer_content,
 /*------------------------For Tablet 768px---------------------------------*/
 
 @media screen and (min-width: 768px) {
-  .padding_top {
+  .yd-1 .padding_top {
     padding-top: 20em;
   }
 
@@ -1939,7 +1952,8 @@ ul.footer_content,
   .yd-1.box-1 .box-title,
   .yd-1.box-2 .box-title,
   .yd-1.box-3 .box-title,
-  .yd-1.box-4 .box-title {
+  .yd-1.box-4 .box-title,
+  .service.yd-service.box-1 .box-title {
     margin-left: 8.33%;
     margin-right: 8.33%;
   }
@@ -2059,6 +2073,10 @@ ul.footer_content,
   .seo.box-4 .bottom-form .cloud-form,
   .yd-1 .bottom-form .cloud-form {
     margin: 0 0 0 160px;
+  }
+
+  .yd-service .padding_top {
+    padding-top: 2em;
   }
 
   .seo .content-img {
