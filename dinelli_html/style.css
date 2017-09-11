@@ -32,8 +32,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Footer
 # Content
   ## Blog
+  ## Service
+  ## Сoach
   ## Reviews
   ## Posts and pages
+# Popup form
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -495,7 +498,6 @@ img {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Header
   ## Header mobile menu
@@ -507,12 +509,12 @@ img {
 
 .left-panel__menu-toggle {
   position: absolute;
-  top: -8px;
+  top: 1px;
   left: 245px;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   margin: 0;
-  padding: 9px;
+  padding: 3px;
   font-size: 0;
   background-color: rgba(54, 54, 54, 0.1);
   border: 1px solid #000000;
@@ -522,9 +524,9 @@ img {
 .header-menu-toggle {
   position: relative;
   display: block;
-  width: 30px;
-  height: 30px;
-  margin: 9px;
+  width: 25px;
+  height: 25px;
+  margin: 3px;
   background-color: transparent;
   border: none;
 }
@@ -532,8 +534,8 @@ img {
 .header-menu-toggle span {
   position: absolute;
   display: block;
-  width: 30px;
-  top: 14px;
+  width: 25px;
+  top: 12px;
   left: 0;
   height: 2px;
   background-color: #000000;
@@ -552,7 +554,7 @@ img {
 }
 
 .header-menu-toggle span::before {
-  top: -14px;
+  top: -12px;
   transform: rotate(-45deg);
   animation-name: prerotate-up;
   animation-duration: 0.8s;
@@ -560,7 +562,7 @@ img {
 }
 
 .header-menu-toggle span::after {
-  bottom: -14px;
+  bottom: -12px;
   transform: rotate(45deg);
   animation-name: prerotate-bottom;
   animation-duration: 0.8s;
@@ -596,7 +598,6 @@ img {
     display: none;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -1239,6 +1240,15 @@ ul.footer_content,
    margin-left: 0;
  }
 
+ .main figure.margin_left {
+   margin-left: 0;
+ }
+
+ .main figure.margin_right {
+   margin-right: 0;
+ }
+
+
  .main.box-9 figure img {
     width: 95%;
   }
@@ -1453,6 +1463,10 @@ ul.footer_content,
 }
 
 @media (min-width: 1280px) {
+  .blosingle-post {
+    min-height: 600px;
+  }
+
   .blog_title h1 {
     margin: 0.8em 0;
     text-align: left;
@@ -1606,6 +1620,10 @@ ul.footer_content,
   color: #b9b9b9;
 }
 
+.audit .question_link {
+  text-transform: uppercase;
+}
+
 .consult.box-2 {
   margin-bottom: 2em;
 }
@@ -1656,6 +1674,47 @@ ul.footer_content,
   text-align: center;
 }
 
+.yd-1.box-1 .box-title {
+  margin: 0;
+  padding: 2em 0 1em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/yd/dn_service-ya1-img-1.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.yd-1.box-2 .box-title {
+  margin: 0;
+  padding: 2em 0 3em 0;
+  background: url("img/seo/dn_service-seo-img-5.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.yd-1.box-3 .box-title {
+  margin: 0;
+  padding: 2em 0 1em 0;
+  background: url("img/yd/dn_service-ya1-img-6.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.yd-1.box-3 .box-title .title_left {
+  padding-left: 2em;
+}
+
+.yd-1.box-3 .box-title .title_center {
+  text-align: center;
+}
+
+.yd-1.box-3 .box-title .title_right {
+  padding-right: 2em;
+}
+
+.yd-1.box-4 .box-title {
+  margin: 0;
+  padding: 2em 0 1em 2em;
+  background: url("img/yd/dn_service-ya1-img-10.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
 .seo.box-1 .box-title {
   margin: 1em 0 0 0;
   padding: 2em 0 2em 0;
@@ -1697,6 +1756,10 @@ ul.footer_content,
 /*------------------------For Tablet 768px---------------------------------*/
 
 @media screen and (min-width: 768px) {
+  .padding_top {
+    padding-top: 20em;
+  }
+
   .service.box-1 .box-title {
     margin-top: 1em;
     margin-left: 8%;
@@ -1750,19 +1813,50 @@ ul.footer_content,
     margin-top: 30%;
   }
 
-  .ga .bottom-form .cloud-form {
+  .ga .bottom-form .cloud-form,
+  .yd-1 .bottom-form .cloud-form {
     margin: 0;
   }
 
-  .ga .bottom-form::before {
+  .ga .bottom-form::before,
+  .yd-1 .bottom-form::before {
     display: none;
   }
 
   img.yd-img-2,
   img.yd-img-3,
   img.yd-img-4,
-  img.yd-img-7 {
+  img.yd-img-7,
+  img.yd1-img-3 {
     margin-top: 40%;
+  }
+
+  img.yd1-img-4,
+  img.yd1-img-5,
+  img.yd1-img-6,
+  img.yd1-img-7,
+  img.yd1-img-8,
+  img.yd1-img-9,
+  img.yd1-img-10,
+  img.yd1-img-11 {
+    margin-top: 20%;
+  }
+
+  .yd-1 .small-title.box {
+    margin-bottom: 0;
+  }
+
+  .yd-1.box-3 .box-title .title_left {
+    padding-left: 4em;
+  }
+
+  .yd-1.box-3 .box-title .title_right {
+    padding-right: 4em;
+  }
+
+  .yd-1.box-4 .box-title {
+    text-align: left;
+    padding-left: 3em;
   }
 
   .yd.box-3 .box-title .title_left {
@@ -1842,15 +1936,23 @@ ul.footer_content,
     margin-bottom: 2em;
   }
 
-  .service .right_side a,
-  .site .right_side a,
-  .yt .right_side a {
+  .yd-1.box-1 .box-title,
+  .yd-1.box-2 .box-title,
+  .yd-1.box-3 .box-title,
+  .yd-1.box-4 .box-title {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+  }
+
+  .service .cols.right_side a,
+  .site .cols.right_side a,
+  .yt .cols.right_side a {
     margin-right: 0;
   }
 
-  .service .left_side a,
-  .site .left_side a,
-  .yt .left_side a {
+  .service .cols.left_side a,
+  .site .cols.left_side a,
+  .yt .cols.left_side a {
     margin-left: 0;
   }
 
@@ -1875,18 +1977,6 @@ ul.footer_content,
     padding-right: 0;
   }
 
-  .ga.box-1 .box-title,
-  .ga.box-2 .box-title,
-  .seo.box-1 .box-title,
-  .seo.box-2 .box-title,
-  .seo.box-3 .box-title,
-  .seo.box-4 .box-title,
-  .site.box-1 .box-title,
-  .yt.box-1 .box-title {
-    margin-left: 8.33%;
-    margin-right: 8.33%;
-  }
-
   .ga.box-2 .box-title {
     margin-top: 1em;
   }
@@ -1905,7 +1995,10 @@ ul.footer_content,
   }
 
   .ga .bottom-form::after {
-    left: -200px;
+    top: -78px;
+    left: -270px;
+    width: 768px;
+    height: 480px;
   }
 
   .umbrella {
@@ -1942,9 +2035,18 @@ ul.footer_content,
     margin-bottom: 5em;
   }
 
+  .yd.box-3 .box-title .title_left {
+    margin-left: 30%;
+  }
+
+  .yd.box-3 .box-title .title_right {
+    margin-left: 25%;
+  }
+
   .yd.box-3 .bottom-form::before,
   .seo.box-1 .bottom-form::before,
-  .seo.box-4 .bottom-form::before {
+  .seo.box-4 .bottom-form::before,
+  .yd-1 .bottom-form::before {
     display: block;
   }
 
@@ -1954,7 +2056,8 @@ ul.footer_content,
 
   .yd.box-3 .bottom-form .cloud-form,
   .seo.box-1 .bottom-form .cloud-form,
-  .seo.box-4 .bottom-form .cloud-form {
+  .seo.box-4 .bottom-form .cloud-form,
+  .yd-1 .bottom-form .cloud-form {
     margin: 0 0 0 160px;
   }
 
@@ -1976,6 +2079,21 @@ ul.footer_content,
     margin-left: 8.33%;
     margin-bottom: 0;
     font-size: 4em;
+  }
+
+  .ga.box-1 .box-title,
+  .ga.box-2 .box-title,
+  .seo.box-1 .box-title,
+  .seo.box-2 .box-title,
+  .seo.box-3 .box-title,
+  .seo.box-4 .box-title,
+  .site.box-1 .box-title,
+  .yt.box-1 .box-title,
+  .yd.box-2 .box-title,
+  .yd.box-3 .box-title,
+  .audit.box-2 .box-title {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
   }
 
 }
@@ -2021,9 +2139,6 @@ ul.footer_content,
     margin-top: 3%;
   }
 }
-
-
-
 
 /*--------------------------------------------------------------
 # Content
@@ -2106,6 +2221,8 @@ ul.footer_content,
 
 .audit.box-2 .box-title {
   margin: 0;
+  margin-left: 8.33%;
+  margin-right: 8.33%;
   padding: 3em 0 1em;
   background: url("img/audit/dn_service-ya-audit-img-3.svg") no-repeat 0 50%;
   background-size: contain;
@@ -2304,7 +2421,6 @@ ul.footer_content,
   }
 }
 
-
 /*--------------------------------------------------------------
 # Content
   ## Reviews
@@ -2436,4 +2552,84 @@ ul.footer_content,
   .reviews iframe {
     max-height: 100%;
   }
+
+  #main {
+    min-height: 600px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Popup form
+--------------------------------------------------------------*/
+
+.wrap {
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(74, 92, 104, 0.9);
+  z-index: 9999;
+  overflow: auto;
+}
+
+.popup-question {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  display: none;
+  margin: 5px auto;
+  padding: 1em;
+  width: 300px;
+  height: 360px;
+	border-radius: 5px;
+  color: #000000;
+  background: transparent;
+  z-index: 99999;
+}
+
+.modal-content-show {
+  display: block;
+}
+
+.popup-question-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	margin: 0;
+	padding: 5px;
+	border-radius: 50%;
+	font-size: 16px;
+	background-color: #ffffff;
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+	border: 2px solid #ffffff;
+}
+
+.popup-question-close:hover {
+  cursor: pointer;
+  color: #d4d8e2;
+	background-color: #a93b14;
+}
+
+.navigation.post-navigation {
+  display: none;
+}
+
+.review_vk_ava img {
+  border-radius: 50%;
+}
+
+.review_vk_date {
+  display: none;
 }
