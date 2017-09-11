@@ -1554,7 +1554,15 @@ ul.footer_content,
   background-size: contain;
 }
 
-.service.box-1.yd-service .yd-service.small-title {
+.service.box-1.ga-service .box-title {
+  margin: 0;
+  padding: 2.5em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/ga/dn_service-google-img-1.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.service .yd-service.small-title {
   margin: 0.5em 0;
   font-size: 4em;
 }
@@ -1953,7 +1961,8 @@ ul.footer_content,
   .yd-1.box-2 .box-title,
   .yd-1.box-3 .box-title,
   .yd-1.box-4 .box-title,
-  .service.yd-service.box-1 .box-title {
+  .service.yd-service.box-1 .box-title,
+  .service.box-1.ga-service .box-title {
     margin-left: 8.33%;
     margin-right: 8.33%;
   }
@@ -2075,7 +2084,8 @@ ul.footer_content,
     margin: 0 0 0 160px;
   }
 
-  .yd-service .padding_top {
+  .yd-service .padding_top,
+  .ga-service .padding_top {
     padding-top: 2em;
   }
 
