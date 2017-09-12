@@ -1121,7 +1121,7 @@ ul.footer_content,
 
 @media (min-width: 1280px) {
   .container {
-    width: 96%;
+    width: 93%;
     margin: 0 2%;
   }
 
@@ -1546,6 +1546,36 @@ ul.footer_content,
   background-size: contain;
 }
 
+.service.box-1.yd-service .box-title {
+  margin: 0;
+  padding: 2.5em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/yd/dn_service-ya1-img-1.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.service.box-1.ga-service .box-title {
+  margin: 0;
+  padding: 2.5em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/ga/dn_service-google-img-1.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.service.box-1.seo-service .box-title {
+  margin: 0;
+  padding: 2.5em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/seo/dn_service-seo-img-1.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.service .yd-service.small-title {
+  margin: 0.5em 0;
+  font-size: 3.5em;
+  line-height: normal;
+}
+
 .service.box-2 {
   margin-bottom: 3em;
 }
@@ -1674,6 +1704,47 @@ ul.footer_content,
   text-align: center;
 }
 
+.yd-1.box-1 .box-title {
+  margin: 0;
+  padding: 2em 0 1em 0;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  background: url("img/yd/dn_service-ya1-img-1.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.yd-1.box-2 .box-title {
+  margin: 0;
+  padding: 2em 0 3em 0;
+  background: url("img/seo/dn_service-seo-img-5.svg") no-repeat 50% 50%;
+  background-size: contain;
+}
+
+.yd-1.box-3 .box-title {
+  margin: 0;
+  padding: 2em 0 1em 0;
+  background: url("img/yd/dn_service-ya1-img-6.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.yd-1.box-3 .box-title .title_left {
+  padding-left: 2em;
+}
+
+.yd-1.box-3 .box-title .title_center {
+  text-align: center;
+}
+
+.yd-1.box-3 .box-title .title_right {
+  padding-right: 2em;
+}
+
+.yd-1.box-4 .box-title {
+  margin: 0;
+  padding: 2em 0 1em 2em;
+  background: url("img/yd/dn_service-ya1-img-10.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
 .seo.box-1 .box-title {
   margin: 1em 0 0 0;
   padding: 2em 0 2em 0;
@@ -1715,6 +1786,10 @@ ul.footer_content,
 /*------------------------For Tablet 768px---------------------------------*/
 
 @media screen and (min-width: 768px) {
+  .yd-1 .padding_top {
+    padding-top: 20em;
+  }
+
   .service.box-1 .box-title {
     margin-top: 1em;
     margin-left: 8%;
@@ -1768,19 +1843,50 @@ ul.footer_content,
     margin-top: 30%;
   }
 
-  .ga .bottom-form .cloud-form {
+  .ga .bottom-form .cloud-form,
+  .yd-1 .bottom-form .cloud-form {
     margin: 0;
   }
 
-  .ga .bottom-form::before {
+  .ga .bottom-form::before,
+  .yd-1 .bottom-form::before {
     display: none;
   }
 
   img.yd-img-2,
   img.yd-img-3,
   img.yd-img-4,
-  img.yd-img-7 {
+  img.yd-img-7,
+  img.yd1-img-3 {
     margin-top: 40%;
+  }
+
+  img.yd1-img-4,
+  img.yd1-img-5,
+  img.yd1-img-6,
+  img.yd1-img-7,
+  img.yd1-img-8,
+  img.yd1-img-9,
+  img.yd1-img-10,
+  img.yd1-img-11 {
+    margin-top: 20%;
+  }
+
+  .yd-1 .small-title.box {
+    margin-bottom: 0;
+  }
+
+  .yd-1.box-3 .box-title .title_left {
+    padding-left: 4em;
+  }
+
+  .yd-1.box-3 .box-title .title_right {
+    padding-right: 4em;
+  }
+
+  .yd-1.box-4 .box-title {
+    text-align: left;
+    padding-left: 3em;
   }
 
   .yd.box-3 .box-title .title_left {
@@ -1858,6 +1964,17 @@ ul.footer_content,
 
   .service.box-2 .row {
     margin-bottom: 2em;
+  }
+
+  .yd-1.box-1 .box-title,
+  .yd-1.box-2 .box-title,
+  .yd-1.box-3 .box-title,
+  .yd-1.box-4 .box-title,
+  .service.yd-service.box-1 .box-title,
+  .service.box-1.ga-service .box-title,
+  .service.seo-service.box-1 .box-title {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
   }
 
   .service .cols.right_side a,
@@ -1961,7 +2078,8 @@ ul.footer_content,
 
   .yd.box-3 .bottom-form::before,
   .seo.box-1 .bottom-form::before,
-  .seo.box-4 .bottom-form::before {
+  .seo.box-4 .bottom-form::before,
+  .yd-1 .bottom-form::before {
     display: block;
   }
 
@@ -1971,8 +2089,14 @@ ul.footer_content,
 
   .yd.box-3 .bottom-form .cloud-form,
   .seo.box-1 .bottom-form .cloud-form,
-  .seo.box-4 .bottom-form .cloud-form {
+  .seo.box-4 .bottom-form .cloud-form,
+  .yd-1 .bottom-form .cloud-form {
     margin: 0 0 0 160px;
+  }
+
+  .yd-service .padding_top,
+  .ga-service .padding_top {
+    padding-top: 2em;
   }
 
   .seo .content-img {

@@ -1121,7 +1121,7 @@ ul.footer_content,
 
 @media (min-width: 1280px) {
   .container {
-    width: 96%;
+    width: 93%;
     margin: 0 2%;
   }
 
@@ -1538,7 +1538,10 @@ ul.footer_content,
   ## Service
 --------------------------------------------------------------*/
 
-.service.box-1 .box-title {
+.service.box-1 .box-title,
+.service.box-1.yd-service .box-title,
+.service.box-1.ga-service .box-title,
+.service.box-1.seo-service .box-title {
   margin: 0;
   padding: 2.5em 0;
   font-family: 'Open Sans', 'Arial', sans-serif;
@@ -1547,26 +1550,22 @@ ul.footer_content,
 }
 
 .service.box-1.yd-service .box-title {
-  margin: 0;
-  padding: 2.5em 0;
-  font-family: 'Open Sans', 'Arial', sans-serif;
   background: url("img/yd/dn_service-ya1-img-1.svg") no-repeat 0 100%;
   background-size: contain;
 }
 
 .service.box-1.ga-service .box-title {
-  margin: 0;
-  padding: 2.5em 0;
-  font-family: 'Open Sans', 'Arial', sans-serif;
   background: url("img/ga/dn_service-google-img-1.svg") no-repeat 0 100%;
   background-size: contain;
 }
 
 .service.box-1.seo-service .box-title {
-  margin: 0;
-  padding: 2.5em 0;
-  font-family: 'Open Sans', 'Arial', sans-serif;
   background: url("img/seo/dn_service-seo-img-1.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.service.box-1.audit-service .box-title {
+  background: url("img/audit/dn_service-audit-img-7.png") no-repeat 0 100%;
   background-size: contain;
 }
 
