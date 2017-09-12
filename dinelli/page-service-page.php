@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Услуги
+ * Template Name: Услуги и предложения
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -135,7 +135,7 @@ get_header(); ?>
 							<label class="cloud-form__mail" for="mail">e-mail</label>
 							<input id="mail"  class="cloud-form__mail" type="text" name="mail"
 							value="" placeholder="iNfo@DiNelli.ru" required
-							pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">							
+							pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
 							<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="">
 							<label class="cloud-form__сonsent" for="сonsent">
 								Согласие на обработку персональных данных

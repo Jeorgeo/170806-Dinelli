@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Коучинг
+ * Template Name: Индивидуальный коучинг по Яндекс.Директ
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
