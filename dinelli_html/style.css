@@ -1099,6 +1099,7 @@ ul.footer_content,
 @media (min-width: 960px) {
   .content-area {
     padding-left: 235px;
+    overflow: hidden;
   }
 
   .main.box-9 figure {
@@ -1507,6 +1508,8 @@ ul.footer_content,
   }
 
   .blog_title::after {
+    top: 0;
+    left: -20px;
     width: 100%;
     height: 100%;
   }
@@ -1541,7 +1544,8 @@ ul.footer_content,
 .service.box-1 .box-title,
 .service.box-1.yd-service .box-title,
 .service.box-1.ga-service .box-title,
-.service.box-1.seo-service .box-title {
+.service.box-1.seo-service .box-title,
+.service.box-1.coach-service .box-title {
   margin: 0;
   padding: 2.5em 0;
   font-family: 'Open Sans', 'Arial', sans-serif;
@@ -1566,6 +1570,11 @@ ul.footer_content,
 
 .service.box-1.audit-service .box-title {
   background: url("img/audit/dn_service-audit-img-7.png") no-repeat 0 100%;
+  background-size: contain;
+}
+
+.service.box-1.coach-service .box-title {
+  background: url("img/coach/dn_couch-img-24.png") no-repeat 0 100%;
   background-size: contain;
 }
 
@@ -1952,7 +1961,15 @@ ul.footer_content,
     line-height: 1.3em;
   }
 
-  .service.box-2 {
+
+
+  .service.box-2,
+  .service.yd-service.box-1,
+  .service.audit-service.box-1,
+  .service.audit-service.box-1,
+  .service.audit-service.box-1,
+  .service.audit-service.box-1,
+  .service.audit-service.box-1 {
     margin-bottom: 10em;
   }
 
@@ -1971,7 +1988,9 @@ ul.footer_content,
   .yd-1.box-4 .box-title,
   .service.yd-service.box-1 .box-title,
   .service.box-1.ga-service .box-title,
-  .service.seo-service.box-1 .box-title {
+  .service.seo-service.box-1 .box-title,
+  .service.box-1.coach-service .box-title,
+  .service.box-1.audit-service .box-title {
     margin-left: 8.33%;
     margin-right: 8.33%;
   }
