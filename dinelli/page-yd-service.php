@@ -39,57 +39,57 @@ get_header(); ?>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link1'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-11.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link2'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-14.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link3'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-28.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link4'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-12.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link5'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-15.png" alt="">
 						</a>
 					</div>
-					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+					<div class="cols col-3 col-md-6 right_side">
+						<a class="service__card" href="<?php echo get_field('link6'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-13.png" alt="">
 						</a>
 					</div>
-					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+					<div class="cols col-3 col-md-6 left_side">
+						<a class="service__card" href="<?php echo get_field('link7'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-17.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link8'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-18.png" alt="">
 						</a>
 					</div>
-					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+					<div class="cols col-3 col-md-6 right_side">
+						<a class="service__card" href="<?php echo get_field('link9'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-19.png" alt="">
 						</a>
 					</div>
-					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+					<div class="cols col-3 col-md-6 left_side">
+						<a class="service__card" href="<?php echo get_field('link10'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-20.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link11'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/yd/dn_service-yd-img-21.png" alt="">
 						</a>
 					</div>

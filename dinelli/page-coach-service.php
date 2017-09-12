@@ -33,32 +33,32 @@ get_header(); ?>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link1'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-18.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link2'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-19.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link3'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-20.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link4'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-21.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link5'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-22.png" alt="">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
-						<a class="service__card" href="#">
+						<a class="service__card" href="<?php echo get_field('link6'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-23.png" alt="">
 						</a>
 					</div>

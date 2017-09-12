@@ -62,7 +62,7 @@ get_header(); ?>
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="<?php echo get_field('youtube'); ?> target="_blank"">
+						<a class="service__card" href="<?php echo get_field('youtube'); ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/pics/service_youtube.jpg" alt="">
 						</a>
 					</div>
