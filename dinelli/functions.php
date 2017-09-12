@@ -177,6 +177,15 @@ add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
  		'before_title'  => '<h2 class="widget-title">',
  		'after_title'   => '</h2>',
  	) );
+	register_sidebar( array(
+ 		'name'          => esc_html__( 'Сертификат яндекса', 'dinelli' ),
+ 		'id'            => 'yd_icon',
+ 		'description'   => esc_html__( 'Вставте картинку со ссылкой', 'dinelli' ),
+ 		'before_widget' => '<li>',
+ 		'after_widget'  => '</li>',
+ 		'before_title'  => '<h2 class="widget-title">',
+ 		'after_title'   => '</h2>',
+ 	) );
  	register_sidebar( array(
  		'name'          => esc_html__( 'Контент в подвале', 'dinelli' ),
  		'id'            => 'footer_c',

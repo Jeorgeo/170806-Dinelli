@@ -65,7 +65,7 @@
 			<div class="left-panel__certification">
 				<ul class="sidebar_list">
 					<li><p>Сертифицировано</p></li>
-					<li><img src="<?php bloginfo('template_url'); ?>/i/yandex.png" alt="Яндекс"></li>
+					<?php dynamic_sidebar( 'yd_icon' ); ?>
 				</ul>
 			</div>
 

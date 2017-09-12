@@ -260,7 +260,7 @@ get_header(); ?>
 							<input id="mail"  class="cloud-form__mail" type="text" name="mail"
 							value="" placeholder="iNfo@DiNelli.ru" required
 							pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
-							<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="">
+							<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>
 							<label class="cloud-form__сonsent" for="сonsent">
 								Согласие на обработку персональных данных
 							</label>
@@ -453,7 +453,7 @@ get_header(); ?>
 		 				<label  class="cloud-form__message" for="message">сообщение</label>
 		 				<textarea id="message" class="cloud-form__message" name="message"
 		 				rows="4" cols="80" placeholder="Очень хочу качественную рекламу для сайта DiNelli.ru Рекламный бюджет от 50 тр."></textarea>
-		 				<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="">
+		 				<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>
 		 				<label class="cloud-form__сonsent" for="сonsent">
 		 					Согласие на обработку персональных данных
 		 				</label>
