@@ -23,18 +23,10 @@ get_header(); ?>
 			<div class="box-content clearfix">
 				<div class="row clearfix">
 					<div class="cols col-5 ">
-						<h4 class="yd-service small-title box">
-							Яндекс.Директ
-						</h4>
-						<p>
-							Пора запустить двигатель торговли? Однозначно, пора!
-							<span class="strong-text">Тогда вперёд к действию.</span>
-						</p>
+						<?php the_field('pole1'); ?>
 					</div>
 					<div class="cols col-5 padding_top">
-						<p>
-							Основная услуга, с которой начинается продвижение  сайта в интернете - аудит Контекстной рекламы в Яндекс.Директ.
-						</p>
+						<?php the_field('pole2'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">

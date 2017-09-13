@@ -26,14 +26,10 @@ get_header(); ?>
 				</h4>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<p>
-							Ваши видео будут  заметны и узнаваемы на самом популярном видеохостинг
-						</p>
+						<?php the_field('pole1'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
-						<p>
-							Основная услуга, с которой начинается продвижение  видео в интернете - аудит вашего YouTube канала
-						</p>
+						<?php the_field('pole2'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">

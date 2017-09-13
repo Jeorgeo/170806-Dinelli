@@ -26,14 +26,10 @@ get_header(); ?>
 						<h4 class="yd-service small-title box">
 							SEO
 						</h4>
-						<p>
-							Познакомим ваш сайт с поисковиками и закрутим любовь с первой индексации.
-						</p>
+						<?php the_field('pole1'); ?>
 					</div>
 					<div class="cols col-5 col-md-6 padding_top">
-						<p>
-							Основная услуга, с которой начинается продвижение  сайта в интернете - аудит сайта для продвижения по SEO
-						</p>
+						<?php the_field('pole2'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">

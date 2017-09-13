@@ -26,14 +26,10 @@ get_header(); ?>
 						<h4 class="yd-service small-title box">
 							Google Adwords
 						</h4>
-						<p>
-							Охватим заинтересованную аудиторию на поиске в Google.
-						</p>
+						<?php the_field('pole1'); ?>
 					</div>
-					<div class="cols col-5 col-md-6 padding_top">
-						<p>
-							Основная услуга, с которой начинается продвижение  сайта в интернете - аудит Контекстной рекламы в Google Adwords.
-						</p>
+					<div class="cols col-5 col-md-6">
+						<?php the_field('pole2'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">

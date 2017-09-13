@@ -23,12 +23,7 @@ get_header(); ?>
 			<div class="box-content clearfix">
 				<div class="row clearfix">
 					<div class="cols col-8">
-						<h4 class="yd-service small-title box">
-							Аудит
-						</h4>
-						<p>
-							Заказав аудит вы получите инструкцию по исправлению ошибок. Проведем комплекс исследований, которые необходимы перед началом рекламной кампании, найдем причину низких позиций и уязвимости.
-						</p>
+						<?php the_field('pole1'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
