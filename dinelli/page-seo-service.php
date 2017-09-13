@@ -28,7 +28,7 @@ get_header(); ?>
 						</h4>
 						<?php the_field('pole1'); ?>
 					</div>
-					<div class="cols col-5 col-md-6 padding_top">
+					<div class="cols col-5 col-md-6">
 						<?php the_field('pole2'); ?>
 					</div>
 				</div>

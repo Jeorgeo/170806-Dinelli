@@ -57,14 +57,14 @@ $news = get_posts(
 			 ?>
 			<figure class="blog__box-content clearfix">
 				<div class="cols col-5 col-4-md">
-					<a href="/blog/<?php echo $obj->post_name; ?>">
+					<a href="/blog/<?php echo $obj->post_name; ?>" target="_blank">
 						<img src="<?php echo get_field('image',$obj->ID); ?>" alt="">
 					</a>
 				</div>
 				<div class="cols col-5 col-12-md">
-					<h4 class="small-title"><?php echo $obj->post_title; ?></h4>					
+					<h4 class="small-title"><?php echo $obj->post_title; ?></h4>
 					<?php echo get_field('description', $obj->ID); ?>
-					<a href="/blog/<?php echo $obj->post_name; ?>">Читать далее...</a>
+					<a href="/blog/<?php echo $obj->post_name; ?>" target="_blank">Читать далее...</a>
 				</div>
 			</figure>
 			<?php

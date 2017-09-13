@@ -946,7 +946,7 @@ ul.footer_content,
 }
 
 .cloud-form textarea {
-  background: url("img/dn_mail-pole-3.svg") no-repeat 50% 50%;
+  background: url("img/dn_mail-pole-3.svg") no-repeat 50% 40%;
   background-size: contain;
 }
 
@@ -2627,7 +2627,7 @@ ul.footer_content,
   top: 0;
   bottom: 0;
   padding: 16px;
-  background-color: rgba(74, 92, 104, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 9999;
   overflow: auto;
 }
@@ -2645,8 +2645,12 @@ ul.footer_content,
   height: 360px;
 	border-radius: 5px;
   color: #000000;
-  background: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 99999;
+}
+
+.popup-question .details-form::after {
+  display: none;
 }
 
 .modal-content-show {
@@ -2659,7 +2663,7 @@ ul.footer_content,
 	right: 0;
 	display: block;
 	margin: 0;
-	padding: 5px;
+	padding: 0;
 	border-radius: 50%;
 	font-size: 16px;
 	background-color: #ffffff;

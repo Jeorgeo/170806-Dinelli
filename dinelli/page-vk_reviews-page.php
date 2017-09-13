@@ -46,7 +46,9 @@ get_header();
 					</div>
 				</div>
 			</div>
+			<!-- кнопка еще пока заглушена
 			<button class="reviews-next" type="button" name="button">Показать ещё</button>
+			!-->
 		</div>
 	</section>
 
