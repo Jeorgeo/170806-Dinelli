@@ -65,7 +65,7 @@ $news = get_posts(
 							<?php echo $obj->post_title; ?>
 						</h4>
 						<figure class="reviews-photo">
-							<a href="<?php echo $obj->post_name; ?>" target="_blank">
+							<a href="/t_reviews-page/<?php echo $obj->post_name; ?>" target="_blank">
 								<img src="<?php echo get_field('image',$obj->ID); ?>" alt="">
 							</a>
 						</figure>

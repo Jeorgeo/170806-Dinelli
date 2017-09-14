@@ -22,10 +22,11 @@ get_header(); ?>
 			</span>
 			<div class="box-content clearfix">
 				<div class="row clearfix">
+					<h4 class="yd-service small-title box">
+						SEO
+					</h4>
 					<div class="cols col-5 col-md-6">
-						<h4 class="yd-service small-title box">
-							SEO
-						</h4>
+
 						<?php the_field('pole1'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">

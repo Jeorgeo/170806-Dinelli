@@ -22,10 +22,10 @@ get_header(); ?>
 			</span>
 			<div class="box-content clearfix">
 				<div class="row clearfix">
-					<div class="cols col-5 col-md-6">
-						<h4 class="yd-service small-title box">
-							Google Adwords
-						</h4>
+					<h4 class="yd-service small-title box">
+						Google Adwords
+					</h4>
+					<div class="cols col-5 col-md-6">						
 						<?php the_field('pole1'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">

@@ -1157,11 +1157,12 @@ ul.footer_content,
   }
 
   .small-title {
-    margin-bottom: 0.8em;
+    margin-bottom: 1.5em;
   }
 
   .small-title.box {
     margin-left: 8.33%;
+    margin-bottom: 0;
   }
 
   .title-img {
@@ -1486,6 +1487,10 @@ ul.footer_content,
     min-height: 610px;
   }
 
+  .blog .small-title {
+    margin-top: 0;
+  }
+
   .blog.box-1 p {
     width: 100%;
     margin: 0;
@@ -1796,13 +1801,19 @@ ul.footer_content,
   margin: 0;
   padding: 2em 0 1em 0;
   text-align: left;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   background: url("img/yt/dn_service-youtube-img-1.png") no-repeat 50% 100%;
   background-size: contain;
 }
 
-.yt .bottom-form,
-.site .bottom-form,
-.service .bottom-form {
+.service.box-2,
+.service.yd-service.box-1,
+.service.ga-service.box-1,
+.yt.box-1,
+.service.seo-service.box-1,
+.site.box-1,
+.service.audit-service.box-1,
+.service.coach-service.box-1 {
   margin-bottom: 5em;
 }
 
@@ -1972,12 +1983,16 @@ ul.footer_content,
     margin-bottom: 1em;
   }
 
-  .yt .bottom-form,
-  .site .bottom-form,
-  .service .bottom-form {
-    margin-bottom: 10em;
+  .service.box-2,
+  .service.yd-service.box-1,
+  .service.ga-service.box-1,
+  .yt.box-1,
+  .service.seo-service.box-1,
+  .site.box-1,
+  .service.audit-service.box-1,
+  .service.coach-service.box-1 {
+    margin-bottom: 9em;
   }
-
 }
 
 /*------------------------For PC 1280px---------------------------------*/
@@ -1988,16 +2003,15 @@ ul.footer_content,
     line-height: 1.3em;
   }
 
-
-
   .service.box-2,
   .service.yd-service.box-1,
+  .service.ga-service.box-1,
+  .yt.box-1,
+  .service.seo-service.box-1,
+  .site.box-1,
   .service.audit-service.box-1,
-  .service.audit-service.box-1,
-  .service.audit-service.box-1,
-  .service.audit-service.box-1,
-  .service.audit-service.box-1 {
-    margin-bottom: 10em;
+  .service.coach-service.box-1 {
+    margin-bottom: 8em;
   }
 
   .service.box-2 .box-title {
@@ -2094,7 +2108,7 @@ ul.footer_content,
   }
 
   .yd.box-1 .box-title {
-    margin: 0 8.33% 0 8.33%;
+    margin: 0 3.33% 0 8.33%;
     padding: 1em 27% 1em 0;
   }
 
@@ -2126,7 +2140,9 @@ ul.footer_content,
   .seo.box-4 .bottom-form::before,
   .yd-1 .bottom-form::before,
   .yt .bottom-form::before,
-  .service .bottom-form::before {
+  .service .bottom-form::before,
+  .audit .bottom-form::before,
+  .audit .service-form::before {
     display: block;
   }
 
@@ -2139,7 +2155,9 @@ ul.footer_content,
   .seo.box-4 .bottom-form .cloud-form,
   .yd-1 .bottom-form .cloud-form,
   .yt .bottom-form .cloud-form,
-  .service .bottom-form .cloud-form {
+  .service .bottom-form .cloud-form,
+  .audit .bottom-form .cloud-form,
+  .audit .service-form .cloud-form  {
     margin: 0 0 0 160px;
   }
 
@@ -2327,7 +2345,9 @@ ul.footer_content,
 }
 
 .content-img {
-  max-width: 80%;
+  max-width: 70%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 
@@ -2473,8 +2493,8 @@ ul.footer_content,
   }
 
   .row.clock {
-    background: url("img/audit/dn_service-ya-audit-img-11.svg") no-repeat 15% 50%;
-    background-size: 35%;
+    background: url("img/audit/dn_service-ya-audit-img-11.svg") no-repeat 20% 50%;
+    background-size: 28%;
   }
 
   .audit.box-3 {
