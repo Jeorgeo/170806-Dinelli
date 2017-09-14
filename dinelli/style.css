@@ -2142,7 +2142,8 @@ ul.footer_content,
   .yt .bottom-form::before,
   .service .bottom-form::before,
   .audit .bottom-form::before,
-  .audit .service-form::before {
+  .audit .service-form::before,
+  .coach .bottom-form::before {
     display: block;
   }
 
@@ -2157,7 +2158,8 @@ ul.footer_content,
   .yt .bottom-form .cloud-form,
   .service .bottom-form .cloud-form,
   .audit .bottom-form .cloud-form,
-  .audit .service-form .cloud-form  {
+  .audit .service-form .cloud-form,
+  .coach .bottom-form .cloud-form {
     margin: 0 0 0 160px;
   }
 
