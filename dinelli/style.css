@@ -2746,3 +2746,15 @@ ul.footer_content,
 .review_vk_date {
   display: none;
 }
+
+/*--------------------------------------------------------------
+# Custom class
+--------------------------------------------------------------*/
+
+.page-scroll-buttons button.one-page-up {
+  background-image: url("img/dn_arrow-up.svg");
+}
+
+.page-scroll-buttons button.one-page-down {
+  background-image: url("img/dn_arrow-down.svg");
+}

@@ -73,7 +73,7 @@ winPopup.addEventListener("click", function(event) {
 $(document).ready(function() {
 
 	//E-mail Ajax Send
-	$(".cloud-form").submit(function() { //Change
+	$(".modal-form").submit(function() { //Change
 		var th = $(this).serialize();
 		$.ajax({
 			type: "POST",
