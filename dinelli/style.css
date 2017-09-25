@@ -542,9 +542,9 @@ img {
 .header-menu-toggle span {
   position: absolute;
   display: block;
-  width: 25px;
+  width: 21px;
   top: 12px;
-  left: 0;
+  left: 2px;
   height: 2px;
   background-color: #000000;
   font-size: 0;
@@ -562,7 +562,7 @@ img {
 }
 
 .header-menu-toggle span::before {
-  top: -12px;
+  top: -10px;
   transform: rotate(-45deg);
   animation-name: prerotate-up;
   animation-duration: 0.8s;
@@ -570,7 +570,7 @@ img {
 }
 
 .header-menu-toggle span::after {
-  bottom: -12px;
+  bottom: -10px;
   transform: rotate(45deg);
   animation-name: prerotate-bottom;
   animation-duration: 0.8s;
@@ -928,9 +928,31 @@ ul.footer_content,
 }
 
 .cloud-form label.cloud-form__сonsent {
-  width: 210px;
+  position: relative;
+  width: 300px;
   margin: 0;
   padding: 0;
+  padding-left: 90px;
+}
+
+label.cloud-form__сonsent:hover {
+  cursor: pointer;
+}
+
+input[type=checkbox] + label.cloud-form__сonsent::before {
+  position: absolute;
+  top: 8px;
+  left: 36px;
+  width: 24px;
+  height: 24px;
+  background: url("img/dn_chekbox-nonactive.png") no-repeat 100% 100%;
+  background-size: contain;
+  content: '';
+}
+
+input[type=checkbox]:checked + label.cloud-form__сonsent::before {
+  background: url("img/dn_chekbox-active.png") no-repeat 100% 100%;
+  background-size: contain;
 }
 
 .cloud-form input,
@@ -940,8 +962,8 @@ ul.footer_content,
 }
 
 .cloud-form input.cloud-form__сonsent {
-  width: 85px;
-  text-align: center;
+  position: absolute;
+  opacity: 0;
 }
 
 .cloud-form input {
@@ -989,6 +1011,7 @@ ul.footer_content,
   background-size: cover;
   content: "";
 }
+
 
 
 /*-------------------Second for tablet 768px-----------------------*/
