@@ -28,8 +28,15 @@ function showPopup() {
 };
 
 function removePopup() {
-  popup.classList.remove("modal-content-show");
-  winPopup.classList.remove("modal-content-show");
+  popup.classList.add("modal-content-hide");
+  winPopup.classList.add("modal-content-hide");
+  setTimeout(function() {
+    popup.classList.remove("modal-content-show");
+    winPopup.classList.remove("modal-content-show");
+    popup.classList.remove("modal-content-hide");
+    winPopup.classList.remove("modal-content-hide");
+  }, 600);
+
 };
 
 
