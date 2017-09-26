@@ -213,8 +213,8 @@ get_header(); ?>
 							<button id="submit" class="cloud-form__submit" type="submit" name="submit">
 								Отправить заявку
 							</button>
-							<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>
-							<label class="cloud-form__сonsent" for="сonsent">
+							<input id="сonsent1" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>
+							<label class="cloud-form__сonsent" for="сonsent1">
 								Согласие на обработку персональных данных
 							</label>
 						</form>
