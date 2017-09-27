@@ -2674,6 +2674,8 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   .reviews iframe {
     max-height: 100%;
   }
+
+
 }
 
 /*----------------------for PC 1024px---------------------------*/
@@ -2752,19 +2754,6 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   display: none;
 }
 
-.modal-content-show {
-  display: block;
-  animation-name: show-popup;
-  animation-duration: 0.5s;
-  opacity: 1;
-}
-
-.modal-content-hide {
-  animation-name: hide-popup;
-  animation-duration: 0.4s;
-  opacity: 0;
-}
-
 .popup-question-close {
 	position: absolute;
 	top: 0;
@@ -2803,16 +2792,46 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   transform: rotate(-180deg);
 }
 
-.navigation.post-navigation {
+.popup-question-thanks {
+  position: fixed;
+  top:30px;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  width: 80%;
+  margin: auto;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.7) url("img/dn_spasibo.png") no-repeat 50% 100%;
+  background-size: contain;
+  border-radius: 10px;
   display: none;
 }
 
-.review_vk_ava img {
-  border-radius: 50%;
+.popup-question-thanks .box-content {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 55%;
 }
 
-.review_vk_date {
-  display: none;
+@media (min-width: 768px) {
+  .popup-question-thanks .box-content {
+    width: 50%;
+    margin-left: 48%;
+    margin-bottom: 38%;
+  }
+}
+
+.modal-content-show {
+  display: block;
+  animation-name: show-popup;
+  animation-duration: 0.5s;
+  opacity: 1;
+}
+
+.modal-content-hide {
+  animation-name: hide-popup;
+  animation-duration: 0.4s;
+  opacity: 0;
 }
 
 /*--------------------------------------------------------------
@@ -2825,4 +2844,16 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 
 .page-scroll-buttons button.one-page-down {
   background-image: url("img/dn_arrow-down.svg");
+}
+
+.navigation.post-navigation {
+  display: none;
+}
+
+.review_vk_ava img {
+  border-radius: 50%;
+}
+
+.review_vk_date {
+  display: none;
 }

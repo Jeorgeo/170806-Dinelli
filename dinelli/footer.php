@@ -46,13 +46,35 @@
 	<!-- popup form -->
 
 	<div class="wrap"></div>
+	<div class="popup-question-thanks">
+	  <div class="box-content">
+	  	<p>
+				Вы очень умны, что решили обойти всех конкурентов с нами, мы как закончим танцевать от счастья,
+				сразу же свяжемся с вами.
+			</p>
+			<p>
+				Если ваш вопрос не терпит отлагательств, то вы можете продублировать его в личные сообщения.
+				(Пока вы читали, открылось окно новой вкладкой.
+				Пишите, не откладывайте, я почти всегда онлайн Bконтакте.)
+			</p>
+			<p>
+				С уважением, Нелли Давыдова.
+	  	</p>
+	  </div>
+		<ul class="sidebar-social clearfix">
+			<li><?php dynamic_sidebar( 'social_vk' ); ?></a></li>
+			<li><?php dynamic_sidebar( 'social_f' ); ?></a></li>
+			<li><?php dynamic_sidebar( 'social_youtube' ); ?></a></li>
+			<li><?php dynamic_sidebar( 'social_instagram' ); ?></a></li>
+		</ul>
+	</div>
 
 	<div id="window" class="popup-question">
 	  <div class="popup-question-close">
 	    x
 	  </div>
 		<div class="details-form">
-			<form id="js_form" class="cloud-form">
+			<form id="js_form" method="post" class="cloud-form">
 				<!-- Hidden Required Fields -->
 				<input type="hidden" name="project_name" value="Dinelli.ru">
 				<input type="hidden" name="admin_email" value="<?php the_field('mail'); ?>">

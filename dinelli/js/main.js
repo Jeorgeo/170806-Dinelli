@@ -19,6 +19,7 @@ function moveMenu(){
 // popup windows
 
 var popup = document.querySelector(".popup-question");
+var popupS = document.querySelector(".popup-question-thanks");
 var close = document.querySelector(".popup-question-close");
 var winPopup = document.querySelector(".wrap");
 
@@ -30,8 +31,9 @@ function showPopup() {
 function removePopup() {
   popup.classList.add("modal-content-hide");
   winPopup.classList.add("modal-content-hide");
+  popupS.classList.remove("modal-content-show");
   setTimeout(function() {
-    popup.classList.remove("modal-content-show");
+    popup.classList.remove("modal-content-show");    
     winPopup.classList.remove("modal-content-show");
     popup.classList.remove("modal-content-hide");
     winPopup.classList.remove("modal-content-hide");
@@ -39,7 +41,21 @@ function removePopup() {
 
 };
 
-
+function showThank() {
+  popup.classList.remove("modal-content-show");
+  window.open("https://vk.com/davnelli");
+  popupS.classList.add("modal-content-show");
+  setTimeout(function() {
+    popupS.classList.add("modal-content-hide");
+    winPopup.classList.add("modal-content-hide");
+  }, 19000);
+  setTimeout(function() {
+    popupS.classList.remove("modal-content-show");
+    winPopup.classList.remove("modal-content-show");
+    popupS.classList.remove("modal-content-hide");
+    winPopup.classList.remove("modal-content-hide");
+  }, 20000);
+}
 
 close.addEventListener("click", function(event) {
 
@@ -65,8 +81,6 @@ window.addEventListener("keydown", function(event) {
 
 });
 
-
-
 winPopup.addEventListener("click", function(event) {
 
   if (winPopup.classList.contains("modal-content-show")) {
@@ -80,15 +94,14 @@ winPopup.addEventListener("click", function(event) {
 $(document).ready(function() {
 
 	//E-mail Ajax Send
-	$(".modal-form").submit(function() { //Change
+	$(".cloud-form").submit(function() { //Change
 		var th = $(this).serialize();
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
 			data: th,
 		}).done(function() {
-			alert("Спасибо! Мы свяжемся с вами в ближайшее время!");
-			removePopup();
+			showThank();
 		});
 		return false;
 	});
