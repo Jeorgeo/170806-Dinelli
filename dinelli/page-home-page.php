@@ -103,7 +103,7 @@ get_header(); ?>
 							<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-2-responsibility.svg" alt="">
 							<div class="figure-title">
 								<span class="list-title">Ответственность</span>
-								<p>Вникаем в суть ещё до того как вы решите работать с DINELLI</p>
+								<p>Вникаем в суть ещё до того как вы решите работать с DiNelli</p>
 							</div>
 						</figure>
 					</div>
@@ -146,6 +146,9 @@ get_header(); ?>
 		<div class="container">
 			<div class="box-content ">
 				<div class="row clearfix">
+					<div class="cols col-6 col-md-6 cloth_off">
+						<img src="<?php bloginfo('template_url'); ?>/img/dn_img-8-cloth_off.svg" alt="">
+					</div>
 					<div class="cols col-6 col-md-6 no-padding_right">
 						<?php the_field('pole9'); ?>
 					</div>
@@ -162,32 +165,42 @@ get_header(); ?>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6">
 						<figure class="details margin_left">
-							<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-5-site_analise.svg" alt="">
+							<div class="details_img">
+								<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-5-site_analise.svg" alt="">
+							</div>
 							<p>Анализ сайта и источников трафика, переходов на него</p>
 						</figure>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<figure class="details">
-							<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-6-offer_analise.svg" alt="">
+							<div class="details_img">
+								<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-6-offer_analise.svg" alt="">
+							</div>
 							<p>Анализ существующих рекламных кампаний в Яндекс.Директ, Google при их наличии</p>
 						</figure>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<figure class="details margin_right">
-							<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-7-recomendations.svg" alt="">
+							<div class="details_img">
+								<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-7-recomendations.svg" alt="">
+							</div>
 							<p>Рекомендации по улучшению сайта с точки зрения его восприятия
 								посетителями и удобству пользования</p>
 						</figure>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<figure class="details margin_left">
-							<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-8-monitoring.svg" alt="">
+							<div class="details_img">
+								<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-8-monitoring.svg" alt="">
+							</div>
 							<p>Мониторинг всех объявлений и контроль цены на рекламу</p>
 						</figure>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<figure class="details">
-							<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-9-everyday.svg" alt="">
+							<div class="details_img">
+								<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-9-everyday.svg" alt="">
+							</div>
 							<p>Ежедневное ведение рекламной кампании после настройки и оплаты</p>
 						</figure>
 					</div>

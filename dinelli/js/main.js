@@ -33,7 +33,7 @@ function removePopup() {
   winPopup.classList.add("modal-content-hide");
   popupS.classList.remove("modal-content-show");
   setTimeout(function() {
-    popup.classList.remove("modal-content-show");    
+    popup.classList.remove("modal-content-show");
     winPopup.classList.remove("modal-content-show");
     popup.classList.remove("modal-content-hide");
     winPopup.classList.remove("modal-content-hide");
@@ -48,13 +48,13 @@ function showThank() {
   setTimeout(function() {
     popupS.classList.add("modal-content-hide");
     winPopup.classList.add("modal-content-hide");
-  }, 19000);
+  }, 59000);
   setTimeout(function() {
     popupS.classList.remove("modal-content-show");
     winPopup.classList.remove("modal-content-show");
     popupS.classList.remove("modal-content-hide");
     winPopup.classList.remove("modal-content-hide");
-  }, 20000);
+  }, 60000);
 }
 
 close.addEventListener("click", function(event) {

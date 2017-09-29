@@ -178,6 +178,10 @@ a {
   color: inherit;
 }
 
+b, strong {
+  font-weight: bold;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -861,7 +865,10 @@ ul.footer_content,
 
 .list-title,
 .strong-text {
+  font-size: 1.05em;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: bold;
+  color: #000000;
 }
 
 .main.box-1 {
@@ -992,7 +999,10 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   background-size: contain;
 }
 
-.cloud-form input:focus {
+.cloud-form input:focus,
+.cloud-form textarea:focus,
+.cloud-form textarea:active,
+.cloud-form textarea:hover {
   color: #404040;
 }
 
@@ -1032,8 +1042,6 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   background-size: cover;
   content: "";
 }
-
-
 
 /*-------------------Second for tablet 768px-----------------------*/
 
@@ -1082,8 +1090,12 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   }
 
   .main.box-8 .box-content {
-    background: url("img/dn_img-8-cloth_off.svg") no-repeat 70% 50%;
+    background: url("img/dn_img-8-cloth_off.svg") no-repeat 80% 50%;
     background-size: 55%;
+  }
+
+  .main.box-8 .cloth_off {
+    display: none;
   }
 
   .main.box-9 .box-title {
@@ -1305,6 +1317,10 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 
  .main.box-9 figure img {
     width: 95%;
+  }
+
+  .details_img {
+    min-height: 135px;
   }
 
  .main.box-9 .box-content .small-title {
@@ -1631,7 +1647,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 }
 
 .service.box-1.coach-service .box-title {
-  background: url("img/coach/dn_couch-img-24.png") no-repeat 0 100%;
+  background: url("img/coach/dn_couch-img-9.svg") no-repeat 0 100%;
   background-size: contain;
 }
 
@@ -2127,7 +2143,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   }
 
   .ga .bottom-form {
-    margin-top: 4em;
+    margin-top: 5em;
   }
 
   .ga .bottom-form::after {
@@ -2140,11 +2156,6 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   .umbrella {
     position: relative;
     margin-left: 0;
-  }
-
-  .umbrella .small-title {
-    margin-top: 50%;
-    margin-bottom: 62%;
   }
 
   .ga.box-2 {
@@ -2334,7 +2345,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 .coach.box-4 .box-title {
   margin: 0.5em 0 0 0;
   padding: 2em 0 2em;
-  background: url("img/coach/dn_couch-img-9.svg") no-repeat 50% 50%;
+  background: url("img/coach/dn_couch-img-24.png") no-repeat 50% 50%;
   background-size: contain;
 }
 
@@ -2459,6 +2470,10 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
     margin-right: 30%;
   }
 
+  .coach.box-8 .bottom-form {
+    margin: 3em 0;
+  }
+
   .audit.box-1 .box-title {
     margin: 0.5em 0 0 0;
     padding: 2.5em 0 1em;
@@ -2512,7 +2527,8 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   .coach.box-4 .box-title,
   .coach.box-5 .box-title,
   .coach.box-7 .box-title,
-  .audit.box-1 .box-title {
+  .audit.box-1 .box-title,
+  .service .yd-service.small-title {
     margin-left: 8.33%;
     margin-right: 8.33%;
   }
@@ -2567,10 +2583,6 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 
   .coach img.img_small {
     max-width: 70%;
-  }
-
-  .box-content figure.palm {
-    margin-top: 3em;
   }
 }
 
@@ -2801,7 +2813,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   width: 80%;
   margin: auto;
   color: #000000;
-  background: rgba(255, 255, 255, 0.7) url("img/dn_spasibo.png") no-repeat 50% 100%;
+  background: rgba(255, 255, 255, 0.9) url("img/dn_spasibo.png") no-repeat 50% 100%;
   background-size: contain;
   border-radius: 10px;
   display: none;
@@ -2818,6 +2830,16 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
     width: 50%;
     margin-left: 48%;
     margin-bottom: 38%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .popup-question-thanks .box-content {
+    margin-bottom: 30%;
+  }
+
+  .popup-question-thanks .sidebar-social {
+    margin-bottom: 8em;
   }
 }
 
@@ -2840,10 +2862,12 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 
 .page-scroll-buttons button.one-page-up {
   background-image: url("img/dn_arrow-up.svg");
+  background-color: rgba(232, 61, 37, 0.5);
 }
 
 .page-scroll-buttons button.one-page-down {
   background-image: url("img/dn_arrow-down.svg");
+  background-color: rgba(232, 61, 37, 0.5);
 }
 
 .navigation.post-navigation {
