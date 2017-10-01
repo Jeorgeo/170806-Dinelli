@@ -156,7 +156,7 @@ get_header(); ?>
 								value="" placeholder="ivanov@ivan.ru" required>
 								<label  class="cloud-form__message" for="message">сообщение</label>
 								<textarea id="message" class="cloud-form__message" name="message"
-								rows="5" cols="80" placeholder="Очень хочу получить аудит РК для сайта Dinelli.ru..."
+								rows="5" cols="80" placeholder=""
 								></textarea>
 								<button id="submit" class="cloud-form__submit" type="submit" name="submit">
 									Отправить заявку
@@ -215,7 +215,7 @@ get_header(); ?>
 							value="" placeholder="ivanov@ivan.ru" required>
 							<label  class="cloud-form__message" for="message">сообщение</label>
 							<textarea id="message" class="cloud-form__message" name="message"
-							rows="5" cols="80" placeholder="Очень хочу получить аудит РК для сайта Dinelli.ru..."
+							rows="5" cols="80" placeholder=""
 							></textarea>
 							<button id="submit" class="cloud-form__submit" type="submit" name="submit">
 								Отправить заявку

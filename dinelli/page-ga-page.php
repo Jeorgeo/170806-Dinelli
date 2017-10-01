@@ -81,9 +81,6 @@ get_header(); ?>
 						<div class="cols padding_right col-5 col-md-6 faq">
 							<?php the_field('pole10'); ?>
 						</div>
-						<div class="cols col-5 col-md-6">
-							<img class="content-img google-img-3" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-16.svg" alt="">
-						</div>
 					</div>
 					<div class="row clearfix">
 						<h4 class="small-title box">
@@ -103,7 +100,7 @@ get_header(); ?>
 						<div class="cols col-5 col-md-6">
 							<img class="content-img google-img-5" src="<?php bloginfo('template_url'); ?>/img/ga/dn_service-google-img-5.svg" alt="">
 							<p><span class="strong-text">
-								Оставьте заявку на консультацию по контекстной рекламе GoogleAdWords в этой простой форме.
+								Оставьте заявку на бесплатную консультацию в форме справа.
 							</span></p>
 							<p><span class="strong-text">
 								Не забудьте написать ваше имя и контакты, и я лично свяжусь с вами в ближайшее рабочее время.
@@ -125,7 +122,7 @@ get_header(); ?>
 									pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
 									<label  class="cloud-form__message" for="message">сообщение</label>
 									<textarea id="message" class="cloud-form__message" name="message"
-									rows="4" cols="80" placeholder="Очень хочу качественную рекламу для сайта DiNelli.ru Рекламный бюджет от 50 тр."></textarea>
+									rows="4" cols="80" placeholder=""></textarea>
 
 									<button id="submit" class="cloud-form__submit" type="submit" name="submit">
 										Отправить заявку
@@ -144,7 +141,6 @@ get_header(); ?>
 						</div>
 						<div class="cols col-6 col-md-6 umbrella">
 							<?php the_field('pole14'); ?>
-							<a class="question_link" href="https://vk.com/topic-55517976_28337937">Посмотреть все результаты и отзывы</a>
 						</div>
 					</div>
 				</div>

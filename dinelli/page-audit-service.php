@@ -29,32 +29,37 @@ get_header(); ?>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
 						<a class="service__card" href="<?php echo get_field('link1'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/img/audit/dn_service-audit-img-1.png" alt="">
+							<img src="<?php the_field('img1'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<a class="service__card" href="<?php echo get_field('link2'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/img/audit/dn_service-audit-img-2.png" alt="">
+							<img src="<?php the_field('img2'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
 						<a class="service__card" href="<?php echo get_field('link3'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/img/audit/dn_service-audit-img-3.png" alt="">
+							<img src="<?php the_field('img3'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 left_side">
 						<a class="service__card" href="<?php echo get_field('link4'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/img/audit/dn_service-audit-img-4.png" alt="">
+							<img src="<?php the_field('img4'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<a class="service__card" href="<?php echo get_field('link5'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/img/audit/dn_service-audit-img-5.png" alt="">
+							<img src="<?php the_field('img5'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
 						<a class="service__card" href="<?php echo get_field('link6'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/img/audit/dn_service-audit-img-6.png" alt="">
+							<img src="<?php the_field('img7'); ?>">
+						</a>
+					</div>
+					<div class="cols col-3 col-md-6 left_side">
+						<a class="service__card" href="<?php echo get_field('link7'); ?>" target="_blank">
+							<img src="<?php the_field('img7'); ?>">
 						</a>
 					</div>
 				</div>

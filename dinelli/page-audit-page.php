@@ -108,13 +108,7 @@ get_header(); ?>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<h4 class="small-title">
-							Заявка на бесплатный аудит контекстной рекламы, сайта, SEO
-						</h4>
-						<p>
-							Хотите получить аудит по перечню главных недочетов совершенно бесплатно?
-							Не забудьте написать ваше имя и адрес сайта, я лично свяжусь с вами.
-						</p>
+						<?php the_field('pole7-f'); ?>
 					</div>
 					<div class="cols col-5 bottom-form">
 						<form id="js_form" class="cloud-form">
@@ -131,7 +125,6 @@ get_header(); ?>
 							<input id="mail"  class="cloud-form__mail" type="text" name="mail"
 							value="" placeholder="iNfo@DiNelli.ru" required
 							pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
-
 							<button id="submit" class="cloud-form__submit" type="submit" name="submit">
 								Отправить заявку
 							</button>
@@ -229,7 +222,7 @@ get_header(); ?>
 		 				pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
 		 				<label  class="cloud-form__message" for="message">сообщение</label>
 		 				<textarea id="message" class="cloud-form__message" name="message"
-		 				rows="4" cols="80" placeholder="Очень хочу качественную рекламу для сайта DiNelli.ru Рекламный бюджет от 50 тр."></textarea>
+		 				rows="4" cols="80" placeholder=""></textarea>
 
 		 				<button id="submit" class="cloud-form__submit" type="submit" name="submit">
 		 					Отправить заявку

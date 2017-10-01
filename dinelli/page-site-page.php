@@ -34,38 +34,38 @@ get_header(); ?>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/site/dn_service-site-img-2.jpg" alt="">
+						<a class="service__card" href="<?php echo get_field('link1'); ?>" onclick="showPopup()">
+							<img src="<?php the_field('img1'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/site/dn_service-site-img-3.jpg" alt="">
+						<a class="service__card" href="<?php echo get_field('link2'); ?>" onclick="showPopup()">
+							<img src="<?php the_field('img2'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
-						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/site/dn_service-site-img-4.jpg" alt="">
+						<a class="service__card" href="<?php echo get_field('link3'); ?>" onclick="showPopup()">
+							<img src="<?php the_field('img3'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/site/dn_service-site-img-5.jpg" alt="">
+						<a class="service__card" href="<?php echo get_field('link4'); ?>" onclick="showPopup()">
+							<img src="<?php the_field('img4'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
-						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/site/dn_service-site-img-6.jpg" alt="">
+						<a class="service__card" href="<?php echo get_field('link5'); ?>" onclick="showPopup()">
+							<img src="<?php the_field('img5'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
-						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/site/dn_service-site-img-7.jpg" alt="">
+						<a class="service__card" href="<?php echo get_field('link6'); ?>" onclick="showPopup()">
+							<img src="<?php the_field('img6'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 left_side">
-						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/site/dn_service-site-img-8.jpg" alt="">
+						<a class="service__card" href="<?php echo get_field('link7'); ?>" onclick="showPopup()">
+							<img src="<?php the_field('img7'); ?>">
 						</a>
 					</div>
 				</div>
@@ -73,7 +73,6 @@ get_header(); ?>
 					<div class="cols col-5 col-md-6">
 						<h4 class="small-title">Заявка на консультацию</h4>
 						<p>Напишите ваши контакты и пожелания, и я, Нелли Давыдова лично свяжусь с вами в ближайшее рабочее время.</p>
-
 					</div>
 					<div class="cols col-5 bottom-form col-md-6">
 						<form id="js_form" class="cloud-form">
