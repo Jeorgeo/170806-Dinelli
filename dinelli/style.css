@@ -1754,7 +1754,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   background-size: contain;
 }
 
-.ga .question_link {
+.question_link {
   text-transform: uppercase;
 }
 
@@ -2158,6 +2158,16 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
     margin-left: 0;
   }
 
+  .graph {
+    position: relative;
+    margin-top: 3em;
+  }
+
+  .graph .col-4 {
+    position: absolute;
+    top: -4em;
+  }
+
   .ga.box-2 {
     margin-bottom: 7em;
   }
@@ -2287,8 +2297,8 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
     background-size: 20%;
   }
 
-  .umbrella .small-title {
-    margin-bottom: 90%;
+  .umbrella ul {
+    margin-bottom: 1em;
   }
 
   .yd.box-1 .box-title {
@@ -2405,6 +2415,10 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   max-width: 70%;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.content-img.full {
+  max-width: 100%;
 }
 
 

@@ -123,6 +123,15 @@ get_header(); ?>
 						</form>
 					</div>
 				</div>
+				<div class="row clearfix">
+					<div class="cols col-6 col-md-6">
+						<img class="content-img full" src="<?php the_field('img-o'); ?>" alt="">
+					</div>
+					<div class="cols col-5 col-md-6 umbrella">
+						<?php the_field('pole14'); ?>
+						<a class="question_link" href="https://vk.com/topic-55517976_28337937">Посмотреть все результаты и отзывы</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

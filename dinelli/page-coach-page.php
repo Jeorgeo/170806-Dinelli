@@ -152,8 +152,13 @@ get_header(); ?>
 						<?php the_field('pole10'); ?>
 					</div>
 				</div>
-				<div class="row graph">
-					<img src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-graph.png" alt="">
+				<div class="row graph clearfix">
+					<div class="cols col-4">
+						<?php the_field('pole-graph'); ?>
+					</div>
+					<div class="cols col-12">
+						<img class="content-img" src="<?php the_field('img-graph'); ?>" alt="">
+					</div>
 				</div>
 				<h4 class="small-title box">
 					Особый подход
@@ -353,7 +358,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
-	
+
 </main>
 
 <?php
