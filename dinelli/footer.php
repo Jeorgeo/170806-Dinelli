@@ -15,30 +15,36 @@
 		<div id="footer" class="main footer">
 			<div class="container">
 				<div class="row clearfix">
-					<div class="cols col-5">
+					<div class="cols col-4">
 						<div class="footer_content">
 							<?php dynamic_sidebar( 'footer_al' ); ?>
 							<?php dynamic_sidebar( 'footer_pl' ); ?>
 						</div>
 					</div>
-					<div class="cols col-5 footer__footer-copy">
-						<div id="logo" class="site-branding">
-						<?php	the_custom_logo(); ?>
-						</div>
-						<div class="footer-contacts">
-							<?php dynamic_sidebar( 'phone' ); ?>
-							<?php dynamic_sidebar( 'phone_b' ); ?>
-							<div class="contacts_icon">
-								<span class="contacts_icon-w"></span>
-								<span class="contacts_icon-v"></span>
-								<span class="contacts_icon-t"></span>
+					<div class="cols col-7 footer__footer-copy">
+						<div class="footer__middle-box">
+							<div id="logo" class="site-branding">
+							<?php	the_custom_logo(); ?>
+							</div>
+							<div class="footer-contacts">
+								<?php dynamic_sidebar( 'phone' ); ?>
+								<?php dynamic_sidebar( 'phone_b' ); ?>
+								<div class="contacts_icon">
+									<span class="contacts_icon-w"></span>
+									<span class="contacts_icon-v"></span>
+									<span class="contacts_icon-t"></span>
+								</div>
+							</div>
+							<div class="footer_content">
+								<?php dynamic_sidebar( 'footer_about' ); ?>
 							</div>
 						</div>
-						<div class="footer_content">
-							<?php dynamic_sidebar( 'footer_about' ); ?>
-							<?php dynamic_sidebar( 'footer_content' ); ?>
-						</div>
-						<?php dynamic_sidebar( 'footer_copy' ); ?>
+						<div class="footer__left-box">
+							<div class="footer_content">
+								<?php dynamic_sidebar( 'footer_content' ); ?>
+							</div>
+							<?php dynamic_sidebar( 'footer_copy' ); ?>
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -58,7 +64,7 @@
 			<p>
 				Если ваш вопрос не терпит отлагательств, то вы можете продублировать его в личные сообщения.
 				(Пока вы читали, открылось окно новой вкладкой.
-				Пишите, не откладывайте, я почти всегда онлайн Bконтакте.)
+				Пишите, не откладывайте, я почти всегда онлайн <a href="https://vk.com/directbm" target="_blank">Bконтакте</a>.)
 			</p>
 			<p>
 				С уважением, Нелли Давыдова.

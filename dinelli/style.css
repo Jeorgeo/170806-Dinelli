@@ -747,8 +747,8 @@ img {
 }
 
 .footer_content ul li {
-  margin: 1em 0;
-  font-size: 1.1em;
+  margin: 0.5em 0;
+  font-size: 0.95em;
 }
 
 .footer .footer_copy a,
@@ -789,8 +789,12 @@ img {
     margin: 0 2%;
   }
 
-  .footer .cols. {
-    margin-left: 8.33%;
+  .footer .cols {
+    margin-left: 4%;
+  }
+
+  .footer .site-branding {
+    margin-top: 1em;
   }
 }
 
@@ -798,6 +802,17 @@ img {
   .footer .container {
     width: 100%;
     margin: 0;
+  }
+
+  .footer__middle-box {
+    float: left;
+    width: 40%;
+  }
+
+  .footer__left-box {
+    float: left;
+    width: 55%;
+    margin-left: 5%;
   }
 }
 

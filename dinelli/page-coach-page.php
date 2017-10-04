@@ -29,7 +29,7 @@ get_header(); ?>
 				</h4>
 				<div class="row clearfix learning">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole1'); ?>
+						<?php the_field('pole2'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
@@ -37,7 +37,7 @@ get_header(); ?>
 						<img class="img_small" class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-3.svg" alt="">
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole2'); ?>
+						<?php the_field('pole3'); ?>
 					</div>
 				</div>
 			</div>
@@ -49,7 +49,7 @@ get_header(); ?>
 			<div class="box-content">
 				<div class="row clearfix strategy">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole3'); ?>
+						<?php the_field('pole4'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
@@ -57,12 +57,12 @@ get_header(); ?>
 						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-5.svg" alt="">
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole4'); ?>
+						<?php the_field('pole5'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole5'); ?>
+						<?php the_field('pole6'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
 						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-6.svg" alt="">
@@ -84,10 +84,10 @@ get_header(); ?>
 			<div class="box-content">
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole6'); ?>
+						<?php the_field('pole7'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole7'); ?>
+						<?php the_field('pole8'); ?>
 					</div>
 				</div>
 				<h4 class="small-title box">
@@ -141,15 +141,15 @@ get_header(); ?>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-4 col-md-6">
-						<?php the_field('pole8'); ?>
+						<?php the_field('pole9'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-4 col-md-6">
-						<?php the_field('pole9'); ?>
+						<?php the_field('pole10'); ?>
 					</div>
 					<div class="cols col-4 col-md-6">
-						<?php the_field('pole10'); ?>
+						<?php the_field('pole11'); ?>
 					</div>
 				</div>
 				<div class="row graph clearfix">
@@ -165,7 +165,7 @@ get_header(); ?>
 				</h4>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole11'); ?>
+						<?php the_field('pole12'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
 						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-8.svg" alt="">
@@ -182,18 +182,18 @@ get_header(); ?>
 			<div class="box-content">
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole12'); ?>
+						<?php the_field('pole13'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole13'); ?>
+						<?php the_field('pole14'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole14'); ?>
+						<?php the_field('pole15'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole15'); ?>
+						<?php the_field('pole16'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
@@ -201,7 +201,7 @@ get_header(); ?>
 						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-10.svg" alt="">
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole16'); ?>
+						<?php the_field('pole17'); ?>
 					</div>
 				</div>
 			</div>
@@ -215,30 +215,30 @@ get_header(); ?>
 			<div class="box-content">
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole17'); ?>
+						<?php the_field('pole18'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole18'); ?>
+						<?php the_field('pole19'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole19'); ?>
-						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-13.svg" alt="">
 						<?php the_field('pole20'); ?>
+						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-13.svg" alt="">
+						<?php the_field('pole21'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
 						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-12.svg" alt="">
-						<?php the_field('pole21'); ?>
+						<?php the_field('pole22'); ?>
 						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-14.svg" alt="">
 					</div>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole22'); ?>
+						<?php the_field('pole23'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole23'); ?>
+						<?php the_field('pole24'); ?>
 					</div>
 				</div>
 			</div>
@@ -295,11 +295,11 @@ get_header(); ?>
 			<div class="box-content">
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole24'); ?>
+						<?php the_field('pole25'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
 						<img class="img_small" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-16.svg" alt="">
-						<?php the_field('pole25'); ?>
+						<?php the_field('pole26'); ?>
 					</div>
 				</div>
 			</div>
@@ -316,15 +316,15 @@ get_header(); ?>
 			<div class="box-content">
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole26'); ?>
+						<?php the_field('pole27'); ?>
 					</div>
 					<div class="cols col-5 col-md-6">
-						<?php the_field('pole27'); ?>
+						<?php the_field('pole28'); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-4">
-						<?php the_field('pole28'); ?>
+						<?php the_field('pole29'); ?>
 					</div>
 					<div class="cols col-6 bottom-form">
 						<form id="js_form" class="cloud-form">

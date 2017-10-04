@@ -50,6 +50,11 @@
 							Заказать звонок
 							<span class="color-text"> ]</span>
 						</a>
+						<a href="#" id="js_modal" onclick="showPopup()" class="show_modal">
+							<span class="color-text">[ </span>
+							Оставить отзыв
+							<span class="color-text"> ]</span>
+						</a>
 					</li>
 				</ul>
 				<ul class="sidebar-social clearfix">
