@@ -4,18 +4,18 @@ add_action( 'init', 'register_cpt_events' );
 function register_cpt_events() {
 
 	$labels = array(
-		'name' => __( 'События', 'events' ),
-		'singular_name' => __( 'События', 'events' ),
-		'add_new' => __( 'Добавить событие', 'events' ),
-		'add_new_item' => __( 'Добавить событие', 'events' ),
-		'edit_item' => __( 'Редактировать событие', 'events' ),
-		'new_item' => __( 'Новое событие', 'events' ),
-		'view_item' => __( 'Посмотреть событие', 'events' ),
-		'search_items' => __( 'Найти событие', 'events' ),
+		'name' => __( 'Видеозаписи', 'events' ),
+		'singular_name' => __( 'Видеозаписи', 'events' ),
+		'add_new' => __( 'Добавить Видеозапись', 'events' ),
+		'add_new_item' => __( 'Добавить Видеозапись', 'events' ),
+		'edit_item' => __( 'Редактировать Видеозапись', 'events' ),
+		'new_item' => __( 'Новая Видеозапись', 'events' ),
+		'view_item' => __( 'Посмотреть Видеозапись', 'events' ),
+		'search_items' => __( 'Найти Видеозапись', 'events' ),
 		'not_found' => __( 'Ничего не найдено', 'events' ),
 		'not_found_in_trash' => __( 'Ничего не найдено в корзине', 'events' ),
 		'parent_item_colon' => __( 'Родитель:', 'events' ),
-		'menu_name' => __( 'События', 'events' ),
+		'menu_name' => __( 'Видеозаписи', 'events' ),
 	);
 
 	$args = array(

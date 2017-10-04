@@ -307,11 +307,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require get_template_directory() . '/tgm/dinelli_tgm.php';
 
 /**
- * Custom vlog.
- */
-require get_template_directory() . '/inc/vlog.php';
-
-/**
  * Custom reviews_text.
  */
 require get_template_directory() . '/inc/reviews_text.php';
@@ -411,6 +406,7 @@ if(function_exists("register_field_group"))
 					'group_no' => 3,
 				),
 			),
+
 		),
 		'options' => array (
 			'position' => 'normal',

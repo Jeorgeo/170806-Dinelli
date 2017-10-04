@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="single-post">
 	<div class="row clearfix">
-		<div class="cols col-12">
+		<div class="cols col-10">
 			<div class="blog-title">
 				<h2>
 					<?php the_title(); ?>
