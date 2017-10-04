@@ -15,29 +15,26 @@
 		<div id="footer" class="main footer">
 			<div class="container">
 				<div class="row clearfix">
-					<div class="cols col-5">
-						<div class="footer_content">
-							<?php dynamic_sidebar( 'footer_al' ); ?>
-							<?php dynamic_sidebar( 'footer_pl' ); ?>
-						</div>
-					</div>
-					<div class="cols col-5 footer__footer-copy">
-						<div id="logo" class="site-branding">
-						<?php	the_custom_logo(); ?>
-						</div>
-						<div class="footer-contacts">
-							<?php dynamic_sidebar( 'phone' ); ?>
-							<?php dynamic_sidebar( 'phone_b' ); ?>
-							<div class="contacts_icon">
-								<span class="contacts_icon-w"></span>
-								<span class="contacts_icon-v"></span>
-								<span class="contacts_icon-t"></span>
+					<div class="cols col-5 col-md-6">
+						<div class="cols col-5 contacts">
+							<div class="footer-contacts">
+								<?php dynamic_sidebar( 'phone' ); ?>
+								<?php dynamic_sidebar( 'phone_b' ); ?>
+								<div class="contacts_icon">
+									<span class="contacts_icon-w"></span>
+									<span class="contacts_icon-v"></span>
+									<span class="contacts_icon-t"></span>
+									<span class="contacts_icon-s"></span>
+								</div>
 							</div>
 						</div>
-						<div class="footer_content">
-							<?php dynamic_sidebar( 'footer_about' ); ?>
-							<?php dynamic_sidebar( 'footer_content' ); ?>
+						<div class="cols col-7">
+							<ul class="footer_content">
+								<li><?php dynamic_sidebar( 'footer_c' ); ?></li>
+							</ul>
 						</div>
+					</div>
+					<div class="cols col-5 col-md-6 footer__footer-copy">
 						<?php dynamic_sidebar( 'footer_copy' ); ?>
 					</div>
 				</div>
@@ -49,7 +46,7 @@
 
 	<div class="wrap"></div>
 	<div class="popup-question-thanks">
-
+		
 	  <div class="box-content">
 	  	<p>
 				Вы очень умны, что решили обойти всех конкурентов с нами, мы как закончим танцевать от счастья,

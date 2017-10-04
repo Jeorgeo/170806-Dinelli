@@ -186,17 +186,44 @@ add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
  		'before_title'  => '<h2 class="widget-title">',
  		'after_title'   => '</h2>',
  	) );
- 	register_sidebar( array(
+	register_sidebar( array(
+		'name'          => esc_html__( 'Ссылки на обучение активные', 'dinelli' ),
+		'id'            => 'footer_al',
+		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+		'before_widget' => '<div class="active-link">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Ссылки на обучение пассивные', 'dinelli' ),
+		'id'            => 'footer_pl',
+		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+		'before_widget' => '<div class="passive-link">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Ссылки на страницы о', 'dinelli' ),
+		'id'            => 'footer_about',
+		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
+		'before_widget' => '<div class="about-link">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
  		'name'          => esc_html__( 'Контент в подвале', 'dinelli' ),
- 		'id'            => 'footer_c',
+ 		'id'            => 'footer_content',
  		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
- 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+ 		'before_widget' => '<div class="content-link">',
  		'after_widget'  => '</div>',
  		'before_title'  => '<h2 class="widget-title">',
  		'after_title'   => '</h2>',
  	) );
  	register_sidebar( array(
- 		'name'          => esc_html__( 'Копирайт в подвале', 'dinelli' ),
+ 		'name'          => esc_html__( 'Копирайт и политика в подвале', 'dinelli' ),
  		'id'            => 'footer_copy',
  		'description'   => esc_html__( 'Add widgets here.', 'dinelli' ),
  		'before_widget' => '<div id="%1$s" class="footer_copy">',
@@ -204,7 +231,6 @@ add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
  		'before_title'  => '<h2 class="widget-title">',
  		'after_title'   => '</h2>',
  	) );
-
  }
  add_action( 'widgets_init', 'dinelli_widgets_init' );
 
@@ -279,6 +305,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * TGM.
  */
 require get_template_directory() . '/tgm/dinelli_tgm.php';
+
+/**
+ * Custom vlog.
+ */
+require get_template_directory() . '/inc/vlog.php';
 
 /**
  * Custom reviews_text.
