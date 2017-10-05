@@ -255,9 +255,9 @@ function dinelli_scripts() {
 
 	wp_enqueue_script( 'dinelli-skip-link-focus-fix', $dineli_url . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	/*wp_enqueue_script('jquery-min', $dineli_url . '/js/jquery.min.js', array(), true );
+	wp_enqueue_script('jquery-min', $dineli_url . '/js/jquery.min.js', array(), true );
 
-	wp_enqueue_script('jquery-mousewheel', $dineli_url . '/js/jquery.mousewheel-3.0.6.pack.js', array(), '20151215', true );
+	/*wp_enqueue_script('jquery-mousewheel', $dineli_url . '/js/jquery.mousewheel-3.0.6.pack.js', array(), '20151215', true );
 
 	wp_enqueue_script('jquery-bxslider', $dineli_url . '/js/jquery.bxslider.min.js', array(), '20151215', true );
 

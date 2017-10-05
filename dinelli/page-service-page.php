@@ -128,7 +128,7 @@ get_header(); ?>
 						<img class="content-img full" src="<?php the_field('img-o'); ?>" alt="">
 					</div>
 					<div class="cols col-5 col-md-6 umbrella">
-						<?php the_field('pole14'); ?>						
+						<?php the_field('pole14'); ?>
 					</div>
 				</div>
 			</div>
