@@ -119,7 +119,7 @@ get_header(); ?>
 							<img src="<?php bloginfo('template_url'); ?>/img/dn_icon-4-tactic.svg" alt="">
 							<div class="figure-title">
 								<span class="list-title">Тактичность</span>
-								<p>Персонализации работы по вашему заказу</p>
+								<p>Персонализация работы по вашему заказу</p>
 							</div>
 						</figure>
 					</div>

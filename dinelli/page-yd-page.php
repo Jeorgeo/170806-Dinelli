@@ -55,8 +55,11 @@ get_header(); ?>
 			<div class="box-content">
 				<div class="container">
 					<div class="row clearfix">
-						<div class="cols padding_right col-5">
+						<div class="cols padding_right col-5 col-md-6">
 						<?php the_field('pole4'); ?>
+						</div>
+						<div class="cols padding_right col-5 col-md-6">
+						<?php the_field('pole4-1'); ?>
 						</div>
 					</div>
 					<div class="row clearfix">

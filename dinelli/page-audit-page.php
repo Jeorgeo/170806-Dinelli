@@ -74,6 +74,9 @@ get_header(); ?>
 					<div class="cols col-5 col-md-6">
 						<?php the_field('pole4'); ?>
 					</div>
+					<div class="cols col-5 col-md-6">
+						<?php the_field('pole4-1'); ?>
+					</div>
 				</div>
 				<div class="row clearfix">
 					<div class="cols col-6 col-md-6">

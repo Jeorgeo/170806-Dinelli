@@ -20,7 +20,10 @@ function moveMenu(){
 
 var popup = document.querySelector(".popup-question");
 var popupS = document.querySelector(".popup-question-thanks");
-var close = document.querySelector(".popup-question-close");
+var popupSr = document.querySelector(".popup-question-thanks-r");
+var popupR = document.querySelector(".reviews-popup-question");
+var close = document.querySelectorAll(".popup-question-close");
+var closeR = document.querySelector(".popup-question-close-r");
 var winPopup = document.querySelector(".wrap");
 
 function showPopup() {
@@ -28,17 +31,42 @@ function showPopup() {
   winPopup.classList.add("modal-content-show");
 };
 
+function showPopupR() {
+  popupR.classList.add("modal-content-show");
+  winPopup.classList.add("modal-content-show");
+};
+
 function removePopup() {
   popup.classList.add("modal-content-hide");
+  popupR.classList.add("modal-content-hide");
   winPopup.classList.add("modal-content-hide");
   popupS.classList.remove("modal-content-show");
+  popupSr.classList.remove("modal-content-show");
   setTimeout(function() {
     popup.classList.remove("modal-content-show");
+    popupR.classList.remove("modal-content-show");
     winPopup.classList.remove("modal-content-show");
     popup.classList.remove("modal-content-hide");
+    popupR.classList.remove("modal-content-hide");
     winPopup.classList.remove("modal-content-hide");
   }, 600);
 
+};
+
+function showThankR() {
+  popupR.classList.remove("modal-content-show");
+  window.open("https://vk.com/davnelli");
+  popupSr.classList.add("modal-content-show");
+  setTimeout(function() {
+    popupSr.classList.add("modal-content-hide");
+    winPopup.classList.add("modal-content-hide");
+  }, 59000);
+  setTimeout(function() {
+    popupS.classList.remove("modal-content-show");
+    winPopup.classList.remove("modal-content-show");
+    popupS.classList.remove("modal-content-hide");
+    winPopup.classList.remove("modal-content-hide");
+  }, 60000);
 };
 
 function showThank() {
@@ -55,17 +83,26 @@ function showThank() {
     popupS.classList.remove("modal-content-hide");
     winPopup.classList.remove("modal-content-hide");
   }, 60000);
+};
+
+for (var i = 0; i < close.length; i++) {
+
+  close[i].addEventListener("click", function(event) {
+
+    event.preventDefault();
+
+    removePopup();
+
+  });
 }
 
-close.addEventListener("click", function(event) {
+closeR.addEventListener("click", function(event) {
 
   event.preventDefault();
 
   removePopup();
 
 });
-
-
 
 window.addEventListener("keydown", function(event) {
 
@@ -94,11 +131,23 @@ winPopup.addEventListener("click", function(event) {
 $(document).ready(function() {
 
 	//E-mail Ajax Send
-	$(".cloud-form").submit(function() { //Change
+	$(".reviews-form").submit(function() { //Change
 		var th = $(this).serialize();
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "https://dinelli.ru/mail.php", //Change
+			data: th,
+		}).done(function() {
+			showThankR();
+		});
+		return false;
+	});
+
+  $(".order-form").submit(function() { //Change
+		var th = $(this).serialize();
+		$.ajax({
+			type: "POST",
+			url: "https://dinelli.ru/mail.php", //Change
 			data: th,
 		}).done(function() {
 			showThank();

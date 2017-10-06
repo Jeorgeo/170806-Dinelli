@@ -22,6 +22,7 @@ get_header(); ?>
 			</span>
 			<div class="box-content clearfix">
 				<div class="row clearfix">
+					<h4 class="yd-service small-title box">Аудит</h4>
 					<div class="cols col-8">
 						<?php the_field('pole1'); ?>
 					</div>
@@ -54,7 +55,7 @@ get_header(); ?>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
 						<a class="service__card" href="<?php echo get_field('link6'); ?>" target="_blank">
-							<img src="<?php the_field('img7'); ?>">
+							<img src="<?php the_field('img6'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 left_side">
