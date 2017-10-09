@@ -39,7 +39,7 @@ get_header(); ?>
 						<p class="box-title">
 							40 минут по skype
 						</p>
-						<a href="#" onclick="showPopup()">Заказать</a>
+						<a href="#" onclick="showPopup(); yaCounter39506875.reachGoal('ORDER22'); return true;">Заказать</a>
 					</div>
 					<div class="consult-price">
 						<p class="strong-text">
@@ -66,7 +66,7 @@ get_header(); ?>
 						<p class="box-title">
 							3-5 звонков по skype
 						</p>
-						<a href="#" onclick="showPopup()">Заказать</a>
+						<a href="#" onclick="showPopup(); yaCounter39506875.reachGoal('ORDER22'); return true;">Заказать</a>
 					</div>
 					<div class="consult-price">
 						<p class="strong-text">
@@ -93,7 +93,7 @@ get_header(); ?>
 						<p class="box-title">
 							1 месяц по skype
 						</p>
-						<a href="#" onclick="showPopup()">Заказать</a>
+						<a href="#" onclick="showPopup(); yaCounter39506875.reachGoal('ORDER22'); return true;">Заказать</a>
 					</div>
 					<div class="consult-price">
 						<p class="strong-text">
@@ -110,7 +110,7 @@ get_header(); ?>
 					<img class="content-img full" src="<?php the_field('img-o'); ?>" alt="">
 				</div>
 				<div class="cols col-5 col-md-6 umbrella">
-					<?php the_field('pole14'); ?>					
+					<?php the_field('pole14'); ?>
 				</div>
 			</div>
 			<h4 class="small-title box">

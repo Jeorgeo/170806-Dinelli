@@ -163,7 +163,7 @@ get_header(); ?>
 								<textarea id="message" class="cloud-form__message" name="message"
 								rows="5" cols="80" placeholder=""
 								></textarea>
-								<button id="submit" class="cloud-form__submit" type="submit" name="submit">
+								<button id="submit" class="cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER17'); return true;">
 									Отправить заявку
 								</button>
 								<input id="сonsent1" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>
@@ -222,7 +222,7 @@ get_header(); ?>
 							<textarea id="message" class="cloud-form__message" name="message"
 							rows="5" cols="80" placeholder=""
 							></textarea>
-							<button id="submit" class="cloud-form__submit" type="submit" name="submit">
+							<button id="submit" class="cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER21'); return true;">
 								Отправить заявку
 							</button>
 							<input id="сonsent2" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>

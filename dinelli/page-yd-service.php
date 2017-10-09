@@ -82,7 +82,7 @@ get_header(); ?>
 							<label class="cloud-form__mail" for="mail">e-mail</label>
 							<input id="mail"  class="cloud-form__mail" type="text" name="mail"
 							value="" placeholder="ivanov@ivan.ru" required>
-							<button id="submit" class="cloud-form__submit" type="submit" name="submit">
+							<button id="submit" class="cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER16'); return true;">
 								Отправить заявку
 							</button>
 							<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>

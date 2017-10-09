@@ -90,7 +90,7 @@ get_header(); ?>
 							value="" placeholder="iNfo@DiNelli.ru" required
 							pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
 
-							<button id="submit" class="cloud-form__submit" type="submit" name="submit">
+							<button id="submit" class="cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER14'); return true;">
 								Отправить заявку
 							</button>
 							<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>

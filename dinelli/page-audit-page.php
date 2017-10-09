@@ -128,7 +128,7 @@ get_header(); ?>
 							<input id="mail"  class="cloud-form__mail" type="text" name="mail"
 							value="" placeholder="iNfo@DiNelli.ru" required
 							pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
-							<button id="submit" class="cloud-form__submit" type="submit" name="submit">
+							<button id="submit" class="cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER1'); return true;">
 								Отправить заявку
 							</button>
 							<input id="сonsent1" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>
@@ -227,7 +227,7 @@ get_header(); ?>
 		 				<textarea id="message" class="cloud-form__message" name="message"
 		 				rows="4" cols="80" placeholder=""></textarea>
 
-		 				<button id="submit" class="cloud-form__submit" type="submit" name="submit">
+		 				<button id="submit" class="cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER2'); return true;">
 		 					Отправить заявку
 		 				</button>
 						<input id="сonsent" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>
