@@ -147,7 +147,12 @@ get_header(); ?>
 					<div class="cols col-5 col-md-6">
 						<?php the_field('pole21'); ?>
 						<div class="details-form">
-							<form class="cloud-form" action="index.html" method="post">
+							<form class="cloud-form order-form" method="post">
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="Dinelli.ru">
+								<?php dynamic_sidebar( 'admin_mail' ); ?>
+								<input type="hidden" name="form_subject" value="Заявка с сайта">
+								<!-- END Hidden Required Fields -->
 								<label class="cloud-form__phone" for="phone">Телефон</label>
 								<input id="phone" class="cloud-form__phone" type="text" name="phone"
 								value="" placeholder="+7(___) ___-__-__" required>
@@ -201,10 +206,10 @@ get_header(); ?>
 						<?php the_field('pole28'); ?>
 					</div>
 					<div class="cols col-5 col-md-6 bottom-form">
-						<form class="cloud-form" action="index.html" method="post">
+						<form class="cloud-form order-form" method="post">
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
-							<input type="hidden" name="admin_email" value="<?php the_field('mail'); ?>">
+							<?php dynamic_sidebar( 'admin_mail' ); ?>
 							<input type="hidden" name="form_subject" value="Заявка с сайта">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
@@ -275,10 +280,10 @@ get_header(); ?>
 						</p>
 					</div>
 					<div class="cols col-5 col-md-6 bottom-form">
-						<form class="cloud-form" action="index.html" method="post">
+						<form class="cloud-form order-form" method="post">
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
-							<input type="hidden" name="admin_email" value="<?php the_field('mail'); ?>">
+							<?php dynamic_sidebar( 'admin_mail' ); ?>
 							<input type="hidden" name="form_subject" value="Заявка с сайта">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>

@@ -84,20 +84,23 @@ endif;
 add_action( 'after_setup_theme', 'dinelli_setup' );
 
 /**
+ * Set the content width in pixels, based on the theme's design and stylesheet.
+ *
+ * Priority 0 to make it available to lower priority callbacks.
+ *
+ * @global int $content_width
+ */
+function dinelli_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'dinelli_content_width', 640 );
+}
+add_action( 'after_setup_theme', 'dinelli_content_width', 0 );
+
+/**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
  function dinelli_widgets_init() {
-	 register_sidebar( array(
-	 	'name'          => esc_html__( 'admin_mail', 'dinelli' ),
-	 	'id'            => 'admin_mail',
-	 	'description'   => esc_html__( 'Майл отправки корреспонденции', 'dinelli' ),
-	 	'before_widget' => '<div>',
-	 	'after_widget'  => '</div>',
-	 	'before_title'  => '<h2 class="widget-title">',
-	 	'after_title'   => '</h2>',
-	 ) );
  	register_sidebar( array(
  		'name'          => esc_html__( 'mail', 'dinelli' ),
  		'id'            => 'mail',

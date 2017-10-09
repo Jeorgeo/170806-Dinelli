@@ -100,17 +100,14 @@
 			<form id="js_form" method="post" class="cloud-form order-form">
 				<!-- Hidden Required Fields -->
 				<input type="hidden" name="project_name" value="Dinelli.ru">
-				<input type="hidden" name="admin_email" value="<?php the_field('mail'); ?>">
+				<!--input type="hidden" name="admin_email" value=""!-->
+				<?php dynamic_sidebar( 'admin_mail' ); ?>
 				<input type="hidden" name="form_subject" value="Заявка с сайта">
 				<!-- END Hidden Required Fields -->
 				<label class="cloud-form__phone" for="phone">Телефон</label>
 				<input id="phone" class="cloud-form__phone" type="text" name="phone"
 				value="" placeholder="+7(___) ___-__-__" required
 				pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
-				<label class="cloud-form__mail" for="mail">e-mail</label>
-				<input id="mail"  class="cloud-form__mail" type="text" name="mail"
-				value="" placeholder="iNfo@DiNelli.ru" required
-				pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
 				<label  class="cloud-form__message" for="message">сообщение</label>
 				<textarea id="message" class="cloud-form__message" name="message"
 				rows="4" cols="80" placeholder=""></textarea>
@@ -132,7 +129,7 @@
 			<form id="js_form" method="post" class="cloud-form reviews-form">
 				<!-- Hidden Required Fields -->
 				<input type="hidden" name="project_name" value="Dinelli.ru">
-				<input type="hidden" name="admin_email" value="<?php the_field('mail'); ?>">
+				<?php dynamic_sidebar( 'admin_mail' ); ?>
 				<input type="hidden" name="form_subject" value="Отзыв с сайта">
 				<!-- END Hidden Required Fields -->
 				<label class="cloud-form__phone" for="phone">Телефон</label>

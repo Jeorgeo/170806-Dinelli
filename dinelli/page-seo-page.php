@@ -31,10 +31,10 @@ get_header(); ?>
 						<?php the_field('pole1'); ?>
 					</div>
 					<div class="cols col-5 col-md-6 bottom-form">
-						<form id="js_form" class="cloud-form">
+						<form id="js_form" class="cloud-form order-form" method="post">
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
-							<input type="hidden" name="admin_email" value="<?php the_field('mail'); ?>">
+							<?php dynamic_sidebar( 'admin_mail' ); ?>
 							<input type="hidden" name="form_subject" value="Заявка с сайта">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
@@ -174,10 +174,10 @@ get_header(); ?>
 						<?php the_field('pole16'); ?>
 					</div>
 					<div class="cols col-5 col-md-6 bottom-form">
-						<form id="js_form" class="cloud-form">
+						<form id="js_form" class="cloud-form order-form" method="post">
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
-							<input type="hidden" name="admin_email" value="<?php the_field('mail'); ?>">
+							<?php dynamic_sidebar( 'admin_mail' ); ?>
 							<input type="hidden" name="form_subject" value="Заявка с сайта">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
