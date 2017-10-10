@@ -70,6 +70,7 @@ function showThankR() {
 };
 
 function showThank() {
+  winPopup.classList.add("modal-content-show");
   popup.classList.remove("modal-content-show");
   window.open("https://vk.com/davnelli");
   popupS.classList.add("modal-content-show");
