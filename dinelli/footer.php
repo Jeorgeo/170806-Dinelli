@@ -15,13 +15,13 @@
 		<div id="footer" class="main footer">
 			<div class="container">
 				<div class="row clearfix">
-					<div class="cols col-4">
+					<div class="cols col-4 col-md-6">
 						<div class="footer_content">
 							<?php dynamic_sidebar( 'footer_al' ); ?>
 							<?php dynamic_sidebar( 'footer_pl' ); ?>
 						</div>
 					</div>
-					<div class="cols col-7 footer__footer-copy">
+					<div class="cols col-7 col-md-6 footer__footer-copy">
 						<div class="footer__middle-box">
 							<div id="logo" class="site-branding">
 							<?php	the_custom_logo(); ?>
@@ -112,7 +112,7 @@
 				<textarea id="message" class="cloud-form__message" name="message"
 				rows="4" cols="80" placeholder=""></textarea>
 				<button id="submit" class="cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER19'); return true;">
-					Отправить заявку
+					Заказать звонок
 				</button>
 				<input id="сonsent-p" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>
 				<label class="cloud-form__сonsent" for="сonsent-p">

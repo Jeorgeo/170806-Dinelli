@@ -124,10 +124,10 @@ get_header(); ?>
 					</div>
 				</div>
 				<div class="row clearfix">
-					<div class="cols col-6 col-md-6">
+					<div class="cols col-5 col-md-6">
 						<img class="content-img full" src="<?php the_field('img-o'); ?>" alt="">
 					</div>
-					<div class="cols col-5 col-md-6 umbrella">
+					<div class="cols col-6 col-md-6 umbrella">
 						<?php the_field('pole14'); ?>
 					</div>
 				</div>

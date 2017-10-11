@@ -24,10 +24,10 @@ get_header();
 			<nav class="reviews__nav">
 				<ul>
 					<li>
-						<a href="<?php the_field('t_reviews'); ?>" >благодарственные письма</a>
+						<a href="<?php the_field('t_reviews'); ?>" >Благодарственные письма</a>
 					</li>
 					<li>
-						<a href="<?php the_field('v_reviews'); ?>‎">Видео отзывы</a>
+						<a href="<?php the_field('v_reviews'); ?>">Видео отзывы</a>
 					</li>
 					<li><a class="active_link">Отзывы с ВК</a></li>
 				</ul>
@@ -46,6 +46,8 @@ get_header();
 					</div>
 				</div>
 			</div>
+			<?php the_post(); ?>
+			<?php the_content(); ?>
 			<!-- кнопка еще пока заглушена
 			<button class="reviews-next" type="button" name="button">Показать ещё</button>
 			!-->
