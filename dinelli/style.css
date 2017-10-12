@@ -2797,6 +2797,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 }
 
 .reviews-photo {
+  position: relative;
   margin-left: 0;
 }
 
@@ -2805,6 +2806,25 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   width: 210px;
   height: 250px;
   overflow: hidden;
+}
+
+.reviews-photo_mantle  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #f2f5fa;
+  border: 2px solid #000000;
+  animation-name: show-popup;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+a:hover .reviews-photo_mantle {
+  animation-name: hide-popup;
+  animation-duration: 1s;
+  opacity: 0;
 }
 
 .reviews-photo img {
@@ -2828,7 +2848,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 .reviews-text a {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
 
 .reviews-next,

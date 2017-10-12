@@ -60,13 +60,14 @@ $news = get_posts(
 						}
 				 ?>
 				<div class="row clearfix">
-					<div class="cols col-5 col-md-6">
+					<div class="cols col-3 col-md-6">
 						<h4 class="small-title">
 							<?php echo $obj->post_title; ?>
 						</h4>
 						<figure class="reviews-photo">
 							<a href="/t_reviews-page/<?php echo $obj->post_name; ?>" target="_blank">
-								<img src="<?php echo get_field('image',$obj->ID); ?>" alt="">
+								<div class="reviews-photo_mantle"></div>
+								<img src="<?php echo get_field('image',$obj->ID); ?>" alt="<?php echo $obj->post_title; ?>">								
 							</a>
 						</figure>
 						<div class="reviews-text">
