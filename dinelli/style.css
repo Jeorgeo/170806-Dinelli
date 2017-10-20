@@ -1677,6 +1677,15 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
     width: 100%;
     float: none;
   }
+
+  .policy {
+    margin-bottom: 2em;
+  }
+
+  .policy .box-title {
+    margin-left: 8.33%;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2812,7 +2821,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%;
+  width: 80%;
   height: 100%;
   background-color: #f2f5fa;
   border: 2px solid #000000;
@@ -3013,7 +3022,6 @@ a:hover .reviews-photo_mantle {
   transform: rotate(-180deg);
 }
 
-.popup-question-thanks,
 .popup-question-thanks-r {
   position: fixed;
   top:30px;
@@ -3030,18 +3038,31 @@ a:hover .reviews-photo_mantle {
   display: none;
 }
 
-.popup-question-thanks .box-content {
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 60%;
+.thanks {
+  display: block;
+  min-height: 300px;
+  margin: auto;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.9) url("img/dn_spasibo.png") no-repeat 10% 100%;
+  background-size: contain;
 }
 
-.popup-question-thanks .sidebar-social a {
+.thanks .box-content {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 70%;
+}
+
+.thanks .sidebar-social a {
   background-color: #e7dddd;
 }
 
+.thanks .sidebar-social a:hover {
+  background-color: #d5cdcd;
+}
+
 @media (min-width: 768px) {
-  .popup-question-thanks .box-content {
+  .thanks .box-content {
     width: 50%;
     margin-left: 48%;
     margin-bottom: 42%;
@@ -3049,7 +3070,7 @@ a:hover .reviews-photo_mantle {
 }
 
 @media (min-width: 1280px) {
-  .popup-question-thanks .box-content {
+  .thanks .box-content {
     margin-bottom: 42%;
   }
 }

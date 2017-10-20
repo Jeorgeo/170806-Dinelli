@@ -19,11 +19,9 @@ function moveMenu(){
 // popup windows
 
 var popup = document.querySelector(".popup-question");
-var popupS = document.querySelector(".popup-question-thanks");
 var popupSr = document.querySelector(".popup-question-thanks-r");
 var popupR = document.querySelector(".reviews-popup-question");
 var close = document.querySelectorAll(".popup-question-close");
-var closeR = document.querySelector(".popup-question-close-r");
 var winPopup = document.querySelector(".wrap");
 
 function showPopup() {
@@ -40,7 +38,6 @@ function removePopup() {
   popup.classList.add("modal-content-hide");
   popupR.classList.add("modal-content-hide");
   winPopup.classList.add("modal-content-hide");
-  popupS.classList.remove("modal-content-show");
   popupSr.classList.remove("modal-content-show");
   setTimeout(function() {
     popup.classList.remove("modal-content-show");
@@ -97,14 +94,6 @@ for (var i = 0; i < close.length; i++) {
   });
 }
 
-closeR.addEventListener("click", function(event) {
-
-  event.preventDefault();
-
-  removePopup();
-
-});
-
 window.addEventListener("keydown", function(event) {
 
   if (event.keyCode === 27) {
@@ -151,7 +140,7 @@ $(document).ready(function() {
 			url: "https://dinelli.ru/mail.php", //Change
 			data: th,
 		}).done(function() {
-			showThank();
+			document.location.href = "https://dinelli.ru/spasibo/";
 		});
 		return false;
 	});

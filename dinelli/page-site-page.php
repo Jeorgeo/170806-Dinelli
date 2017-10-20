@@ -72,7 +72,8 @@ get_header(); ?>
 				<div class="row clearfix">
 					<div class="cols col-5 col-md-6">
 						<h4 class="small-title">Заявка на консультацию</h4>
-						<p>Напишите ваши контакты и пожелания, и я, Нелли Давыдова лично свяжусь с вами в ближайшее рабочее время.</p>
+						<p>Напишите ваши контакты и пожелания, и я,
+Нелли Давыдова, лично свяжусь с вами в ближайшее рабочее время.</p>
 					</div>
 					<div class="cols col-5 bottom-form col-md-6">
 						<form id="js_form" class="cloud-form order-form" method="post">

@@ -106,7 +106,6 @@ get_header(); ?>
 						</div>
 						<div class="cols padding_right col-5 col-md-6">
 							<img class="content-img yd1-img-7" src="<?php bloginfo('template_url'); ?>/img/coach/dn_couch-img-12.svg" alt="">
-							<?php the_field('pole17'); ?>
 						</div>
 					</div>
 					<div class="row clearfix">

@@ -54,30 +54,6 @@
 	<!-- popup form -->
 
 	<div class="wrap"></div>
-	<div class="popup-question-thanks">
-		<div class="popup-question-close">
-			close
-		</div>
-	  <div class="box-content">
-	  	<p>
-				Вы очень умны, что решили обойти всех конкурентов с нами, мы как закончим танцевать от счастья,
-				сразу же свяжемся с вами.
-			</p>
-			<p>
-				Если ваш вопрос не терпит отлагательств, то вы можете продублировать его в личные сообщения.
-				Пишите, не откладывайте, я почти всегда онлайн <a href="https://vk.com/directbm" target="_blank">Bконтакте</a>.
-			</p>
-			<p>
-				С уважением, Нелли Давыдова.
-	  	</p>
-			<ul class="sidebar-social clearfix">
-				<li><?php dynamic_sidebar( 'social_vk' ); ?></a></li>
-				<li><?php dynamic_sidebar( 'social_f' ); ?></a></li>
-				<li><?php dynamic_sidebar( 'social_youtube' ); ?></a></li>
-				<li><?php dynamic_sidebar( 'social_instagram' ); ?></a></li>
-			</ul>
-	  </div>
-	</div>
 	<div class="popup-question-thanks-r">
 		<div class="popup-question-close">
 	    close
@@ -122,7 +98,7 @@
 		</div>
 	</div>
 	<div id="window" class="popup-question reviews-popup-question">
-	  <div class="popup-question-close-r">
+	  <div class="popup-question-close">
 	    close
 	  </div>
 		<div class="details-form">
