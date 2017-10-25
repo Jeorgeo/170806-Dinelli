@@ -1091,11 +1091,63 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   content: "";
 }
 
+/*---------------------------thaks---------------------------------*/
+
+.thanks {
+  display: block;
+  min-height: 300px;
+  margin: auto;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.9) url("img/dn_spasibo.png") no-repeat 10% 100%;
+  background-size: contain;
+}
+
+.thanks .box-content {
+  width: 90%;
+  margin-left: 5%;
+  padding-bottom: 70%;
+}
+
+.thanks .sidebar-social a {
+  background-color: #e7dddd;
+}
+
+.thanks .sidebar-social a:hover {
+  background-color: #d5cdcd;
+}
+
+
+/*-------------------Second for tablet 640px-----------------------*/
+@media (min-width: 640px) {
+  .thanks .container {
+    max-width: 400px;
+    margin-left: 40%;
+  }
+}
+
+
 /*-------------------Second for tablet 768px-----------------------*/
 
 @media (min-width: 768px) {
   .container {
     width: 90%;
+  }
+
+  .thanks .container {
+    max-width: 760px;
+    margin-left: 0;
+  }
+
+  .thanks {
+    background: rgba(255, 255, 255, 0.9) url("img/dn_spasibo.png") no-repeat 0 100%;
+    background-size: contain;
+  }
+
+  .thanks .box-content {
+    width: 50%;
+    margin-left: 48%;
+    margin-bottom: 10%;
+    padding-bottom: 50%;
   }
 
   .big-title {
@@ -1426,6 +1478,13 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   .cols.bottom-form {
     margin-left: 2%;
   }
+
+  .thanks .box-content {
+    width: 80%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    padding-bottom: 60%;
+  }
 }
 
 @media (min-width: 1360px) {
@@ -1468,6 +1527,11 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
     max-width: 430px;
     margin: 5em 0 5em 25%;
   }
+
+  .thanks .box-content {
+    width: 75%;
+    margin-left: 70%;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1478,6 +1542,11 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
 
   .main.box-1 {
     margin-bottom: 2.5em;
+  }
+
+  .thanks {
+    background: rgba(255, 255, 255, 0.9) url("img/dn_spasibo.png") no-repeat 0 100%;
+    background-size: 59%;
   }
 }
 
@@ -1551,7 +1620,8 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   position: relative;
 }
 
-.events-template-default .blog-title {
+.events-template-default .blog-title,
+.reviews_video-template-default .blog-title {
   text-align: center;
   padding: 0.5em;
   font-size: 1em;
@@ -1640,7 +1710,8 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
     display: none;
   }
 
-  .events-template-default .blog-title {
+  .events-template-default .blog-title,
+  .reviews_video-template-default .blog-title {
     padding: 1.5em 0 3em;
     font-size: 2em;
     background: url("img/dn_cloud-video.png") no-repeat 0 0;
@@ -2824,7 +2895,7 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   width: 80%;
   height: 100%;
   background-color: #f2f5fa;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   animation-name: show-popup;
   animation-duration: 1s;
   opacity: 1;
@@ -3029,50 +3100,15 @@ a:hover .reviews-photo_mantle {
   right: 0;
   z-index: 99999;
   width: 80%;
+  max-width: 300px;
   min-height: 300px;
   margin: auto;
+  padding: 2em;
   color: #000000;
   background: rgba(255, 255, 255, 0.9) url("img/dn_spasibo.png") no-repeat 50% 100%;
   background-size: contain;
   border-radius: 10px;
   display: none;
-}
-
-.thanks {
-  display: block;
-  min-height: 300px;
-  margin: auto;
-  color: #000000;
-  background: rgba(255, 255, 255, 0.9) url("img/dn_spasibo.png") no-repeat 10% 100%;
-  background-size: contain;
-}
-
-.thanks .box-content {
-  width: 90%;
-  margin-left: 5%;
-  padding-bottom: 70%;
-}
-
-.thanks .sidebar-social a {
-  background-color: #e7dddd;
-}
-
-.thanks .sidebar-social a:hover {
-  background-color: #d5cdcd;
-}
-
-@media (min-width: 768px) {
-  .thanks .box-content {
-    width: 50%;
-    margin-left: 48%;
-    margin-bottom: 42%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .thanks .box-content {
-    margin-bottom: 42%;
-  }
 }
 
 .modal-content-show {

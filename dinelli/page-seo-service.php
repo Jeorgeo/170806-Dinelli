@@ -36,12 +36,12 @@ get_header(); ?>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
 						<a class="service__card" href="<?php echo get_field('link1'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/img/seo/dn_service-seo-img-11.png" alt="">
+							<img src="<?php echo get_field('link1_img'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<a class="service__card" href="<?php echo get_field('link2'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/img/seo/dn_service-seo-img-12.png" alt="">
+							<img src="<?php echo get_field('link2_img'); ?>">
 						</a>
 					</div>
 				</div>
@@ -57,7 +57,7 @@ get_header(); ?>
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
 							<?php dynamic_sidebar( 'admin_mail' ); ?>
-							<input type="hidden" name="form_subject" value="Заявка с сайта">
+							<input type="hidden" name="form_subject" value="Заявка с сайта. Услуги по СЕО">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
 							<input id="phone" class="cloud-form__phone" type="text" name="phone"

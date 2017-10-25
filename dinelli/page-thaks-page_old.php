@@ -19,8 +19,17 @@ get_header(); ?>
 		<div class="container">
 			<div class="box-content clearfix">
 				<div class="cols col-11">
-					<?php the_post(); ?>
-					<?php the_content(); ?>
+					<p>
+						Вы очень умны, что решили обойти всех конкурентов с нами, мы как закончим танцевать от счастья,
+						сразу же свяжемся с вами.
+					</p>
+					<p>
+						Если ваш вопрос не терпит отлагательств, то вы можете продублировать его в личные сообщения.
+						Пишите, не откладывайте, я почти всегда онлайн <a href="https://vk.com/directbm" target="_blank">Bконтакте</a>.
+					</p>
+					<p>
+						С уважением, Нелли Давыдова.
+					</p>
 					<ul class="sidebar-social clearfix">
 						<li><?php dynamic_sidebar( 'social_vk' ); ?></a></li>
 						<li><?php dynamic_sidebar( 'social_f' ); ?></a></li>

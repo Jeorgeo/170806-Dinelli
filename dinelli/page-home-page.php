@@ -212,7 +212,7 @@ get_header(); ?>
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
 							<?php dynamic_sidebar( 'admin_mail' ); ?>
-							<input type="hidden" name="form_subject" value="Заявка с сайта">
+							<input type="hidden" name="form_subject" value="Заявка с сайта. Главная верх">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
 							<input id="phone" class="cloud-form__phone" type="text" name="phone"
@@ -318,7 +318,7 @@ get_header(); ?>
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
 							<?php dynamic_sidebar( 'admin_mail' ); ?>
-							<input type="hidden" name="form_subject" value="Заявка с сайта">
+							<input type="hidden" name="form_subject" value="Заявка с сайта. Главная низ">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
 							<input id="phone" class="cloud-form__phone" type="text" name="phone"

@@ -35,27 +35,27 @@ get_header(); ?>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
 						<a class="service__card" href="<?php echo get_field('yd'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_yd.jpg" alt="Яндекс.Директ Контекстная реклама">
+							<img src="<?php echo get_field('yd_img'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<a class="service__card" href="<?php echo get_field('ga'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_ga.jpg" alt="">
+							<img src="<?php echo get_field('ga_img'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
 						<a class="service__card" href="<?php echo get_field('seo'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_seo.jpg" alt="">
+							<img src="<?php echo get_field('seo_img'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 left_side">
 						<a class="service__card" href="<?php echo get_field('site'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_site.jpg" alt="">
+							<img src="<?php echo get_field('site_img'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<a class="service__card" href="<?php echo get_field('youtube'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_youtube.jpg" alt="">
+							<img src="<?php echo get_field('youtube_img'); ?>">
 						</a>
 					</div>
 				</div>
@@ -79,17 +79,17 @@ get_header(); ?>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
 						<a class="service__card" href="<?php echo get_field('cons'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_consult.jpg" alt="">
+							<img src="<?php echo get_field('cons_img'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<a class="service__card" href="<?php echo get_field('audit'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_audit.jpg" alt="">
+							<img src="<?php echo get_field('audit_img'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
 						<a class="service__card" href="<?php echo get_field('coach'); ?>" target="_blank">
-							<img src="<?php bloginfo('template_url'); ?>/pics/service_learn.jpg" alt="">
+							<img src="<?php echo get_field('coach_img'); ?>">
 						</a>
 					</div>
 				</div>
@@ -102,7 +102,7 @@ get_header(); ?>
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
 							<?php dynamic_sidebar( 'admin_mail' ); ?>
-							<input type="hidden" name="form_subject" value="Заявка с сайта">
+							<input type="hidden" name="form_subject" value="Заявка с сайта. Все услуги">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
 							<input id="phone" class="cloud-form__phone" type="text" name="phone"

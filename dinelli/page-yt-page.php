@@ -35,17 +35,17 @@ get_header(); ?>
 				<div class="row clearfix">
 					<div class="cols col-3 col-md-6 left_side">
 						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/yt/dn_service-youtube-img-2.jpg" alt="">
+							<img src="<?php the_field('img1'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6">
 						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/yt/dn_service-youtube-img-3.jpg" alt="">
+							<img src="<?php the_field('img2'); ?>">
 						</a>
 					</div>
 					<div class="cols col-3 col-md-6 right_side">
 						<a class="service__card" href="#" onclick="showPopup()">
-							<img src="<?php bloginfo('template_url'); ?>/img/yt/dn_service-youtube-img-4.jpg" alt="">
+							<img src="<?php the_field('img3'); ?>">
 						</a>
 					</div>
 				</div>
@@ -61,7 +61,7 @@ get_header(); ?>
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Dinelli.ru">
 							<?php dynamic_sidebar( 'admin_mail' ); ?>
-							<input type="hidden" name="form_subject" value="Заявка с сайта">
+							<input type="hidden" name="form_subject" value="Заявка с сайта. Услуги по yputube">
 							<!-- END Hidden Required Fields -->
 							<label class="cloud-form__phone" for="phone">Телефон</label>
 							<input id="phone" class="cloud-form__phone" type="text" name="phone"
