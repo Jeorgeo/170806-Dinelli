@@ -118,8 +118,8 @@
 				pattern="^([A-Za-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})">
 				<label  class="cloud-form__message" for="message">отзыв</label>
 				<textarea id="message" class="cloud-form__message" name="message"
-				rows="4" cols="80" placeholder=""></textarea>
-				<button id="submit" class="cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER20'); return true;">
+				rows="2" cols="80" placeholder=""></textarea>
+				<button id="submit" class="button cloud-form__submit" type="submit" name="submit" onclick="yaCounter39506875.reachGoal('ORDER20'); return true;">
 					Оставить отзыв
 				</button>
 				<input id="сonsent-r" class="cloud-form__сonsent" type="checkbox" name="сonsent" value="" required>

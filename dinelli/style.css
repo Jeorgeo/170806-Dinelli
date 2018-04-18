@@ -1711,9 +1711,15 @@ input[type=checkbox]:checked + label.cloud-form__сonsent::before {
   }
 
   .events-template-default .blog-title,
-  .reviews_video-template-default .blog-title {
-    padding: 1.5em 0 3em;
+  .reviews_video-template-default .blog-title,
+  .post .blog-title,
+  .reviews_text .blog-title {
+    padding: 1.5em 0 3em 20%;
+    text-align: left;
     font-size: 2em;
+    line-height: 1.1em;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: bold;
     background: url("img/dn_cloud-video.png") no-repeat 0 0;
     background-size: contain;
   }
